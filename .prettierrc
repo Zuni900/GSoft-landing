@@ -1,0 +1,38 @@
+{
+  "trailingComma": "all",
+  "tabWidth": 2,
+  "semi": false,
+  "singleQuote": true,
+  "jsxSingleQuote": false,
+  "printWidth": 120,
+  "arrowParens": "always",
+  "overrides": [
+    {
+      "files": ["**/*.css", "**/*.scss", "**/*.html"],
+      "options": {
+        "singleQuote": false
+      }
+    }
+  ],
+  "extends": [
+    "next/core-web-vitals",
+    "plugin:react/recommended",
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:@typescript-eslint/eslint-recommended",
+    "prettier"
+  ],
+  "plugins": ["@typescript-eslint", "prettier"],
+  "globals": {
+    "React": "writable"
+  },
+  "parser": "@typescript-eslint/parser",
+  "ignorePatterns": [".github/", "public/"],
+  "rules": {
+    "react/prop-types": "off",
+    "react/no-unescaped-entities": 0,
+    "@typescript-eslint/no-unused-vars": "warn",
+    "@typescript-eslint/no-explicit-any": "warn",
+    "prettier/prettier": "error"
+  }
+}
