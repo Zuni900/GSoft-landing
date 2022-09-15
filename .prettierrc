@@ -26,7 +26,6 @@
   "globals": {
     "React": "writable"
   },
-  "parser": "@typescript-eslint/parser",
   "ignorePatterns": [".github/", "public/"],
   "rules": {
     "react/prop-types": "off",
