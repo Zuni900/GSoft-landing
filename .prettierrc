@@ -15,6 +15,7 @@
     }
   ],
   "extends": [
+    "next",
     "next/core-web-vitals",
     "plugin:react/recommended",
     "eslint:recommended",
