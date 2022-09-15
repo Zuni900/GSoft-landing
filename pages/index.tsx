@@ -11,8 +11,6 @@ const Home: NextPage = () => {
       </Head>
 
       <main>
-        <h1>{process.env.NEXT_PUBLIC_DB_HOST}</h1>
-
         <p>Get started by editing </p>
       </main>
     </div>

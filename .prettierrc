@@ -22,7 +22,7 @@
     "plugin:@typescript-eslint/eslint-recommended",
     "prettier"
   ],
-  "plugins": ["@typescript-eslint", "prettier"],
+  "plugins": ["prettier"],
   "globals": {
     "React": "writable"
   },
