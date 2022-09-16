@@ -18,12 +18,12 @@ const Block = (props: Props) => {
         <img src={image} alt="image" />
       </Grid>
       <Grid container sx={style.text}>
-        <Text variant="body1" name={name1} sx={{ color: "#FFFFFF" }} />
-        <Text variant="body1" name={name2} sx={{ color: "#FFFFFF" }} />
+        <Text sx={{ color: "#001A1F", fontWeight: "bold" }} variant="body1" name={name1} />
+        <Text sx={{ color: "#001A1F", fontWeight: "bold" }} variant="body1" name={name2} />
       </Grid>
 
       <Grid>
-        <Text variant="subtitle2" name={description} sx={{ color: "#FFFFFF" }} />
+        <Text sx={{ color: "#001A1F" }} variant="subtitle2" name={description} />
       </Grid>
     </Grid>
   );

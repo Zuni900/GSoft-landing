@@ -11,7 +11,7 @@ const Services = () => {
   return (
     <Grid container sx={style.container}>
       <Grid container sx={style.text}>
-        <Text variant="h4" name="Our 360° Services" />
+        <Text variant="h5" name="Our 360° Services" sx={{ color: "#001A1F", fontWeight: 600 }} />
       </Grid>
       <Grid container item md={10} sx={style.description}>
         <Block

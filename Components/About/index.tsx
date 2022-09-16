@@ -8,15 +8,16 @@ const About = () => {
   return (
     <Grid container item md={12} sm={12} sx={style.container}>
       <Grid container item md={12} sm={12} sx={style.text}>
-        <Text variant="subtitle1" name="Who We Are" />
+        <Text variant="subtitle2" name="Who We Are" sx={{ fontWeight: "bold", color: "#001A1F" }} />
       </Grid>
 
       <Grid container item md={12} sm={12} sx={style.text}>
-        <Text variant="h4" name="About Company" />
+        <Text variant="h5" name="About Company" sx={{ fontWeight: "bold", color: "#001A1F" }} />
       </Grid>
 
       <Grid container item md={6.5} sm={6} sx={style.description}>
         <Text
+          sx={{ color: "#1E212C" }}
           variant="subtitle2"
           name="We are providing professional services of Website Development as well as Mobile App Development to Enterprises and companies. Global Software Consulting intends to be in front of the client’s needs and delivers modern solutions for modern problems of the client's business from the initial phase of scoping the requirements up to the final delivery, maintenance, and continuous upgrade."
         />

@@ -12,7 +12,6 @@ export const style = {
   },
   description: {
     display: "flex",
-    backgroundColor: "pink",
     justifyContent: "space-around",
     marginTop: "20px",
     textAlign: "center",
