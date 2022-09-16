@@ -9,7 +9,8 @@
     "lint": "next lint",
     "lint:errors": "next lint --quiet",
     "lint:fix": "next lint --fix",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "pre-commit": "next lint"
   },
   "dependencies": {
     "@emotion/react": "^11.10.4",

@@ -1,60 +1,62 @@
 module.exports = {
   root: true,
-  parser: '@typescript-eslint/parser',
-  extends: ['eslint:recommended', 'plugin:react/recommended'],
-  plugins: ['react-hooks', '@typescript-eslint'],
+  parser: "@typescript-eslint/parser",
+  extends: ["eslint:recommended", "plugin:react/recommended","plugin:@typescript-eslint/recommended"],
+  plugins: ["react-hooks", "@typescript-eslint",],
   rules: {
-    'comma-dangle': [
-      'error',
+    "comma-dangle": [
+      "error",
       {
-        arrays: 'only-multiline',
-        objects: 'only-multiline',
-        imports: 'only-multiline',
-        exports: 'only-multiline',
-        functions: 'only-multiline',
-      },
+        arrays: "only-multiline",
+        objects: "only-multiline",
+        imports: "only-multiline",
+        exports: "only-multiline",
+        functions: "only-multiline"
+      }
     ],
-    'no-useless-escape': 'off',
-    'react/display-name': 'off',
-    '@typescript-eslint/no-unused-vars': 'error',
-    '@typescript-eslint/quotes': ['error', 'double'],
-    '@typescript-eslint/semi': ['error', 'always'],
-    'react-hooks/rules-of-hooks': 'error',
-    'react-hooks/exhaustive-deps': 'off',
-    'react-native/no-inline-styles': 0, // @TODO remove this after code cleanup with styled components
-    'no-alert': 'off',
+    "no-unused-vars": "error",
+    "@typescript-eslint/no-unused-vars": ["error"],
+     "no-useless-escape": "off",
+    "react/display-name": "off",
+    "@typescript-eslint/no-unused-vars": "error",
+    "@typescript-eslint/quotes": ["error", "double"],
+    "@typescript-eslint/semi": ["error", "always"],
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "off",
+    "react-native/no-inline-styles": 0, // @TODO remove this after code cleanup with styled components
+    "no-alert": "off"
   },
   settings: {
-    'import/order': [
-      'error',
+    "import/order": [
+      "error",
       {
-        groups: ['builtin', 'external', 'internal'],
+        groups: ["builtin", "external", "internal"],
         pathGroups: [
           {
-            pattern: 'react',
-            group: 'external',
-            position: 'before',
-          },
+            pattern: "react",
+            group: "external",
+            position: "before"
+          }
         ],
-        pathGroupsExcludedImportTypes: ['react'],
-        'newlines-between': 'always',
+        pathGroupsExcludedImportTypes: ["react"],
+        "newlines-between": "always",
         alphabetize: {
-          order: 'asc',
-          caseInsensitive: true,
-        },
-      },
+          order: "asc",
+          caseInsensitive: true
+        }
+      }
     ],
     react: {
-      version: 'detect',
-    },
+      version: "detect"
+    }
   },
   parserOptions: {
     ecmaFeatures: {
       jsx: true,
-      module: true,
+      module: true
     },
     ecmaVersion: 2018,
-    sourceType: 'module',
+    sourceType: "module"
   },
   env: {
     es6: true,
@@ -72,6 +74,6 @@ module.exports = {
     context: true,
     expect: true,
     jsdom: true,
-    JSX: true,
-  },
-}
+    JSX: true
+  }
+};
