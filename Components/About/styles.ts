@@ -4,6 +4,7 @@ export const style = {
     flexDirection: "column",
     alignItems: "center",
     padding: "40px",
+    backgroundColor: "#F5F5F5",
   },
   text: {
     display: "flex",

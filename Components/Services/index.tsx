@@ -5,8 +5,6 @@ import { style } from "./styles";
 import Text from "../Typography";
 import Block from "../DevelopmentBlock";
 
-// import image from "../../public/images/WebDev.png";
-
 const Services = () => {
   return (
     <Grid container sx={style.container}>
