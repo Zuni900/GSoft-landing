@@ -1,5 +1,8 @@
-import type { NextPage } from "next";
-import Head from "next/head";
+import type { NextPage } from 'next'
+import Head from 'next/head'
+
+import About from '../Components/About'
+import Services from '../Components/Services'
 
 const Home: NextPage = () => {
   return (
@@ -11,10 +14,12 @@ const Home: NextPage = () => {
       </Head>
 
       <main>
-        <p>Get started by editing </p>
+        {/* <p>Get started by editing </p> */}
+        <About />
+        <Services />
       </main>
     </div>
-  );
-};
+  )
+}
 
-export default Home;
+export default Home
