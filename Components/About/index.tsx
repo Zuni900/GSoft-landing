@@ -1,20 +1,28 @@
-import React from "react"
-import { Grid } from "@mui/material"
+import React from "react";
+import { Grid } from "@mui/material";
 
-import Text from "../Typography"
-import { useStyles } from "./styles"
+import Text from "../Typography";
+import { useStyles } from "./styles";
 
 const About = () => {
-  const { classes, cx } = useStyles()
+  const { classes, cx } = useStyles();
 
   return (
     <Grid container item md={12} sm={12} className={cx(classes.container)}>
       <Grid container item md={12} sm={12} className={cx(classes.text)}>
-        <Text variant="subtitle2" name="Who We Are" className={cx(classes.styling)} />
+        <Text
+          variant="subtitle2"
+          name="Who We Are"
+          className={cx(classes.styling)}
+        />
       </Grid>
 
       <Grid container item md={12} sm={12} className={cx(classes.text)}>
-        <Text variant="h5" name="About Company" className={cx(classes.styling)} />
+        <Text
+          variant="h5"
+          name="About Company"
+          className={cx(classes.styling)}
+        />
       </Grid>
 
       <Grid container item md={6.5} sm={6} className={cx(classes.description)}>
@@ -25,7 +33,7 @@ const About = () => {
         />
       </Grid>
     </Grid>
-  )
-}
+  );
+};
 
-export default About
+export default About;

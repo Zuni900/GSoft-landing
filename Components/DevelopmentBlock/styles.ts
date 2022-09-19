@@ -1,9 +1,9 @@
-import { makeStyles } from "tss-react/mui" // "tss-react/mui-compat" if your project is using Typescript < 4.4
+import { makeStyles } from "tss-react/mui"; // "tss-react/mui-compat" if your project is using Typescript < 4.4
 
 export const useStyles = makeStyles({
   name: "ComponentServices",
   uniqId: "servicesComponent",
-})((theme) => ({
+})(() => ({
   container: {
     // background: "#001A1F",
     display: "flex",
@@ -36,5 +36,5 @@ export const useStyles = makeStyles({
       backgroundcolor: "#FFFFFF",
     },
   },
-}))
-export const style = {}
+}));
+export const style = {};
