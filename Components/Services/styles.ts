@@ -16,4 +16,8 @@ export const style = {
     marginTop: "20px",
     textAlign: "center",
   },
+  styling: {
+    color: "#001A1F",
+    fontWeight: 600,
+  },
 };

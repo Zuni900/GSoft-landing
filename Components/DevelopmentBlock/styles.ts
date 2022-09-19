@@ -14,4 +14,11 @@ export const style = {
     marginTop: "10px",
     marginBottom: "10px",
   },
+  styling: {
+    color: "#001A1F",
+    fontWeight: "bold",
+  },
+  color: {
+    color: "#001A1F",
+  },
 };
