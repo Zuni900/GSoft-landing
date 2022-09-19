@@ -1,7 +1,7 @@
-import { Margin } from "@mui/icons-material";
-import { display } from "@mui/system";
+
+
 import { makeStyles } from "tss-react/mui"; 
-export  const useStyles = makeStyles()((theme) => ({
+export  const useStyles = makeStyles()(() => ({
   root: {
     width: "1920px",
     height: "714px",
@@ -64,8 +64,6 @@ alignItems:"center",
     color: "white",
     marginLeft: "auto",
   },
-  class: {
-    WebkitAlignItems: "",
-  },
+ 
 }));
   

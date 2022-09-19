@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Drawer, IconButton, List, ListItemButton, ListItemIcon, ListItemText } from "@mui/material";
+import { Drawer, IconButton, List, ListItemButton,  ListItemText } from "@mui/material";
 import CloseIcon from "@mui/icons-material/Close";
 import MenuIcon from "@mui/icons-material/Menu";
 import { useStyles } from "../styles";
@@ -7,10 +7,7 @@ import { pages } from "./Navbardata";
 import Link from "next/link";
 const DrawerComp = () => {
   const [openDrawer, setOpenDrawer] = useState(false);
-  const [active, setactive] = useState(false);
-  const toggle = () => {
-    setactive(!active);
-  };
+ 
    const { classes } = useStyles();
   return (
     <React.Fragment>

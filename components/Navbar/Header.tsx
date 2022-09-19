@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { AppBar, Button, Tab, Tabs, Toolbar, Typography, useMediaQuery, useTheme } from "@mui/material";
+import { AppBar, Button, Tab, Tabs, Toolbar,  useMediaQuery, useTheme } from "@mui/material";
 import { useStyles } from "../styles";
 import DrawerComp from "./Drawer";
 import Link from "next/link";

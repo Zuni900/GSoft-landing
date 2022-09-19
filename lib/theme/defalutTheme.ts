@@ -6,4 +6,4 @@ export const theme = createTheme({
       // main: "#001A1F",
     },
   },
-})
+});
