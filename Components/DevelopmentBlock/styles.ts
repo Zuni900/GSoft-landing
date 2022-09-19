@@ -1,4 +1,9 @@
-export const style = {
+import { makeStyles } from "tss-react/mui" // "tss-react/mui-compat" if your project is using Typescript < 4.4
+
+export const useStyles = makeStyles({
+  name: "ComponentServices",
+  uniqId: "servicesComponent",
+})((theme) => ({
   container: {
     // background: "#001A1F",
     display: "flex",
@@ -6,6 +11,13 @@ export const style = {
     justifyContent: "center",
     borderRadius: "10px",
     padding: "20px",
+    color: "#001A1F",
+    // backgroundColor: "pink",
+    // "&:hover": {
+    //   background: "#001A1F",
+    //   color: "#FFFFFF",
+    // },
+    // backgroundColor: theme.palette.primary.light,
   },
   text: {
     display: "flex",
@@ -15,10 +27,14 @@ export const style = {
     marginBottom: "10px",
   },
   styling: {
-    color: "#001A1F",
+    // color: "#001A1F",
     fontWeight: "bold",
   },
-  color: {
-    color: "#001A1F",
+  bgcolor: {
+    backgroundcolor: "#001A1F",
+    "&:hover": {
+      backgroundcolor: "#FFFFFF",
+    },
   },
-};
+}))
+export const style = {}
