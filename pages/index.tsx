@@ -1,6 +1,9 @@
 import type { NextPage } from "next";
 import Head from "next/head";
-import Header from "../components/Navbar/Header";
+
+import About from "../Components/About";
+import Services from "../Components/Services";
+import Header from "../Components/Navbar/Header";
 const Home: NextPage = () => {
   return (
     <div>
@@ -10,10 +13,13 @@ const Home: NextPage = () => {
       </Head>
 
       <main>
-        <Header />
+        <Header/>
+        {/* <p>Get started by editing </p> */}
+        <About />
+        <Services />
       </main>
     </div>
-  );
-};
+  )
+}
 
-export default Home;
+export default Home
