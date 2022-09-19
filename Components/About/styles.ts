@@ -1,10 +1,15 @@
-export const style = {
+import { makeStyles, withStyles } from "tss-react/mui"; // "tss-react/mui-compat" if your project is using Typescript < 4.4
+
+export const useStyles = makeStyles({
+  name: "ComponentAbout",
+  uniqId: "aboutComponent",
+})((theme) => ({
   container: {
     display: "flex",
     flexDirection: "column",
     alignItems: "center",
     padding: "40px",
-    backgroundColor: "#F5F5F5",
+    backgroundColor: theme.palette.primary.light,
   },
   text: {
     display: "flex",
@@ -14,4 +19,5 @@ export const style = {
     marginTop: "20px",
     textAlign: "center",
   },
-};
+}));
+export const style = {};
