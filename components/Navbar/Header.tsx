@@ -1,25 +1,33 @@
 import React, { useState } from "react";
-import { AppBar, Button, Tab, Tabs, Toolbar,  useMediaQuery, useTheme } from "@mui/material";
+import {
+  AppBar,
+  Button,
+  Tab,
+  Tabs,
+  Toolbar,
+  useMediaQuery,
+  useTheme,
+} from "@mui/material";
 import { useStyles } from "./styles";
 import DrawerComp from "./Drawer";
-import Link from "next/link";
-import { pages } from "./Navbardata";
+
+import { pages } from "./data";
 import Image from "next/image";
+
+import Logo from "../../public/images/logo.png";
 const Header = () => {
-  const [value, setValue] = useState();
+  const [value, setValue] = useState(0);
   const theme = useTheme();
   console.log(theme);
   const isMatch = useMediaQuery(theme.breakpoints.down("sm"));
   console.log(isMatch);
- const { classes} = useStyles();
+  const { classes } = useStyles();
 
   return (
     <React.Fragment>
       <AppBar className={classes.appBar}>
         <Toolbar>
-          <Link href="/">
-            <Image src="/c.png" alt="Logo" width={140} height={35} />
-          </Link>
+          <Image src={Logo} alt="Logo" layout="fixed" />
 
           {isMatch ? (
             <>
@@ -27,15 +35,23 @@ const Header = () => {
             </>
           ) : (
             <>
-              <Tabs className={classes.headerTabs} value={value} onChange={(e, value) => setValue(value)}>
-                {" "}
+              <Tabs
+                className={classes.headerTabs}
+                value={value}
+                onChange={(e, value) => setValue(value)}
+                indicatorColor={undefined}
+              >
                 {pages.map((page, index) => (
-                  <Link href={page.link} key={index} className={classes.headerLabel}>
-                    <Tab label={page.name} className={classes.headerLabel} />
-                  </Link>
+                  <Tab
+                    label={page.name}
+                    key={index}
+                    className={classes.headerLabel}
+                  />
                 ))}
               </Tabs>
-              <Button className={classes.headerButton}>Estimate Your Project</Button>
+              <Button className={classes.headerButton}>
+                Estimate Your Project
+              </Button>
             </>
           )}
         </Toolbar>

@@ -2,38 +2,36 @@ import React from "react";
 import { Grid, TypographyProps } from "@mui/material";
 import { useStyles } from "./styles";
 import Text from "../Typography";
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 
 interface Props extends TypographyProps {
-  image: string;
+  image: StaticImageData;
   name1: string;
-  name2: string;
   description: string;
 }
 
 const Block = (props: Props) => {
   const { classes, cx } = useStyles();
-  const { name1, name2, description, image } = props;
+  const { name1, description, image } = props;
 
   return (
-    <Grid container sm={6} md={2.5} className={cx(classes.container)}>
+    <Grid container item sm={6} md={2.5} className={cx(classes.container)}>
       <Grid>
-        <Image
-          src={image}
-          alt="image"
-          width={80}
-          height={80}
-          className={cx(classes.bgcolor)}
-        />
+        <Image src={image} alt="image" layout="fixed" />
       </Grid>
 
       <Grid container className={cx(classes.text)}>
-        <Text className={cx(classes.styling)} variant="body1" name={name1} />
-        <Text className={cx(classes.styling)} variant="body1" name={name2} />
+        <Text
+          className={cx(classes.styling)}
+          variant="h5"
+          align="center"
+          display="block"
+          name={name1}
+        />
       </Grid>
 
       <Grid>
-        <Text variant="subtitle2" name={description} />
+        <Text variant="body1" name={description} />
       </Grid>
     </Grid>
   );

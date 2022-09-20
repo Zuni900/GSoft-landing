@@ -6,7 +6,6 @@ export const useStyles = makeStyles()((theme) => ({
     left: "0px",
     top: "0px",
     display: "flex",
-    fontFamily: "Poppins",
   },
   appBar: {
     backgroundColor: theme.palette.secondary.main,
@@ -26,6 +25,8 @@ export const useStyles = makeStyles()((theme) => ({
     color: theme.palette.secondary.light,
     fontSize: "16px",
     lineHeight: "25.5px",
+    display: "flex",
+    textTransform: "none",
   },
   headerButton: {
     backgroundColor: theme.palette.secondary.contrastText,

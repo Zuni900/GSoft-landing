@@ -13,4 +13,7 @@ export const theme = createTheme({
       contrastText: "#16B1E1",
     },
   },
+  typography: {
+    fontFamily: ["Poppins"].join(","),
+  },
 });

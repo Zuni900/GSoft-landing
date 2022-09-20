@@ -3,21 +3,14 @@ import { makeStyles } from "tss-react/mui"; // "tss-react/mui-compat" if your pr
 export const useStyles = makeStyles({
   name: "ComponentServices",
   uniqId: "servicesComponent",
-})(() => ({
+})((theme) => ({
   container: {
-    // background: "#001A1F",
     display: "flex",
     flexDirection: "column",
     justifyContent: "center",
     borderRadius: "10px",
     padding: "20px",
-    color: "#001A1F",
-    // backgroundColor: "pink",
-    // "&:hover": {
-    //   background: "#001A1F",
-    //   color: "#FFFFFF",
-    // },
-    // backgroundColor: theme.palette.primary.light,
+    color: theme.palette.secondary.main,
   },
   text: {
     display: "flex",
@@ -27,13 +20,12 @@ export const useStyles = makeStyles({
     marginBottom: "10px",
   },
   styling: {
-    // color: "#001A1F",
     fontWeight: "bold",
   },
-  bgcolor: {
-    backgroundcolor: "#001A1F",
+  bgColor: {
+    backgroundColor: theme.palette.secondary.main,
     "&:hover": {
-      backgroundcolor: "#FFFFFF",
+      backgroundColor: theme.palette.primary.main,
     },
   },
 }));
