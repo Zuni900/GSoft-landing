@@ -39,7 +39,9 @@ const Header = () => {
                 className={classes.headerTabs}
                 value={value}
                 onChange={(e, value) => setValue(value)}
-                indicatorColor={undefined}
+                TabIndicatorProps={{
+                  sx: { display: "none" },
+                }}
               >
                 {pages.map((page, index) => (
                   <Tab
