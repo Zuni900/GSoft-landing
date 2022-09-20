@@ -1,14 +1,14 @@
-import React, { useState } from "react"
-import { Drawer, IconButton, List, ListItemButton, ListItemText } from "@mui/material"
-import CloseIcon from "@mui/icons-material/Close"
-import MenuIcon from "@mui/icons-material/Menu"
-import { useStyles } from "./styles"
-import { pages } from "./Navbardata"
-import Link from "next/link"
+import React, { useState } from "react";
+import { Drawer, IconButton, List, ListItemButton, ListItemText } from "@mui/material";
+import CloseIcon from "@mui/icons-material/Close";
+import MenuIcon from "@mui/icons-material/Menu";
+import { useStyles } from "./styles";
+import { pages } from "./Navbardata";
+import Link from "next/link";
 
 const DrawerComp = () => {
-  const [openDrawer, setOpenDrawer] = useState(false)
-  const { classes } = useStyles()
+  const [openDrawer, setOpenDrawer] = useState(false);
+  const { classes } = useStyles();
   return (
     <React.Fragment>
       <Drawer
@@ -41,7 +41,7 @@ const DrawerComp = () => {
         {openDrawer ? <CloseIcon /> : <MenuIcon />}
       </IconButton>
     </React.Fragment>
-  )
-}
+  );
+};
 
-export default DrawerComp
+export default DrawerComp;

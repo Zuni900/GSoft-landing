@@ -1,9 +1,10 @@
 import type { NextPage } from "next";
 import Head from "next/head";
 
-import About from "../Components/About";
-import Services from "../Components/Services";
-import Header from "../Components/Navbar/Header";
+
+import About from "../components/About";
+import Services from "../components/Services";
+import Header from "../components/Navbar/Header";
 const Home: NextPage = () => {
   return (
     <div>
@@ -19,7 +20,7 @@ const Home: NextPage = () => {
         <Services />
       </main>
     </div>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;

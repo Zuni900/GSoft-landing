@@ -12,7 +12,5 @@ export const theme = createTheme({
       light: "#ffffff",
       contrastText: "#16B1E1",
     },
-    // success for border
-  
   },
-})
+});

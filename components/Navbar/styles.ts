@@ -1,8 +1,4 @@
-
-
-import { Margin } from "@mui/icons-material"
-import { display } from "@mui/system"
-import { makeStyles } from "tss-react/mui"
+import { makeStyles } from "tss-react/mui";
 export const useStyles = makeStyles()((theme) => ({
   root: {
     width: "1920px",
@@ -67,6 +63,4 @@ export const useStyles = makeStyles()((theme) => ({
     color: theme.palette.secondary.light,
     marginLeft: "auto",
   },
-}))
-
-
+}));
