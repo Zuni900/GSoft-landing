@@ -8,24 +8,24 @@ export const useStyles = makeStyles({
     display: "flex",
     flexDirection: "column",
     alignItems: "center",
-    padding: "40px",
-    backgroundColor: theme.palette.primary.light,
-  },
-  text: {
-    display: "flex",
-    justifyContent: "center",
-  },
-  description: {
-    marginTop: "20px",
     textAlign: "center",
-    width: "1150px",
+    padding: "20px",
+    "&:hover": {
+      backgroundColor: "rgba(255,255,255,0.1)",
+      // paddingTop: "30px",
+      // marginTop: "20px",
+      // marginBottom: "20px",
+      paddingBottom: "80px",
+    },
   },
-  styling: {
-    fontWeight: "bold",
-    color: "#001A1F",
+  uperText: {
+    color: "#16B1E1",
+    fontWeight: 900,
   },
-  color: {
-    color: "#1E212C",
+  lowerText: {
+    marginTop: "10px",
+    marginBottom: "10px",
+    fontWeight: 600,
   },
 }));
 export const style = {};

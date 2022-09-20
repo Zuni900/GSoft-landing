@@ -18,13 +18,7 @@ const Block = (props: Props) => {
   return (
     <Grid container sm={6} md={2.5} className={cx(classes.container)}>
       <Grid>
-        <Image
-          src={image}
-          alt="image"
-          width={80}
-          height={80}
-          className={cx(classes.bgcolor)}
-        />
+        <Image src={image} alt="image" width={80} height={80} className={cx(classes.bgcolor)} />
       </Grid>
 
       <Grid container className={cx(classes.text)}>

@@ -20,13 +20,11 @@ export const useStyles = makeStyles({
     justifyContent: "space-around",
     marginTop: "20px",
     textAlign: "center",
+    width: "1150px",
   },
   styling: {
     color: "#001A1F",
     fontWeight: 600,
-  },
-  color: {
-    color: "pink",
   },
 }));
 export const style = {};

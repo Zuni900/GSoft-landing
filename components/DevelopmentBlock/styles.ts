@@ -12,11 +12,10 @@ export const useStyles = makeStyles({
     borderRadius: "10px",
     padding: "20px",
     color: "#001A1F",
-    // backgroundColor: "pink",
-    // "&:hover": {
-    //   background: "#001A1F",
-    //   color: "#FFFFFF",
-    // },
+    "&:hover": {
+      background: "#001A1F",
+      color: "#FFFFFF",
+    },
     // backgroundColor: theme.palette.primary.light,
   },
   text: {

@@ -1,10 +1,12 @@
 import type { NextPage } from "next";
 import Head from "next/head";
 
+import Header from "../components/Navbar/Header";
+import TopCard from "../components/TopCard/TopCard";
 import About from "../components/About";
 import Services from "../components/Services";
+import WorkFlow from "../components/WorkFlow/WorkFlow";
 
-import Header from "../components/Navbar/Header";
 const Home: NextPage = () => {
   return (
     <div>
@@ -14,9 +16,10 @@ const Home: NextPage = () => {
 
       <main>
         <Header />
-        {/* <p>Get started by editing </p> */}
+        <TopCard />
         <About />
         <Services />
+        <WorkFlow />
       </main>
     </div>
   );

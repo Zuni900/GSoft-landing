@@ -15,11 +15,7 @@ const Services = () => {
   return (
     <Grid container className={cx(classes.container)}>
       <Grid container className={cx(classes.text)}>
-        <Text
-          variant="h5"
-          name="Our 360° Services"
-          className={cx(classes.styling)}
-        />
+        <Text variant="h5" name="Our 360° Services" className={cx(classes.styling)} />
       </Grid>
       <Grid container item md={10} className={cx(classes.description)}>
         <Block
