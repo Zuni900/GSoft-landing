@@ -29,13 +29,18 @@ export const useStyles = makeStyles({
   },
   text: {
     display: "flex",
-    // backgroundColor: "pink",
     height: "20%",
     flexDirection: "column",
     justifyContent: "center",
   },
   styling: {
-    fontWeight: "bold",
+    // fontWeight: "bold",
+    paddingTop: "10px",
+    paddingBottom: "10px",
+    width: "70%",
+    // fontSize: "20px",
+    fontWeight: 800,
+    textAlign: "center",
   },
 }));
 export const style = {};

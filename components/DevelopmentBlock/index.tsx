@@ -17,15 +17,11 @@ const Block = (props: Props) => {
   return (
     <Grid container sm={6} md={2.5} className={cx(classes.container)}>
       <Grid className={cx(classes.img)}>
-        <Image src={image} alt="image" height="130px" width="80px" layout={"fixed"} />
+        <Image src={image} alt="image" height={50} width={50} layout={"fixed"} />
 
-        <Grid container md={8} className={cx(classes.text)}>
-          <Text className={cx(classes.styling)} variant="body1" name={name} />
-        </Grid>
+        <Text className={cx(classes.styling)} variant="body1" name={name} />
 
-        <Grid>
-          <Text variant="subtitle2" name={description} />
-        </Grid>
+        <Text variant="subtitle2" name={description} />
       </Grid>
     </Grid>
   );
