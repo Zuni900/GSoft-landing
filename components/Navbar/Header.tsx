@@ -18,15 +18,13 @@ import Logo from "../../public/images/logo.png";
 const Header = () => {
   const [value, setValue] = useState(0);
   const theme = useTheme();
-  console.log(theme);
   const isMatch = useMediaQuery(theme.breakpoints.down("lg"));
-  console.log(isMatch);
   const { classes } = useStyles();
 
   return (
     <React.Fragment>
       <AppBar className={classes.appBar}>
-        <Toolbar className={classes.appBarh}>
+        <Toolbar className={classes.toolBar}>
           <Image src={Logo} alt="Logo" layout="fixed" />
 
           {isMatch ? (
@@ -44,10 +42,16 @@ const Header = () => {
                 }}
               >
                 {pages.map((page, index) => (
-                  <Tab label={page.name} key={index} className={classes.headerLabel} />
+                  <Tab
+                    label={page.name}
+                    key={index}
+                    className={classes.headerLabel}
+                  />
                 ))}
               </Tabs>
-              <Button className={classes.headerButton}>Estimate Your Project</Button>
+              <Button className={classes.headerButton}>
+                Estimate Your Project
+              </Button>
             </>
           )}
         </Toolbar>

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useCallback } from "react";
 import {
   Drawer,
   IconButton,
@@ -15,6 +15,10 @@ import Link from "next/link";
 const DrawerComp = () => {
   const [openDrawer, setOpenDrawer] = useState(false);
   const { classes } = useStyles();
+
+  const onClickDrawer = useCallback(() => {
+    setOpenDrawer(!openDrawer);
+  }, []);
   return (
     <React.Fragment>
       <Drawer
@@ -46,8 +50,9 @@ const DrawerComp = () => {
         </List>
       </Drawer>
       <IconButton
+        aria-label="Drawer"
         className={classes.drawerIcon}
-        onClick={() => setOpenDrawer(!openDrawer)}
+        onClick={onClickDrawer}
       >
         {openDrawer ? <CloseIcon /> : <MenuIcon />}
       </IconButton>

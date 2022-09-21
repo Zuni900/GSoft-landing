@@ -10,11 +10,11 @@ export const useStyles = makeStyles()((theme) => ({
   appBar: {
     backgroundColor: theme.palette.secondary.main,
   },
-  appBarh: {
+  toolBar: {
     backgroundColor: theme.palette.secondary.main,
     top: "20px",
   },
-  appBarlogo: {
+  appBarLogo: {
     height: "20px",
     width: "auto",
 
@@ -25,7 +25,7 @@ export const useStyles = makeStyles()((theme) => ({
     marginLeft: "auto",
     top: "20px",
     display: "flex",
-    marginRight:"80px",
+    marginRight: "80px",
     justifyContent: "flex-end",
     alignItems: "flex-end",
   },
@@ -39,22 +39,8 @@ export const useStyles = makeStyles()((theme) => ({
   headerButton: {
     backgroundColor: theme.palette.secondary.contrastText,
     color: theme.palette.secondary.light,
-    gap:"244px",
-    marginLeft:"16px"
-//     display: flex;
-// flex-direction: column;
-// align-items: center;
-// padding: 0px 16px;
-// gap: 10px;
-
-// position: absolute;
-// width: 237px;
-// height: 44px;
-// right: 0px;
-// top: calc(50% - 44px/2);
-
-// background: #16B1E1;
-// border-radius: 4px;
+    gap: "244px",
+    marginLeft: "16px",
   },
   list: {
     alignItems: "center",
@@ -62,7 +48,6 @@ export const useStyles = makeStyles()((theme) => ({
   },
   drawer: {
     color: theme.palette.secondary.main,
-
     top: "56px",
     height: "auto",
     width: "100%",
