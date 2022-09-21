@@ -3,7 +3,7 @@ import { makeStyles } from "tss-react/mui"; // "tss-react/mui-compat" if your pr
 export const useStyles = makeStyles({
   name: "ComponentAbout",
   uniqId: "aboutComponent",
-})((theme) => ({
+})(() => ({
   //   container: {
   //     display: "flex",
   //     // alignItems: "center",

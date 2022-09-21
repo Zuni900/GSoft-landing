@@ -3,7 +3,7 @@ import { Grid } from "@mui/material";
 
 import { useStyles } from "./styles";
 import WorkFlowComponent from "../WorkFlowComponent/WorkFlowComponent";
-import Text from "../Typography/index";
+// import Text from "../Typography/index";
 
 const WorkFlow = () => {
   const { classes, cx } = useStyles();
