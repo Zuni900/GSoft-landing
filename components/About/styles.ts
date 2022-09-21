@@ -8,7 +8,7 @@ export const useStyles = makeStyles({
     display: "flex",
     flexDirection: "column",
     alignItems: "center",
-    padding: "40px",
+    padding: "100px",
     backgroundColor: theme.palette.primary.light,
   },
   text: {

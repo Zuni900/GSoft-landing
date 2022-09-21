@@ -18,15 +18,13 @@ import Logo from "../../public/images/logo.png";
 const Header = () => {
   const [value, setValue] = useState(0);
   const theme = useTheme();
-  console.log(theme);
-  const isMatch = useMediaQuery(theme.breakpoints.down("sm"));
-  console.log(isMatch);
+  const isMatch = useMediaQuery(theme.breakpoints.down("lg"));
   const { classes } = useStyles();
 
   return (
     <React.Fragment>
       <AppBar className={classes.appBar}>
-        <Toolbar>
+        <Toolbar className={classes.toolBar}>
           <Image src={Logo} alt="Logo" layout="fixed" />
 
           {isMatch ? (
