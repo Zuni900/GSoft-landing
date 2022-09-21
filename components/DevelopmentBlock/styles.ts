@@ -5,35 +5,37 @@ export const useStyles = makeStyles({
   uniqId: "servicesComponent",
 })(() => ({
   container: {
-    // background: "#001A1F",
     display: "flex",
     flexDirection: "column",
     justifyContent: "center",
     borderRadius: "10px",
-    padding: "20px",
     color: "#001A1F",
     "&:hover": {
       background: "#001A1F",
-      color: "#FFFFFF",
     },
-    // backgroundColor: theme.palette.primary.light,
+  },
+  img: {
+    display: "flex",
+    flexDirection: "column",
+    height: "100%",
+    width: "100%",
+    padding: "20px",
+    alignItems: "center",
+    justifyContent: "center",
+    textAlign: "center",
+    "&:hover": {
+      filter: "brightness(0) invert(1)",
+    },
   },
   text: {
     display: "flex",
+    // backgroundColor: "pink",
+    height: "20%",
     flexDirection: "column",
     justifyContent: "center",
-    marginTop: "10px",
-    marginBottom: "10px",
   },
   styling: {
-    // color: "#001A1F",
     fontWeight: "bold",
-  },
-  bgcolor: {
-    backgroundcolor: "#001A1F",
-    "&:hover": {
-      backgroundcolor: "#FFFFFF",
-    },
   },
 }));
 export const style = {};

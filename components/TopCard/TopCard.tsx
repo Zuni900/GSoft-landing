@@ -28,7 +28,7 @@ const TopCard = () => {
         </Grid>
 
         <Grid sx={{ marginLeft: "30px", marginTop: "60px" }}>
-          <Image src={amico} alt="image" width={214} height={199} />
+          <Image src={amico} alt="image" width={214} height={199} layout={"fixed"} />
         </Grid>
       </Grid>
     </Grid>

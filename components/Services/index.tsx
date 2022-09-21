@@ -19,27 +19,27 @@ const Services = () => {
       </Grid>
       <Grid container item md={10} className={cx(classes.description)}>
         <Block
-          name1="Web"
-          name2="Development"
+          name="Web Development"
+          // name2="Development"
           image={WebDev}
           description="We offers top-quality development services and uses excellent frameworks to develop user-friendly app interfaces."
         />
         <Block
           image={BackendDev}
-          name1="Backend"
-          name2="Development"
+          name="Backend Development"
+          // name2="Development"
           description="We offers top-quality development services and uses excellent frameworks to develop user-friendly app interfaces."
         />
         <Block
           image={AppDev}
-          name1="Mobile"
-          name2="Development"
+          name="Mobile Development"
+          // name2="Development"
           description="We offers top-quality development services and uses excellent frameworks to develop user-friendly app interfaces."
         />
         <Block
           image={WebDesign}
-          name1="Web"
-          name2="Design"
+          name="Web Design"
+          // name2="Design"
           description="We offers top-quality development services and uses excellent frameworks to develop user-friendly app interfaces."
         />
 
