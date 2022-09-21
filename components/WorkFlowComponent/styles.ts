@@ -9,23 +9,22 @@ export const useStyles = makeStyles({
     flexDirection: "column",
     alignItems: "center",
     textAlign: "center",
-    padding: "20px",
+    // backgroundColor: "pink",
+    paddingLeft: "20px",
+    paddingRight: "20px",
+    paddingTop: "20vh",
     "&:hover": {
       backgroundColor: "rgba(255,255,255,0.1)",
-      // paddingTop: "30px",
-      // marginTop: "20px",
-      // marginBottom: "20px",
-      paddingBottom: "80px",
+      paddingTop: "10vh",
+      cursor: "pointer",
+      transition: "1s",
     },
   },
   uperText: {
     color: "#16B1E1",
-    fontWeight: 900,
   },
   lowerText: {
-    marginTop: "10px",
     marginBottom: "10px",
-    fontWeight: 600,
   },
 }));
 export const style = {};

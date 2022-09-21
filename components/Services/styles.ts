@@ -8,7 +8,10 @@ export const useStyles = makeStyles({
     display: "flex",
     flexDirection: "column",
     alignItems: "center",
-    padding: "40px",
+    paddingTop: "40px",
+    paddingBottom: "40px",
+    paddingLeft: "20px",
+    paddingRight: "20px",
     background: "linear-gradient(259.45deg, #16BCE1 -6.94%, #9FE8FF 104.78%)",
   },
   text: {
@@ -18,13 +21,12 @@ export const useStyles = makeStyles({
   description: {
     display: "flex",
     justifyContent: "space-around",
-    marginTop: "20px",
+    marginTop: "25px",
     textAlign: "center",
     width: "1150px",
   },
   styling: {
     color: "#001A1F",
-    fontWeight: 600,
   },
 }));
 export const style = {};

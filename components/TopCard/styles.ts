@@ -8,20 +8,30 @@ export const useStyles = makeStyles({
     display: "flex",
     alignItems: "center",
     justifyContent: "center",
-    padding: "40px",
-    marginTop: "60px",
     color: "#FFFFFF",
-    background: "radial-gradient(83.15% 154.4% at 10% 13.52%, #001A1F 0%, #002E37 56.38%, #001A1F 100%);",
+    background: "radial-gradient(83.15% 154.4% at 10% 13.52%, #001A1F 0%, #002E37 56.38%, #001A1F 100%)",
+  },
+  box: {
+    width: "1150px",
+    paddingTop: "80px",
+    paddingBottom: "100px",
+    paddingLeft: "20px",
+    paddingRight: "20px",
+    // backgroundColor: "pink",
+    display: "flex",
+    justifyContent: "center",
   },
   typo: {
     display: "flex",
   },
   button: {
-    color: "#16B1E1;",
-    borderColor: "#16B1E1;",
+    color: "#16B1E1",
+    border: "1px solid #16B1E1",
+    display: "flex",
+    justifyContent: "center",
+    borderRadius: "4px",
     textTransform: "none",
-    paddingLeft: "30px",
-    paddingRight: "30px",
+    padding: "10px",
   },
   desc: {
     marginTop: "30px",
@@ -29,11 +39,7 @@ export const useStyles = makeStyles({
   },
   gsoft: {
     color: "#16B1E1",
-    fontWeight: 600,
     marginLeft: "10px",
-  },
-  style: {
-    fontWeight: 600,
   },
 }));
 export const style = {};

@@ -8,12 +8,16 @@ export const useStyles = makeStyles({
     display: "flex",
     flexDirection: "column",
     alignItems: "center",
-    padding: "40px",
+    paddingTop: "70px",
+    paddingBottom: "70px",
+    paddingLeft: "20px",
+    paddingRight: "20px",
     backgroundColor: theme.palette.primary.light,
   },
   text: {
     display: "flex",
     justifyContent: "center",
+    alignItems: "center",
   },
   description: {
     marginTop: "20px",
@@ -21,7 +25,6 @@ export const useStyles = makeStyles({
     width: "1150px",
   },
   styling: {
-    fontWeight: "bold",
     color: "#001A1F",
   },
   color: {

@@ -6,19 +6,19 @@ export const useStyles = makeStyles()((theme) => ({
     left: "0px",
     top: "0px",
     display: "flex",
-    fontFamily: "Poppins",
   },
-  appBar: {
-    backgroundColor: theme.palette.secondary.main,
-  },
-  appBarlogo: {
+  appBarLogo: {
     height: "20px",
     width: "auto",
+
+    left: "60px",
   },
   headerTabs: {
     color: theme.palette.secondary.light,
-    marginLeft: "auto",
+    marginLeft: "195px",
+    top: "20px",
     display: "flex",
+    marginRight: "30px",
     justifyContent: "flex-end",
     alignItems: "flex-end",
   },
@@ -26,10 +26,14 @@ export const useStyles = makeStyles()((theme) => ({
     color: theme.palette.secondary.light,
     fontSize: "16px",
     lineHeight: "25.5px",
+    display: "flex",
+    textTransform: "none",
   },
   headerButton: {
     backgroundColor: theme.palette.secondary.contrastText,
     color: theme.palette.secondary.light,
+    gap: "244px",
+    // marginLeft: "10px",
   },
   list: {
     alignItems: "center",
@@ -37,7 +41,6 @@ export const useStyles = makeStyles()((theme) => ({
   },
   drawer: {
     color: theme.palette.secondary.main,
-
     top: "56px",
     height: "auto",
     width: "100%",

@@ -36,28 +36,30 @@ export const useStyles = makeStyles({
 
   container: {
     display: "flex",
-    alignItems: "center",
+    // alignItems: "center",
     justifyContent: "center",
     color: "#FFFFFF",
+    minHeight: "40vh",
     // padding: "40px",
     // flexDirection: "column",
     backgroundColor: "#001A1F",
   },
   box: {
     display: "flex",
-    flexDirection: "column",
-    justifyContent: "center",
-    width: "1150px",
+    // flexDirection: "column",
+    // justifyContent: "center",
+    // width: "1150px",
   },
   text: {
     display: "flex",
     flexDirection: "column",
     // backgroundColor: "pink",
-    marginBottom: "30px",
+    // marginBottom: "30px",
   },
   grid: {
-    display: "flex",
+    // display: "flex",
     // backgroundColor: "pink",
+    width: "1150px",
     justifyContent: "space-between",
   },
 }));

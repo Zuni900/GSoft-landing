@@ -1,4 +1,4 @@
-import type { NextPage } from "next";
+import { NextPage } from "next";
 import Head from "next/head";
 
 import Header from "../components/Navbar/Header";
@@ -12,10 +12,12 @@ const Home: NextPage = () => {
     <div>
       <Head>
         <link rel="icon" href="/favicon.ico" />
+        <title>Home</title>
+
+        <meta property="og:title" content="Home" key="Home" name="description" />
       </Head>
 
       <main>
-        <Header />
         <TopCard />
         <About />
         <Services />

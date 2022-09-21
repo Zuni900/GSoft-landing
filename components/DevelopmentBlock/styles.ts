@@ -3,7 +3,7 @@ import { makeStyles } from "tss-react/mui"; // "tss-react/mui-compat" if your pr
 export const useStyles = makeStyles({
   name: "ComponentServices",
   uniqId: "servicesComponent",
-})(() => ({
+})((theme) => ({
   container: {
     display: "flex",
     flexDirection: "column",
@@ -12,19 +12,23 @@ export const useStyles = makeStyles({
     color: "#001A1F",
     "&:hover": {
       background: "#001A1F",
+      cursor: "pointer",
+      transition: "1s",
     },
   },
   img: {
     display: "flex",
     flexDirection: "column",
-    height: "100%",
-    width: "100%",
-    padding: "20px",
+    paddingTop: "30px",
+    paddingBottom: "30px",
+    paddingLeft: "20px",
+    paddingRight: "20px",
     alignItems: "center",
     justifyContent: "center",
     textAlign: "center",
     "&:hover": {
       filter: "brightness(0) invert(1)",
+      // transition: "1s",
     },
   },
   text: {
@@ -34,13 +38,8 @@ export const useStyles = makeStyles({
     justifyContent: "center",
   },
   styling: {
-    // fontWeight: "bold",
     paddingTop: "10px",
     paddingBottom: "10px",
-    width: "70%",
-    // fontSize: "20px",
-    fontWeight: 800,
-    textAlign: "center",
   },
 }));
 export const style = {};

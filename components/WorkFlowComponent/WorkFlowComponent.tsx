@@ -15,9 +15,9 @@ const WorkFlowComponent = (props: Props) => {
   const { classes, cx } = useStyles();
 
   return (
-    <Grid md={2.25} className={cx(classes.container)}>
-      <Text variant="h5" name={num} className={cx(classes.uperText)} />
-      <Text variant="body2" name={name} className={cx(classes.lowerText)} />
+    <Grid container item md={3} sm={5.5} xs={12} className={cx(classes.container)}>
+      <Text variant="overline" name={num} className={cx(classes.uperText)} />
+      <Text variant="subtitle2" name={name} className={cx(classes.lowerText)} />
       <Text variant="body2" name={desc} />
     </Grid>
   );
