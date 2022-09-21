@@ -5,6 +5,7 @@ import {
   List,
   ListItemButton,
   ListItemText,
+  useTheme,
 } from "@mui/material";
 import CloseIcon from "@mui/icons-material/Close";
 import MenuIcon from "@mui/icons-material/Menu";
@@ -15,7 +16,16 @@ import Link from "next/link";
 const DrawerComp = () => {
   const [openDrawer, setOpenDrawer] = useState(false);
   const { classes } = useStyles();
-
+  const theme = useTheme();
+  const paperStyle = {
+    color: theme.palette.primary.light,
+    background: theme.palette.secondary.light,
+    top: "76px",
+    width: "100%",
+    height: "auto",
+    boxShadow: "none",
+    backgroundColor: theme.palette.secondary.light,
+  };
   const onClickDrawer = useCallback(() => {
     setOpenDrawer(!openDrawer);
   }, []);
@@ -26,15 +36,7 @@ const DrawerComp = () => {
         open={openDrawer}
         onClose={() => setOpenDrawer(false)}
         PaperProps={{
-          sx: {
-            color: "white",
-            background: "#001A1F",
-            top: "76px",
-            width: "100%",
-            height: "auto",
-            boxShadow: "none",
-            backgroundColor: "#001A1F",
-          },
+          sx: paperStyle,
         }}
       >
         <List className={classes.drawerList}>
