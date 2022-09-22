@@ -1,7 +1,7 @@
 import React from "react";
-import { Button, TypographyProps } from "@mui/material";
+import { Button, ButtonProps } from "@mui/material";
 
-interface Props extends TypographyProps {
+interface Props extends ButtonProps {
   name: string;
 }
 const CommonButton = (props: Props) => {
