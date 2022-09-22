@@ -16,8 +16,22 @@ const WorkFlowComponent = (props: Props) => {
 
   return (
     <Grid container item md={3} sm={5.5} xs={12} className={cx(classes.container)}>
-      <Text variant="overline" name={num} className={cx(classes.uperText)} />
-      <Text variant="subtitle2" name={name} className={cx(classes.lowerText)} />
+      <Text
+        variant="overline"
+        variantMapping={{
+          overline: "h1",
+        }}
+        name={num}
+        className={cx(classes.uperText)}
+      />
+      <Text
+        variant="subtitle2"
+        variantMapping={{
+          subtitle2: "p",
+        }}
+        name={name}
+        className={cx(classes.lowerText)}
+      />
       <Text variant="body2" name={desc} />
     </Grid>
   );

@@ -26,12 +26,21 @@ const TopCard = () => {
 
           <Text
             variant="subtitle1"
+            variantMapping={{
+              subtitle1: "p",
+            }}
             className={cx(classes.desc)}
             name="Fast, secure, stunning websites & Web Apps at unbeatable prices."
           />
 
           <Grid container item md={7} sm={12} xs={12} className={cx(classes.button)}>
-            <Text variant="h6" name="Let's discuss your project" />
+            <Text
+              variant="h6"
+              variantMapping={{
+                h6: "p",
+              }}
+              name="Let's discuss your project"
+            />
           </Grid>
         </Grid>
 
