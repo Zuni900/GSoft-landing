@@ -72,7 +72,7 @@ const TopCard = () => {
           </Grid>
         </Grid>
 
-        {!isMatch ? (
+        {!isMatch && (
           <Grid item md={4.5}>
             <Image
               src={amico}
@@ -82,8 +82,6 @@ const TopCard = () => {
               layout={"fixed"}
             />
           </Grid>
-        ) : (
-          ""
         )}
       </Grid>
     </Grid>
