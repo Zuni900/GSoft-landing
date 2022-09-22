@@ -6,6 +6,7 @@ import TopCard from "../components/TopCard/TopCard";
 import About from "../components/About";
 import Services from "../components/Services";
 import WorkFlow from "../components/WorkFlow/WorkFlow";
+import Technologies from "../components/Technologies/Technologies";
 
 const Home: NextPage = () => {
   return (
@@ -21,6 +22,7 @@ const Home: NextPage = () => {
         <TopCard />
         <About />
         <Services />
+        <Technologies />
         <WorkFlow />
       </main>
     </Container>
