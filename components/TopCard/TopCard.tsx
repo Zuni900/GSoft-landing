@@ -39,7 +39,7 @@ const TopCard = () => {
                 variant="h1"
                 variantMapping={{ h1: "span" }}
               >
-                Gsoft
+                Gsoft,
               </Typography>
               <br></br>Best Digital Partner
             </Typography>
