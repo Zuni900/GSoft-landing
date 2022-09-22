@@ -5,8 +5,9 @@ import Container from "@mui/material/Container";
 import TopCard from "../components/TopCard/TopCard";
 import About from "../components/About";
 import Services from "../components/Services";
-import WorkFlow from "../components/WorkFlow/WorkFlow";
 import Technologies from "../components/Technologies/Technologies";
+import WorkFlow from "../components/WorkFlow/WorkFlow";
+import Updates from "../components/Updates/Updates";
 
 const Home: NextPage = () => {
   return (
@@ -15,12 +16,7 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
         <title>Home</title>
 
-        <meta
-          property="og:title"
-          content="Home"
-          key="Home"
-          name="description"
-        />
+        <meta property="og:title" content="Home" key="Home" name="description" />
       </Head>
 
       <main>
@@ -29,6 +25,7 @@ const Home: NextPage = () => {
         <Services />
         <Technologies />
         <WorkFlow />
+        <Updates />
       </main>
     </Container>
   );
