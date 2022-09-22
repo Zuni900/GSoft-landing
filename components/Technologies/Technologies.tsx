@@ -29,7 +29,14 @@ const Technologies = () => {
           <Text variant="h2" name="Technologies We Work With" />
         </Grid>
 
-        <Grid container item md={12} sm={12} xs={12} className={cx(classes.text)}>
+        <Grid
+          container
+          item
+          md={12}
+          sm={12}
+          xs={12}
+          className={cx(classes.text)}
+        >
           <Tabs
             value={value}
             onChange={handleChange}
@@ -41,7 +48,6 @@ const Technologies = () => {
               },
             }}
             variant="scrollable"
-            centered
             className={cx(classes.tabs)}
           >
             <Tab className={cx(classes.tab)} label="Front end" />
