@@ -3,7 +3,7 @@ import { makeStyles } from "tss-react/mui"; // "tss-react/mui-compat" if your pr
 export const useStyles = makeStyles({
   name: "ComponentTecblock",
   uniqId: "tecblockComponent",
-})((theme) => ({
+})(() => ({
   container: {
     padding: "5px",
     marginTop: "10px",
@@ -25,9 +25,6 @@ export const useStyles = makeStyles({
     display: "flex",
     marginTop: "25px",
     marginBottom: "70px",
-    // justifyContent: "center",
-    // alignItems: "center",
-    // textAlign: "center",
   },
   tec: {
     display: "flex",
