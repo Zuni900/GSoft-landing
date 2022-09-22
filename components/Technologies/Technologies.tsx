@@ -1,5 +1,5 @@
 import React from "react";
-import { Grid } from "@mui/material";
+import { Grid, useTheme } from "@mui/material";
 import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
 
@@ -12,12 +12,11 @@ import strapi from "../../public/images/strapi.png";
 import ts from "../../public/images/ts.png";
 import express from "../../public/images/express.png";
 import nest from "../../public/images/nest.png";
-import { theme } from "../../lib/theme/defalutTheme";
 
 const Technologies = () => {
   const { classes, cx } = useStyles();
   const [value, setValue] = React.useState(0);
-
+  const theme = useTheme();
   const handleChange = (event: React.SyntheticEvent, newValue: number) => {
     setValue(newValue);
   };

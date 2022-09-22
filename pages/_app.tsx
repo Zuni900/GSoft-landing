@@ -1,12 +1,15 @@
 import "../styles/globals.css";
 import type { AppProps } from "next/app";
-import { theme } from "../lib/theme/defalutTheme";
+import { theme } from "../styles/lib/theme/defalutTheme";
 import { ThemeProvider } from "@mui/material";
 
 import { createEmotionSsrAdvancedApproach } from "tss-react/nextJs";
 
-const { EmotionCacheProvider, withEmotionCache } = createEmotionSsrAdvancedApproach(
-  { key: "css" } /* Argument of createCache */,
+const {
+  EmotionCacheProvider,
+  withEmotionCache,
+} = createEmotionSsrAdvancedApproach(
+  { key: "css" } /* Argument of createCache */
 );
 
 export { withEmotionCache };
