@@ -9,7 +9,7 @@ import WorkFlow from "../components/WorkFlow/WorkFlow";
 
 const Home: NextPage = () => {
   return (
-    <Container maxWidth="xl" disableGutters>
+    <Container maxWidth={false} disableGutters>
       <Head>
         <link rel="icon" href="/favicon.ico" />
         <title>Home</title>
