@@ -22,13 +22,12 @@ export const useStyles = makeStyles({
   description: {
     marginTop: "20px",
     textAlign: "center",
-    width: "1150px",
   },
   styling: {
-    color: "#001A1F",
+    color: theme.palette.secondary.main,
   },
   color: {
-    color: "#1E212C",
+    color: theme.palette.secondary.dark,
   },
 }));
 export const style = {};

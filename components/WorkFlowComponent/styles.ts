@@ -1,27 +1,26 @@
 import { makeStyles } from "tss-react/mui"; // "tss-react/mui-compat" if your project is using Typescript < 4.4
 
 export const useStyles = makeStyles({
-  name: "ComponentAbout",
-  uniqId: "aboutComponent",
-})(() => ({
+  name: "workflowComponent",
+  uniqId: "workflowComponent",
+})((theme) => ({
   container: {
     display: "flex",
     flexDirection: "column",
     alignItems: "center",
     textAlign: "center",
-    // backgroundColor: "pink",
     paddingLeft: "20px",
     paddingRight: "20px",
     paddingTop: "20vh",
     "&:hover": {
-      backgroundColor: "rgba(255,255,255,0.1)",
+      backgroundColor: theme.palette.success.main,
       paddingTop: "10vh",
       cursor: "pointer",
       transition: "1s",
     },
   },
   uperText: {
-    color: "#16B1E1",
+    color: theme.palette.secondary.contrastText,
   },
   lowerText: {
     marginBottom: "10px",

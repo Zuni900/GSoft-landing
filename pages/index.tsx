@@ -1,7 +1,7 @@
 import { NextPage } from "next";
 import Head from "next/head";
+import Container from "@mui/material/Container";
 
-import Header from "../components/Navbar/Header";
 import TopCard from "../components/TopCard/TopCard";
 import About from "../components/About";
 import Services from "../components/Services";
@@ -9,7 +9,7 @@ import WorkFlow from "../components/WorkFlow/WorkFlow";
 
 const Home: NextPage = () => {
   return (
-    <div>
+    <Container maxWidth="xl" disableGutters>
       <Head>
         <link rel="icon" href="/favicon.ico" />
         <title>Home</title>
@@ -23,7 +23,7 @@ const Home: NextPage = () => {
         <Services />
         <WorkFlow />
       </main>
-    </div>
+    </Container>
   );
 };
 

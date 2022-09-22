@@ -1,18 +1,20 @@
 import { makeStyles } from "tss-react/mui"; // "tss-react/mui-compat" if your project is using Typescript < 4.4
 
 export const useStyles = makeStyles({
-  name: "ComponentServices",
-  uniqId: "servicesComponent",
+  name: "ServicesBlock",
+  uniqId: "servicesBlock",
 })((theme) => ({
   container: {
     display: "flex",
     flexDirection: "column",
-    justifyContent: "center",
-    borderRadius: "10px",
-    color: "#001A1F",
+    // justifyContent: "space-between",
+    alignItems: "center",
+    // padding: "20px",
+    color: theme.palette.secondary.main,
     "&:hover": {
-      background: "#001A1F",
+      background: theme.palette.secondary.main,
       cursor: "pointer",
+      borderRadius: "16px",
       transition: "1s",
     },
   },
@@ -24,8 +26,8 @@ export const useStyles = makeStyles({
     paddingLeft: "20px",
     paddingRight: "20px",
     alignItems: "center",
-    justifyContent: "center",
-    textAlign: "center",
+    // justifyContent: "center",
+    // textAlign: "center",
     "&:hover": {
       filter: "brightness(0) invert(1)",
       // transition: "1s",
@@ -33,7 +35,6 @@ export const useStyles = makeStyles({
   },
   text: {
     display: "flex",
-    height: "20%",
     flexDirection: "column",
     justifyContent: "center",
   },

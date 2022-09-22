@@ -6,15 +6,16 @@ import { useStyles } from "./styles";
 import { pages } from "./data";
 import DrawerComp from "./Drawer";
 import Logo from "../../public/images/logo.png";
+import Text from "../Typography";
 
 const Header = () => {
   const [value, setValue] = useState(0);
   const theme = useTheme();
-  const isMatch = useMediaQuery(theme.breakpoints.down("md"));
-  const { classes } = useStyles();
+  const isMatch = useMediaQuery(theme.breakpoints.down("lg"));
+  const { classes, cx } = useStyles();
 
   return (
-    <Toolbar>
+    <Toolbar className={cx(classes.toolbar)}>
       <Image src={Logo} alt="Logo" layout="fixed" />
 
       {isMatch ? (
@@ -35,7 +36,9 @@ const Header = () => {
               <Tab label={page.name} key={index} className={classes.headerLabel} />
             ))}
           </Tabs>
-          <Button className={classes.headerButton}>Estimate Your Project</Button>
+          <Button variant="contained" className={classes.headerButton}>
+            <Text variant="h6" name="Estimate Your Project" />
+          </Button>
         </>
       )}
     </Toolbar>

@@ -18,7 +18,7 @@ const Services = () => {
         <Text variant="h2" name="Our 360° Services" className={cx(classes.styling)} />
       </Grid>
 
-      <Grid container item md={12} sm={12} xs={12} className={cx(classes.description)}>
+      <Grid container item md={10} sm={12} xs={12} className={cx(classes.description)}>
         <Block
           name="Web Development"
           image={WebDev}

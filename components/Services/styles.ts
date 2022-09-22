@@ -3,7 +3,7 @@ import { makeStyles } from "tss-react/mui"; // "tss-react/mui-compat" if your pr
 export const useStyles = makeStyles({
   name: "ComponentServices",
   uniqId: "servicesComponent",
-})(() => ({
+})((theme) => ({
   container: {
     display: "flex",
     flexDirection: "column",
@@ -12,7 +12,7 @@ export const useStyles = makeStyles({
     paddingBottom: "40px",
     paddingLeft: "20px",
     paddingRight: "20px",
-    background: "linear-gradient(259.45deg, #16BCE1 -6.94%, #9FE8FF 104.78%)",
+    background: theme.palette.primary.contrastText,
   },
   text: {
     display: "flex",
@@ -20,13 +20,12 @@ export const useStyles = makeStyles({
   },
   description: {
     display: "flex",
-    justifyContent: "space-around",
+    justifyContent: "space-between",
     marginTop: "25px",
     textAlign: "center",
-    width: "1150px",
   },
   styling: {
-    color: "#001A1F",
+    color: theme.palette.secondary.main,
   },
 }));
 export const style = {};

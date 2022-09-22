@@ -16,7 +16,7 @@ const WorkFlow = () => {
           <Text variant="h5" name="Our Working Process" />
         </Grid> */}
 
-      <Grid container className={cx(classes.grid)}>
+      <Grid container md={10} sm={12} xs={12} className={cx(classes.grid)}>
         <WorkFlowComponent
           num="01"
           name="Discover"

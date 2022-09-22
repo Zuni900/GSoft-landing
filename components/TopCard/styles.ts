@@ -1,23 +1,21 @@
 import { makeStyles } from "tss-react/mui"; // "tss-react/mui-compat" if your project is using Typescript < 4.4
 
 export const useStyles = makeStyles({
-  name: "ComponentServices",
-  uniqId: "servicesComponent",
-})(() => ({
+  name: "ComponentTop",
+  uniqId: "topComponent",
+})((theme) => ({
   container: {
     display: "flex",
     alignItems: "center",
     justifyContent: "center",
-    color: "#FFFFFF",
-    background: "radial-gradient(83.15% 154.4% at 10% 13.52%, #001A1F 0%, #002E37 56.38%, #001A1F 100%)",
+    color: theme.palette.secondary.light,
+    background: theme.palette.primary.dark,
   },
   box: {
-    width: "1150px",
     paddingTop: "80px",
     paddingBottom: "100px",
     paddingLeft: "20px",
     paddingRight: "20px",
-    // backgroundColor: "pink",
     display: "flex",
     justifyContent: "center",
   },
@@ -25,8 +23,9 @@ export const useStyles = makeStyles({
     display: "flex",
   },
   button: {
-    color: "#16B1E1",
-    border: "1px solid #16B1E1",
+    color: theme.palette.secondary.contrastText,
+    border: "1px solid",
+    // borderColor: theme.palette.secondary.contrastText,
     display: "flex",
     justifyContent: "center",
     borderRadius: "4px",
@@ -38,8 +37,12 @@ export const useStyles = makeStyles({
     marginBottom: "30px",
   },
   gsoft: {
-    color: "#16B1E1",
+    color: theme.palette.secondary.contrastText,
     marginLeft: "10px",
+  },
+  img: {
+    marginLeft: "5px",
+    marginTop: "51px",
   },
 }));
 export const style = {};

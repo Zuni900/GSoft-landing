@@ -1,9 +1,9 @@
 import { makeStyles } from "tss-react/mui"; // "tss-react/mui-compat" if your project is using Typescript < 4.4
 
 export const useStyles = makeStyles({
-  name: "ComponentAbout",
-  uniqId: "aboutComponent",
-})(() => ({
+  name: "ComponentWorkFlow",
+  uniqId: "WorkflowComponent",
+})((theme) => ({
   //   container: {
   //     display: "flex",
   //     // alignItems: "center",
@@ -38,17 +38,16 @@ export const useStyles = makeStyles({
     display: "flex",
     // alignItems: "center",
     justifyContent: "center",
-    color: "#FFFFFF",
+    color: theme.palette.secondary.light,
     minHeight: "40vh",
     // padding: "40px",
     // flexDirection: "column",
-    backgroundColor: "#001A1F",
+    backgroundColor: theme.palette.secondary.main,
   },
   box: {
     display: "flex",
     // flexDirection: "column",
     // justifyContent: "center",
-    // width: "1150px",
   },
   text: {
     display: "flex",
@@ -59,7 +58,6 @@ export const useStyles = makeStyles({
   grid: {
     // display: "flex",
     // backgroundColor: "pink",
-    width: "1150px",
     justifyContent: "space-between",
   },
 }));

@@ -15,7 +15,7 @@ const Block = (props: Props) => {
   const { name, description, image } = props;
 
   return (
-    <Grid container sm={6} xs={12} md={3} className={cx(classes.container)}>
+    <Grid container item sm={6} xs={12} md={2.5} className={cx(classes.container)}>
       <Grid className={cx(classes.img)}>
         <Image src={image} alt="image" height={80} width={80} layout={"fixed"} />
         <Text className={cx(classes.styling)} variant="h3" name={name} />
