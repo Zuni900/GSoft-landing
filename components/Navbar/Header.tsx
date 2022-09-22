@@ -1,5 +1,12 @@
 import React, { useState } from "react";
-import { Button, Tab, Tabs, Toolbar, useMediaQuery, useTheme } from "@mui/material";
+import {
+  Button,
+  Tab,
+  Tabs,
+  Toolbar,
+  useMediaQuery,
+  useTheme,
+} from "@mui/material";
 import Image from "next/image";
 
 import { useStyles } from "./styles";
@@ -33,7 +40,11 @@ const Header = () => {
             }}
           >
             {pages.map((page, index) => (
-              <Tab label={page.name} key={index} className={classes.headerLabel} />
+              <Tab
+                label={page.name}
+                key={index}
+                className={classes.headerLabel}
+              />
             ))}
           </Tabs>
           <Button variant="contained" className={classes.headerButton}>

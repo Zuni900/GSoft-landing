@@ -15,7 +15,12 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
         <title>Home</title>
 
-        <meta property="og:title" content="Home" key="Home" name="description" />
+        <meta
+          property="og:title"
+          content="Home"
+          key="Home"
+          name="description"
+        />
       </Head>
 
       <main>
