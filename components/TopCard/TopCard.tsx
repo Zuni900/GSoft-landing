@@ -1,5 +1,5 @@
 import React from "react";
-import { Grid, useMediaQuery, useTheme } from "@mui/material";
+import { Grid, useMediaQuery, useTheme, Typography } from "@mui/material";
 import Image from "next/image";
 
 import Text from "../Typography";
@@ -13,16 +13,37 @@ const TopCard = () => {
   const isMatch = useMediaQuery(theme.breakpoints.down("lg"));
 
   return (
-    <Grid container item md={12} sm={12} xs={12} className={cx(classes.container)}>
+    <Grid
+      container
+      item
+      md={12}
+      sm={12}
+      xs={12}
+      className={cx(classes.container)}
+    >
       <Header />
       <Grid item md={10.5} sm={12} xs={12} className={cx(classes.box)}>
         <Grid item md={12} sm={12} xs={12}>
-          <Grid container item md={12} sm={12} xs={12} className={cx(classes.typo)}>
-            <Text variant="h1" name="We're" />
-            <Text className={cx(classes.gsoft)} variant="h1" name=" Gsoft," />
+          <Grid
+            container
+            item
+            md={12}
+            sm={12}
+            xs={12}
+            className={cx(classes.typo)}
+          >
+            <Typography variant="h1">
+              {"We're "}
+              <Typography
+                className={cx(classes.gsoft)}
+                variant="h1"
+                variantMapping={{ h1: "span" }}
+              >
+                Gsoft
+              </Typography>
+              <br></br>Best Digital Partner
+            </Typography>
           </Grid>
-
-          <Text variant="h1" name="Best Digital Partner" />
 
           <Text
             variant="subtitle1"
@@ -33,7 +54,14 @@ const TopCard = () => {
             name="Fast, secure, stunning websites & Web Apps at unbeatable prices."
           />
 
-          <Grid container item md={7} sm={12} xs={12} className={cx(classes.button)}>
+          <Grid
+            container
+            item
+            md={7}
+            sm={12}
+            xs={12}
+            className={cx(classes.button)}
+          >
             <Text
               variant="h6"
               variantMapping={{
@@ -46,7 +74,13 @@ const TopCard = () => {
 
         {!isMatch ? (
           <Grid item md={4.5}>
-            <Image src={amico} alt="image" width="404.21px" height="379.14px" layout={"fixed"} />
+            <Image
+              src={amico}
+              alt="image"
+              width="404.21px"
+              height="379.14px"
+              layout={"fixed"}
+            />
           </Grid>
         ) : (
           ""
