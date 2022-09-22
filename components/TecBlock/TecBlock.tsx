@@ -18,7 +18,7 @@ const TecBlock = (props: Props) => {
 
   return (
     <Grid className={cx(classes.container)}>
-      <Image alt="img" src={image} width={width} height={height} />
+      <Image alt="img" src={image} width={width} height={height} layout="fixed" />
       <Text variant="h5" name={name} />
     </Grid>
   );
