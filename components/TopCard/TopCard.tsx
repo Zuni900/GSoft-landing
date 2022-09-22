@@ -36,7 +36,7 @@ const TopCard = () => {
         </Grid>
 
         {!isMatch ? (
-          <Grid md={4.5}>
+          <Grid item md={4.5}>
             <Image src={amico} alt="image" width="404.21px" height="379.14px" layout={"fixed"} />
           </Grid>
         ) : (
