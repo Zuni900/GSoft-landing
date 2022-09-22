@@ -60,6 +60,7 @@ const TopCard = () => {
             md={7}
             sm={12}
             xs={12}
+            xl={4}
             className={cx(classes.button)}
           >
             <Text
