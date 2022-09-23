@@ -2,12 +2,13 @@ import { NextPage } from "next";
 import Head from "next/head";
 import Container from "@mui/material/Container";
 
-import TopCard from "../Home/components/Header/Header";
-import About from "../../components/About";
-import Services from "../../components/Services";
-import WorkFlow from "../../components/WorkFlow/WorkFlow";
+import TopCard from "pages/Home/components/Header/Header";
+import About from "components/About";
+import Services from "components/Services";
+import WorkFlow from "components/WorkFlow/WorkFlow";
 import Technologies from "./components/Technologies/Technologies";
-
+import Portfolio from "components/Portfolio";
+import Testimonials from "components/Testimonials";
 const Home: NextPage = () => {
   return (
     <Container maxWidth={false} disableGutters>
@@ -29,6 +30,8 @@ const Home: NextPage = () => {
         <Services />
         <Technologies />
         <WorkFlow />
+        <Portfolio />
+        <Testimonials />
       </main>
     </Container>
   );
