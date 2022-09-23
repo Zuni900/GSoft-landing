@@ -48,9 +48,9 @@ export const useStyles = makeStyles({
   button: {
     backgroundColor: theme.palette.secondary.main,
     color: theme.palette.secondary.contrastText,
-    font: theme.typography.h6,
     width: "133px",
     height: "44px",
+    textTransform: "none",
   },
   grid: {
     display: "flex",

@@ -13,32 +13,31 @@ const AllRights = () => {
     <Grid container className={cx(classes.container)}>
       <Grid container item md={8} sm={8} xs={8} className={cx(classes.box)}>
         {isMatch ? (
-          <Grid container className={cx(classes.block)}>
-            <ul>
-              <li>
-                <Text name="Privacy policy" variant="caption" />
-              </li>
-            </ul>
-            <ul>
-              <li>
-                <Text name="Terms & conditions" variant="caption" />
-              </li>
-            </ul>
+          <Grid container className={cx(classes.box)}>
+            <Grid sx={{ display: "flex", alignItems: "center" }}>
+              <Text name="•" variant="h6" sx={{ marginRight: "10px" }} />
+              <Text name="Privacy policy" variant="caption" />
+            </Grid>
+
+            <Grid sx={{ display: "flex", alignItems: "center" }}>
+              <Text name="•" variant="h6" sx={{ marginRight: "10px" }} />
+              <Text name="Terms & conditions" variant="caption" />
+            </Grid>
+
             <Text name="©All rights reserved 2022 GCS" variant="caption" />
           </Grid>
         ) : (
           <>
-            <Grid container item md={7} className={cx(classes.box)}>
-              <ul>
-                <li>
-                  <Text name="Privacy policy" variant="caption" />
-                </li>
-              </ul>
-              <ul>
-                <li>
-                  <Text name="Terms & conditions" variant="caption" />
-                </li>
-              </ul>
+            <Grid container item md={6.5} className={cx(classes.box)}>
+              <Grid sx={{ display: "flex", alignItems: "center" }}>
+                <Text name="•" variant="h6" sx={{ marginRight: "10px" }} />
+                <Text name="Privacy policy" variant="caption" />
+              </Grid>
+
+              <Grid sx={{ display: "flex", alignItems: "center" }}>
+                <Text name="•" variant="h6" sx={{ marginRight: "10px" }} />
+                <Text name="Terms & conditions" variant="caption" />
+              </Grid>
 
               <Text name="©All rights reserved 2022 GCS" variant="caption" />
             </Grid>
