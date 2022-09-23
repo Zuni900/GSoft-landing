@@ -47,7 +47,8 @@ export const theme = createTheme({
       fontWeight: 500,
     },
     caption: {
-      fontSize: "14px",
+      fontSize: "12px",
+      fontWeight: 500,
     },
     overline: {
       fontSize: "48px",

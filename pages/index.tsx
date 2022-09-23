@@ -7,7 +7,7 @@ import About from "../components/About";
 import Services from "../components/Services";
 import Technologies from "../components/Technologies/Technologies";
 import WorkFlow from "../components/WorkFlow/WorkFlow";
-import Updates from "../components/Updates/Updates";
+import Footer from "../components/Footer/Footer";
 
 const Home: NextPage = () => {
   return (
@@ -25,7 +25,7 @@ const Home: NextPage = () => {
         <Services />
         <Technologies />
         <WorkFlow />
-        <Updates />
+        <Footer />
       </main>
     </Container>
   );

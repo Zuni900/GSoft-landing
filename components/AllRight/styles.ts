@@ -15,30 +15,12 @@ export const useStyles = makeStyles({
   },
   box: {
     display: "flex",
-    justifyContent: "center",
+    justifyContent: "space-between",
     alignItems: "center",
   },
-  text: {
+  block: {
     display: "flex",
-    justifyContent: "center",
-    textAlign: "center",
-    paddingTop: "15px",
-    paddingBottom: "15px",
-  },
-  textField: {
-    backgroundColor: theme.palette.secondary.light,
-    borderRadius: 4,
-    width: "386px",
-  },
-  button: {
-    backgroundColor: theme.palette.secondary.main,
-    color: theme.palette.secondary.contrastText,
-    font: theme.typography.h6,
-    width: "133px",
-    height: "44px",
-  },
-  grid: {
-    display: "flex",
+    justifyContent: "space-between",
   },
 }));
 export const style = {};

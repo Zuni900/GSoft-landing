@@ -18,6 +18,21 @@ export const useStyles = makeStyles({
     justifyContent: "center",
     alignItems: "center",
   },
+  abc: {
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center",
+  },
+  xyz: {
+    display: "flex",
+    justifyContent: "center",
+  },
+  block: {
+    display: "flex",
+    justifyContent: "space-between",
+    alignItems: "center",
+    textAlign: "center",
+  },
   text: {
     display: "flex",
     justifyContent: "center",
