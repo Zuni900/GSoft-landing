@@ -5,10 +5,8 @@ export const theme = createTheme({
     primary: {
       main: "#f3e5f5",
       light: "#F5F5F5",
-      contrastText:
-        "linear-gradient(259.45deg, #16BCE1 -6.94%, #9FE8FF 104.78%)",
-      dark:
-        "radial-gradient(83.15% 154.4% at 10% 13.52%, #001A1F 0%, #002E37 56.38%, #001A1F 100%)",
+      contrastText: "linear-gradient(259.45deg, #16BCE1 -6.94%, #9FE8FF 104.78%)",
+      dark: "radial-gradient(83.15% 154.4% at 10% 13.52%, #001A1F 0%, #002E37 56.38%, #001A1F 100%)",
     },
     secondary: {
       main: "#001A1F",
@@ -19,6 +17,8 @@ export const theme = createTheme({
     success: {
       main: "rgba(255,255,255,0.1)",
       light: "#555555",
+      dark: "#16B1E11A",
+
     },
   },
   typography: {
@@ -51,7 +51,7 @@ export const theme = createTheme({
       fontSize: "14px",
     },
     overline: {
-      fontSize: "48px",
+      fontSize: "42px",
       fontWeight: 900,
       lineHeight: "62.4px",
     },
