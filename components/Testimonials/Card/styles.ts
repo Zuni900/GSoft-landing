@@ -1,4 +1,3 @@
-
 import { makeStyles } from "tss-react/mui"; // "tss-react/mui-compat" if your project is using Typescript < 4.4
 
 export const useStyles = makeStyles({
@@ -7,7 +6,6 @@ export const useStyles = makeStyles({
 })((theme) => ({
   box: {
     display: "flex",
-
     minHeight: "40vh",
     flexDirection: "column",
     margin: "auto",
@@ -33,7 +31,7 @@ export const useStyles = makeStyles({
     color: theme.palette.secondary.light,
   },
   card: {
-    width: "340px",
+    width: "100%",
     height: "177px",
     borderRadius: "16px",
 
