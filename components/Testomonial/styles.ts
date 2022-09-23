@@ -1,4 +1,4 @@
-import { Directions } from "@mui/icons-material";
+
 import { makeStyles } from "tss-react/mui"; // "tss-react/mui-compat" if your project is using Typescript < 4.4
 
 export const useStyles = makeStyles({

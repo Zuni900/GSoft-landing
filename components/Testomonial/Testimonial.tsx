@@ -1,15 +1,15 @@
-import React from 'react'
+import React from "react";
 import Grid from "@mui/material/Grid";
 
 import Box from "@mui/material/Box";
 import CardContent from "@mui/material/CardContent";
 import { useStyles } from "./styles";
 import Text from "../Typography";
-import Image from 'next/image';
+import Image from "next/image";
 import Testimonal from "../../public/Testemonial/Testimonal.png";
 import AvatarP from "../../public/Testemonial/AvatarP.png";
 import Card from "@mui/material/Card";
-import { Avatar } from '@mui/material';
+import { Avatar } from "@mui/material";
 
 function Testimonial() {
       const { classes } = useStyles();
@@ -46,4 +46,4 @@ function Testimonial() {
   );
 }
 
-export default Testimonial
+export default Testimonial;
