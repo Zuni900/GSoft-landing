@@ -7,7 +7,7 @@ import About from "../../components/About";
 import Services from "../../components/Services";
 import WorkFlow from "../../components/WorkFlow/WorkFlow";
 import Technologies from "./components/Technologies/Technologies";
-
+import SliderCard from "components/SliderCard/Index";
 const Home: NextPage = () => {
   return (
     <Container maxWidth={false} disableGutters>
@@ -15,12 +15,7 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
         <title>Home</title>
 
-        <meta
-          property="og:title"
-          content="Home"
-          key="Home"
-          name="description"
-        />
+        <meta property="og:title" content="Home" key="Home" name="description" />
       </Head>
 
       <main>
@@ -29,6 +24,7 @@ const Home: NextPage = () => {
         <Services />
         <Technologies />
         <WorkFlow />
+        <SliderCard />
       </main>
     </Container>
   );
