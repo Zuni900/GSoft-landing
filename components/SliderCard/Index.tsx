@@ -7,11 +7,12 @@ import Text from "../Typography";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 import Image from "next/image";
+import CardI from "../../public/cardimage/CardI.png";
 function SliderCard() {
   const { classes } = useStyles();
   return (
     <Grid className={classes.mainCardContainer}>
-      <Image src="/cardimage/image.png" width="500px" height="500px" layout="fixed"></Image>
+      <Image src={CardI} width="500px" height="500px" layout="fixed"></Image>
 
       <Grid className={classes.mainCardItems}>
         <Text className={classes.mainCardHeading} name="Blend Menu" />
