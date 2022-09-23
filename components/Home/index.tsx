@@ -2,7 +2,7 @@ import { NextPage } from "next";
 import Head from "next/head";
 import Container from "@mui/material/Container";
 
-import TopCard from "pages/Home/components/Header/Header";
+import Header from "components/Home/components/Header";
 import About from "components/About";
 import Services from "components/Services";
 import WorkFlow from "components/WorkFlow/WorkFlow";
@@ -26,7 +26,7 @@ const Home: NextPage = () => {
       </Head>
 
       <main>
-        <TopCard />
+        <Header />
         <About />
         <Services />
         <Technologies />

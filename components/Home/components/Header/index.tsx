@@ -2,12 +2,12 @@ import React from "react";
 import { Grid, useMediaQuery, useTheme, Typography } from "@mui/material";
 import Image from "next/image";
 
-import Text from "../../../../components/Typography";
+import Text from "components/Typography";
 import { useStyles } from "./styles";
-import amico from "../../../../public/images/amico.png";
-import Header from "../../../../components/Navbar/Header";
+import amico from "images/amico.png";
+import Header from "components/Navbar/Header";
 
-const TopCard = () => {
+const HomeHeader = () => {
   const theme = useTheme();
   const { classes, cx } = useStyles();
   const isMatch = useMediaQuery(theme.breakpoints.down("lg"));
@@ -75,13 +75,7 @@ const TopCard = () => {
 
         {!isMatch && (
           <Grid item md={4.5}>
-            <Image
-              src={amico}
-              alt="image"
-              width="404.21px"
-              height="379.14px"
-              layout={"fixed"}
-            />
+            <Image src={amico} alt="image" layout="fixed" />
           </Grid>
         )}
       </Grid>
@@ -89,4 +83,4 @@ const TopCard = () => {
   );
 };
 
-export default TopCard;
+export default HomeHeader;

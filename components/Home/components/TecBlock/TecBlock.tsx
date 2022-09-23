@@ -14,17 +14,11 @@ interface Props extends TypographyProps {
 
 const TecBlock = (props: Props) => {
   const { classes, cx } = useStyles();
-  const { image, width, height, name } = props;
+  const { image, name } = props;
 
   return (
     <Grid className={cx(classes.container)}>
-      <Image
-        alt="img"
-        src={image}
-        width={width}
-        height={height}
-        layout="fixed"
-      />
+      <Image alt="img" src={image} layout="fixed" />
       <Text variant="h5" variantMapping={{ h5: "p" }} name={name} />
     </Grid>
   );

@@ -52,16 +52,11 @@ export const useStyles = makeStyles({
   technologyHeadings: {
     backgroundColor: theme.palette.secondary.main,
     color: theme.palette.secondary.light,
-    height: "24px",
-    fontSize: "12px",
     borderRadius: "2px",
     marginRight: "30px",
     marginTop: "20px",
     gap: "10px",
-    paddingLeft: "8px",
-    paddingTop: "3px",
-    paddingBottom: "3px",
-    paddingRight: "8px",
+    padding: "8px",
   },
   cardIcons: {
     display: "flex",
