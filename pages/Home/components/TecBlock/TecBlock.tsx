@@ -3,7 +3,7 @@ import { Grid, TypographyProps } from "@mui/material";
 import Image, { StaticImageData } from "next/image";
 
 import { useStyles } from "./styles";
-import Text from "../../../../components/Typography";
+import Text from "components/Typography";
 
 interface Props extends TypographyProps {
   image: StaticImageData;
@@ -25,7 +25,7 @@ const TecBlock = (props: Props) => {
         height={height}
         layout="fixed"
       />
-      <Text variant="h5" name={name} />
+      <Text variant="h5" variantMapping={{ h5: "p" }} name={name} />
     </Grid>
   );
 };

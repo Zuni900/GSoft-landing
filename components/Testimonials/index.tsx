@@ -10,11 +10,17 @@ import {
   SnapItem,
   useVisibleElements,
   useScroll,
-  useDragToScroll,
-  isTouchDevice,
 } from "react-snaplist-carousel";
 
-const MyItem = ({ onClick, children, visible }) => (
+const MyItem = ({
+  onClick,
+  children,
+  visible,
+}: {
+  onClick: () => void;
+  children: React.ReactNode;
+  visible: boolean;
+}) => (
   <Grid
     item
     xs={12}
@@ -41,7 +47,6 @@ const Technologies = () => {
     ([element]) => element
   );
   const goToSnapItem = useScroll({ ref: snapList });
-  const { isDragging } = useDragToScroll({ ref: snapList });
   const theme = useTheme();
 
   return (
@@ -62,7 +67,7 @@ const Technologies = () => {
           color={theme.palette.secondary.light}
         />
       </Grid>
-      <SnapList ref={snapList}>
+      <SnapList direction={"horizontal"} ref={snapList}>
         <SnapItem margin={{ left: "30vw", right: "15px" }} snapAlign="center">
           <MyItem onClick={() => goToSnapItem(0)} visible={visible === 0}>
             Item 0

@@ -1,5 +1,5 @@
 import React from "react";
-import { Grid, useTheme } from "@mui/material";
+import { Grid, useMediaQuery, useTheme } from "@mui/material";
 import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
 
@@ -12,34 +12,19 @@ import {
   SnapItem,
   useVisibleElements,
   useScroll,
-  useDragToScroll,
-  isTouchDevice,
 } from "react-snaplist-carousel";
+import SliderCard from "./Card";
 
-const MyItem = ({ onClick, children, visible }) => (
-  <Grid
-    item
-    xs={12}
-    md={12}
-    sm={12}
-    style={{
-      width: "60vw",
-      height: 200,
-      background: visible ? "#bce6fe" : "#cccccc",
-      cursor: visible ? "default" : "pointer",
-    }}
-    onClick={onClick}
-  >
-    {children}
-  </Grid>
-);
-const Technologies = () => {
+const PortfolioCard = () => {
   const { classes, cx } = useStyles();
   const [tabIndex, setTabValue] = React.useState(0);
   const theme = useTheme();
   const onChangeTab = (event: React.SyntheticEvent, newValue: number) => {
     setTabValue(newValue);
   };
+
+  const isMatch = useMediaQuery(theme.breakpoints.down("sm"));
+
   const snapList = useRef(null);
 
   const visible = useVisibleElements(
@@ -47,7 +32,6 @@ const Technologies = () => {
     ([element]) => element
   );
   const goToSnapItem = useScroll({ ref: snapList });
-  const { isDragging } = useDragToScroll({ ref: snapList });
 
   const TabIndicatorProps = {
     style: {
@@ -90,35 +74,30 @@ const Technologies = () => {
           </Tabs>
         </Grid>
       </Grid>
-      <SnapList ref={snapList}>
-        <SnapItem margin={{ left: "20vw", right: "15px" }} snapAlign="center">
-          <MyItem onClick={() => goToSnapItem(0)} visible={visible === 0}>
-            Item 0
-          </MyItem>
-        </SnapItem>
-        <SnapItem margin={{ left: "15px", right: "15px" }} snapAlign="center">
-          <MyItem onClick={() => goToSnapItem(1)} visible={visible === 1}>
-            Item 1
-          </MyItem>
-        </SnapItem>
-        <SnapItem margin={{ left: "15px", right: "15px" }} snapAlign="center">
-          <MyItem onClick={() => goToSnapItem(2)} visible={visible === 2}>
-            Item 2
-          </MyItem>
-        </SnapItem>
-        <SnapItem margin={{ left: "15px", right: "15px" }} snapAlign="center">
-          <MyItem onClick={() => goToSnapItem(3)} visible={visible === 3}>
-            Item 3
-          </MyItem>
-        </SnapItem>
-        <SnapItem margin={{ left: "15px", right: "20vw" }} snapAlign="center">
-          <MyItem onClick={() => goToSnapItem(4)} visible={visible === 4}>
-            Item 4
-          </MyItem>
-        </SnapItem>
+      <SnapList ref={snapList} direction={"horizontal"}>
+        {[0, 0, 0, 0].map((_, index) => (
+          <SnapItem
+            key={index}
+            margin={{
+              left:
+                index == 0 && isMatch ? "5vw" : index == 0 ? "30vw" : "15px",
+              right:
+                index == 3 && isMatch ? "5vw" : index == 3 ? "30vw" : "15px",
+            }}
+            snapAlign="center"
+          >
+            <SliderCard
+              onClick={goToSnapItem}
+              visible={visible === index}
+              isMatch={isMatch}
+              index={index}
+              last={index == 3}
+            />
+          </SnapItem>
+        ))}
       </SnapList>
     </Grid>
   );
 };
 
-export default Technologies;
+export default PortfolioCard;

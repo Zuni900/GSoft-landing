@@ -14,8 +14,7 @@ module.exports = {
         functions: "only-multiline"
       }
     ],
-    "no-unused-vars": "error",
-    "@typescript-eslint/no-unused-vars": ["error"],
+ "@typescript-eslint/no-unused-vars": ["error"],
      "no-useless-escape": "off",
     "react/display-name": "off",
     "@typescript-eslint/no-unused-vars": "error",

@@ -9,6 +9,7 @@ import WorkFlow from "components/WorkFlow/WorkFlow";
 import Technologies from "./components/Technologies/Technologies";
 import Portfolio from "components/Portfolio";
 import Testimonials from "components/Testimonials";
+
 const Home: NextPage = () => {
   return (
     <Container maxWidth={false} disableGutters>
