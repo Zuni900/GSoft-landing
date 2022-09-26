@@ -19,6 +19,9 @@ export const useStyles = makeStyles({
     justifyContent: "space-between",
     alignItems: "center",
   },
+  block: {
+    marginTop: "7%",
+  },
   button: {
     backgroundColor: theme.palette.secondary.contrastText,
     color: theme.palette.secondary.main,
@@ -32,6 +35,19 @@ export const useStyles = makeStyles({
     paddingTop: "7px",
     paddingBottom: "7px",
     cursor: "pointer",
+  },
+  topGrid: {
+    justifyContent: "center",
+    alignItems: "center",
+  },
+  innerGrid: {
+    marginRight: "20px",
+  },
+  txtGrid: {
+    marginLeft: "4%",
+  },
+  txt: {
+    color: theme.palette.success.contrastText,
   },
   text: {
     paddingRight: "10px",
