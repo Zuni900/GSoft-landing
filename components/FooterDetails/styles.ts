@@ -24,7 +24,6 @@ export const useStyles = makeStyles({
   block: {
     display: "flex",
     flexDirection: "column",
-    // backgroundColor: "pink",
   },
   tecBlock: {
     display: "flex",
