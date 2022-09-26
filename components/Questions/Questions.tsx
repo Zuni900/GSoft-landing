@@ -42,7 +42,7 @@ const Questions = () => {
                     <Text variant="h4" name={icon} className={cx(classes.text)} />
                     <Text variant="subtitle2" name="Why is SEO important for Businesses?" />
                   </Box>
-                  <Grid sx={{ marginLeft: "4%" }}>
+                  <Grid className={cx(classes.txtGrid)}>
                     <Text
                       className={cx(classes.txt)}
                       variant="body1"
@@ -72,7 +72,7 @@ const Questions = () => {
           </Grid>
         ) : (
           <Grid container className={cx(classes.topGrid)}>
-            <Grid container md={6} className={cx(classes.innerGrid)}>
+            <Grid container item md={6} className={cx(classes.innerGrid)}>
               <Text variant="h2" name="Frequently Ask Questions" />
 
               <Grid className={cx(classes.block)}>

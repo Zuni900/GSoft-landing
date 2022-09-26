@@ -20,7 +20,10 @@ export const useStyles = makeStyles({
   },
   block: {
     display: "flex",
-    justifyContent: "space-between",
+    alignItems: "center",
+  },
+  text: {
+    marginRight: "10px",
   },
 }));
 export const style = {};
