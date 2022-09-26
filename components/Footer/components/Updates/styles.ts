@@ -34,18 +34,17 @@ export const useStyles = makeStyles({
   textField: {
     backgroundColor: theme.palette.secondary.light,
     borderRadius: 4,
-    minWidth: "270px",
   },
   button: {
     backgroundColor: theme.palette.secondary.main,
     color: theme.palette.secondary.contrastText,
-    minWidth: "133px",
     height: "40px",
     textTransform: "none",
   },
   grid: {
     display: "flex",
     alignItems: "center",
+    justifyContent: "center",
   },
 }));
 export const style = {};
