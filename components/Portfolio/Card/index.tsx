@@ -36,11 +36,11 @@ function SliderCard(props: Props) {
       <Image
         src={CardI}
         alt={index.toString()}
-        objectFit="cover"
+   
         priority
         objectPosition="center"
-        loading="lazy"
-        placeholder="blur"
+      
+      
       />
       {visible && (
         <>

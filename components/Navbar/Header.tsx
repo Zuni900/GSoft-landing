@@ -20,6 +20,15 @@ const Header = () => {
   const theme = useTheme();
   const isMatch = useMediaQuery(theme.breakpoints.down("lg"));
   const { classes, cx } = useStyles();
+  const [isHovering, setIsHovering] = useState(false);
+
+  const handleMouseOver = () => {
+    setIsHovering(true);
+  };
+
+  const handleMouseOut = () => {
+    setIsHovering(false);
+  };
 
   return (
     <Toolbar className={cx(classes.toolbar)}>
@@ -44,7 +53,10 @@ const Header = () => {
                 label={page.name}
                 key={index}
                 className={classes.headerLabel}
+
               />
+            
+              
             ))}
           </Tabs>
           <Button variant="contained" className={classes.headerButton}>

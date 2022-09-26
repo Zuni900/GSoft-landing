@@ -8,8 +8,8 @@ import Services from "components/Services";
 import WorkFlow from "components/WorkFlow/WorkFlow";
 import Technologies from "./components/Technologies/Technologies";
 import Portfolio from "components/Portfolio";
-import Testimonials from "components/Testimonials";
-
+import Testimonials from "components/Testimonials"
+import ServicesTop from "components/ServicesTop";
 const Home: NextPage = () => {
   return (
     <Container maxWidth={false} disableGutters>
@@ -33,6 +33,7 @@ const Home: NextPage = () => {
         <WorkFlow />
         <Portfolio />
         <Testimonials />
+        <ServicesTop />
       </main>
     </Container>
   );
