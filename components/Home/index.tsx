@@ -9,6 +9,7 @@ import WorkFlow from "components/WorkFlow/WorkFlow";
 import Technologies from "./components/Technologies/Technologies";
 import Testimonial from "components/Testimonials";
 import PortfolioCard from "components/Portfolio";
+import Footer from "../Footer/Footer";
 const Home: NextPage = () => {
   return (
     <Container maxWidth={false} disableGutters>
@@ -16,12 +17,7 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
         <title>Home</title>
 
-        <meta
-          property="og:title"
-          content="Home"
-          key="Home"
-          name="description"
-        />
+        <meta property="og:title" content="Home" key="Home" name="description" />
       </Head>
 
       <main>
@@ -30,9 +26,9 @@ const Home: NextPage = () => {
         <Services />
         <Technologies />
         <WorkFlow />
-
         <PortfolioCard />
         <Testimonial />
+        <Footer />
       </main>
     </Container>
   );

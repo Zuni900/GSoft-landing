@@ -12,7 +12,7 @@ const WorkFlow = () => {
     <Grid container item md={12} sm={12} xs={12} className={cx(classes.container)}>
       {/* <Grid container md={9} className={cx(classes.box)}>
         <Grid container md={4} className={cx(classes.text)}>
-          <Text variant="subtitle2" name="Work Flow" />
+          <Text variant="h5" name="Work Flow" />
           <Text variant="h5" name="Our Working Process" />
         </Grid> */}
 

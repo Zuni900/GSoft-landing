@@ -19,6 +19,7 @@ export const theme = createTheme({
       light: "#555555",
       dark: "#16B1E11A",
 
+      contrastText: "#7E7E7E",
     },
   },
   typography: {
@@ -30,6 +31,7 @@ export const theme = createTheme({
     },
     h4: {
       fontSize: "24px",
+      fontWeight: 600,
     },
     h5: {
       fontSize: "20px",
@@ -39,16 +41,13 @@ export const theme = createTheme({
       fontSize: "18px",
       fontWeight: 600,
     },
-    subtitle2: {
-      fontWeight: 600,
-      fontSize: "20px",
-    },
     body2: {
       fontSize: "16px",
       fontWeight: 500,
     },
     caption: {
-      fontSize: "14px",
+      fontSize: "12px",
+      fontWeight: 500,
     },
     overline: {
       fontSize: "42px",
@@ -90,5 +89,15 @@ theme.typography.subtitle1 = {
   fontFamily: "Poppins",
   [theme.breakpoints.up("sm")]: {
     fontSize: "36px",
+  },
+};
+
+theme.typography.subtitle2 = {
+  fontSize: "16px",
+  fontWeight: 400,
+  fontFamily: "Poppins",
+  [theme.breakpoints.up("sm")]: {
+    fontWeight: 500,
+    fontSize: "20px",
   },
 };
