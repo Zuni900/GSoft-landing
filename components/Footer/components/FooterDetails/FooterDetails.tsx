@@ -16,7 +16,7 @@ import up from "../../../../public/images/Up.png";
 const FooterDetails = () => {
   const { classes, cx } = useStyles();
   const theme = useTheme();
-  const isMatch = useMediaQuery(theme.breakpoints.down("sm"));
+  const isMatch = useMediaQuery(theme.breakpoints.down("md"));
 
   return (
     <Grid container className={cx(classes.container)}>
@@ -64,40 +64,22 @@ const FooterDetails = () => {
         </Grid>
       </Grid>
 
-      {isMatch ? (
-        <Grid
-          container
-          item
-          md={10}
-          sx={{ display: "flex", justifyContent: "center", marginTop: "2%", alignItems: "center" }}
-        >
-          <Grid container item xs={8} sx={{ display: "flex", justifyContent: "space-between" }}>
-            <Image alt="img" src={fb} width="32px" height="32px" layout="fixed" />
-            <Image alt="img" src={insta} width="32px" height="32px" layout="fixed" />
-            <Image alt="img" src={linkedIn} width="32px" height="32px" layout="fixed" />
-            <Image alt="img" src={twiter} width="32px" height="32px" layout="fixed" />
-            <Image alt="img" src={ball} width="32px" height="32px" layout="fixed" />
-            <Image alt="img" src={be} width="32px" height="32px" layout="fixed" />
-          </Grid>
+      <Grid
+        container
+        item
+        md={10}
+        sx={{ display: "flex", justifyContent: "space-between", marginTop: "2%", alignItems: "center" }}
+      >
+        <Grid container item md={3.5} sm={5} sx={{ display: "flex", justifyContent: "space-between" }}>
+          <Image alt="img" src={fb} width="32px" height="32px" layout="fixed" />
+          <Image alt="img" src={insta} width="32px" height="32px" layout="fixed" />
+          <Image alt="img" src={linkedIn} width="32px" height="32px" layout="fixed" />
+          <Image alt="img" src={twiter} width="32px" height="32px" layout="fixed" />
+          <Image alt="img" src={ball} width="32px" height="32px" layout="fixed" />
+          <Image alt="img" src={be} width="32px" height="32px" layout="fixed" />
         </Grid>
-      ) : (
-        <Grid
-          container
-          item
-          md={10}
-          sx={{ display: "flex", justifyContent: "space-between", marginTop: "2%", alignItems: "center" }}
-        >
-          <Grid container item md={3.5} sm={5} sx={{ display: "flex", justifyContent: "space-between" }}>
-            <Image alt="img" src={fb} width="32px" height="32px" layout="fixed" />
-            <Image alt="img" src={insta} width="32px" height="32px" layout="fixed" />
-            <Image alt="img" src={linkedIn} width="32px" height="32px" layout="fixed" />
-            <Image alt="img" src={twiter} width="32px" height="32px" layout="fixed" />
-            <Image alt="img" src={ball} width="32px" height="32px" layout="fixed" />
-            <Image alt="img" src={be} width="32px" height="32px" layout="fixed" />
-          </Grid>
-          <Image alt="img" src={up} width="48px" height="48px" layout="fixed" />
-        </Grid>
-      )}
+        {!isMatch ? <Image alt="img" src={up} width="48px" height="48px" layout="fixed" /> : ""}
+      </Grid>
     </Grid>
   );
 };

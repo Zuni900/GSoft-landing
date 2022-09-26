@@ -44,12 +44,7 @@ function SliderCard(props: Props) {
       {visible && (
         <>
           <Grid className={classes.mainCardItems}>
-            <Text
-              variant="h3"
-              variantMapping={{ h3: "h1" }}
-              className={classes.mainCardHeading}
-              name="Blend Menu"
-            />
+            <Text variant="h3" variantMapping={{ h3: "h1" }} className={classes.mainCardHeading} name="Blend Menu" />
             <Grid
               item
               container
@@ -59,15 +54,8 @@ function SliderCard(props: Props) {
               }}
               md={6}
             >
-              {!last && (
-                <ArrowForwardIcon
-                  onClick={goToNext}
-                  className={classes.arrowF}
-                />
-              )}
-              {index != 0 && (
-                <ArrowBackIcon onClick={goToPrv} className={classes.arrowB} />
-              )}
+              {index != 0 && <ArrowBackIcon onClick={goToPrv} className={classes.arrowB} />}
+              {!last && <ArrowForwardIcon onClick={goToNext} className={classes.arrowF} />}
             </Grid>
           </Grid>
           <Text
@@ -84,21 +72,9 @@ function SliderCard(props: Props) {
               className={classes.mainPara}
               name="Blend Menu is Progressive Web App which allows your guests to place orders from their smartphones without installing anything. Moreover, it allows users to scan a QR code and order, by improving guest experience and reducing costs. It’s multi tenant application which can be deployed for multiple customers(restaurants)"
             />
-            <Text
-              className={classes.technologyHeadings}
-              variant={"body2"}
-              name="React js "
-            />
-            <Text
-              className={classes.technologyHeadings}
-              variant={"body2"}
-              name="React js "
-            />
-            <Text
-              className={classes.technologyHeadings}
-              variant={"body2"}
-              name="React js "
-            />
+            <Text className={classes.technologyHeadings} variant={"body2"} name="React js " />
+            <Text className={classes.technologyHeadings} variant={"body2"} name="React js " />
+            <Text className={classes.technologyHeadings} variant={"body2"} name="React js " />
           </Grid>
         </>
       )}

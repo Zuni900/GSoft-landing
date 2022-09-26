@@ -7,12 +7,7 @@ import Text from "components/Typography";
 import { useStyles } from "./styles";
 import { useRef } from "react";
 
-import {
-  SnapList,
-  SnapItem,
-  useVisibleElements,
-  useScroll,
-} from "react-snaplist-carousel";
+import { SnapList, SnapItem, useVisibleElements, useScroll } from "react-snaplist-carousel";
 import SliderCard from "./Card";
 
 const PortfolioCard = () => {
@@ -27,10 +22,7 @@ const PortfolioCard = () => {
 
   const snapList = useRef(null);
 
-  const visible = useVisibleElements(
-    { debounce: 10, ref: snapList },
-    ([element]) => element
-  );
+  const visible = useVisibleElements({ debounce: 10, ref: snapList }, ([element]) => element);
   const goToSnapItem = useScroll({ ref: snapList });
 
   const TabIndicatorProps = {
@@ -52,14 +44,7 @@ const PortfolioCard = () => {
         />
         <Text variant="h2" name="Portfolio" />
 
-        <Grid
-          container
-          item
-          md={12}
-          sm={12}
-          xs={12}
-          className={cx(classes.text)}
-        >
+        <Grid container item md={12} sm={12} xs={12} className={cx(classes.text)}>
           <Tabs
             value={tabIndex}
             onChange={onChangeTab}
@@ -79,16 +64,14 @@ const PortfolioCard = () => {
           <SnapItem
             key={index}
             margin={{
-              left:
-                index == 0 && isMatch ? "5vw" : index == 0 ? "30vw" : "15px",
-              right:
-                index == 3 && isMatch ? "5vw" : index == 3 ? "30vw" : "15px",
+              left: index == 0 && isMatch ? "5vw" : index == 0 ? "30vw" : "15px",
+              right: index == 3 && isMatch ? "5vw" : index == 3 ? "30vw" : "15px",
             }}
             snapAlign="center"
           >
             <SliderCard
               onClick={goToSnapItem}
-              visible={visible === index}
+              visible={visible === index || isMatch}
               isMatch={isMatch}
               index={index}
               last={index == 3}

@@ -18,8 +18,10 @@ export const theme = createTheme({
       main: "rgba(255,255,255,0.1)",
       light: "#555555",
       dark: "#16B1E11A",
-
       contrastText: "#7E7E7E",
+    },
+    error: {
+      main: "#004960",
     },
   },
   typography: {

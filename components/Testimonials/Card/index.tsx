@@ -32,33 +32,26 @@ function Testimonial(props: Props) {
     >
       <Grid item md={12} sm={12} xs={12} className={classes.grid}>
         <Grid item md={12} sm={12} xs={12} className={classes.gridCard}>
-          {visible ? (
-            <Card className={classes.card2}>
-              <CardContent>
-                <Image src={Testimonal} alt="Card Image" width="390px" height="318px"></Image>
-              </CardContent>
-              <CardContent>
-                <Text
-                  name="Blend Menu is Progressive Web App which allows your guests to place orders from their smartphones without installing anything. Moreover, it allows users to scan a QR code and order"
-                  variant="subtitle2"
-                  className={classes.headerCard}
-                />
-              </CardContent>
-            </Card>
-          ) : (
-            <Card className={classes.card}>
-              <CardContent>
-                <Image src={Testimonal} alt="Card Image" width="390px" height="318px"></Image>
-              </CardContent>
-              <CardContent>
-                <Text
-                  name="Blend Menu is Progressive Web App which allows your guests to place orders from their smartphones without installing anything. Moreover, it allows users to scan a QR code and order"
-                  variant="body2"
-                  className={classes.headerCard}
-                />
-              </CardContent>
-            </Card>
-          )}
+          <Card
+            className={classes.card}
+            style={{
+              background: visible ? theme.palette.error.main : theme.palette.success.dark,
+              width: visible ? "96%" : "88%",
+              height: visible ? "270px" : "197px",
+            }}
+          >
+            <CardContent>
+              <Image src={Testimonal} alt="Card Image" layout="fixed"></Image>
+            </CardContent>
+            <CardContent>
+              <Text
+                variantMapping={{ subtitle2: "p" }}
+                name="Blend Menu is Progressive Web App which allows your guests to place orders from their smartphones without installing anything. Moreover, it allows users to scan a QR code and order"
+                variant="subtitle2"
+                className={classes.headerCard}
+              />
+            </CardContent>
+          </Card>
           <Grid className={classes.dot1}></Grid>
           <Grid className={classes.dot2}></Grid>
           <Avatar alt="Name" src="/images/AvatarP.png" className={classes.avatar} />

@@ -18,20 +18,6 @@ export const useStyles = makeStyles({
     justifyContent: "center",
     alignItems: "center",
   },
-  box2: {
-    display: "flex",
-    alignItems: "center",
-    justifyContent: "space-between",
-  },
-  abc: {
-    display: "flex",
-    alignItems: "center",
-    justifyContent: "center",
-  },
-  xyz: {
-    display: "flex",
-    justifyContent: "center",
-  },
   block: {
     display: "flex",
     justifyContent: "space-between",
@@ -59,6 +45,7 @@ export const useStyles = makeStyles({
   },
   grid: {
     display: "flex",
+    alignItems: "center",
   },
 }));
 export const style = {};

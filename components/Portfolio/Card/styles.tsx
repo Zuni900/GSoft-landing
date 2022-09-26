@@ -11,20 +11,21 @@ export const useStyles = makeStyles({
   },
   arrowF: {
     marginRight: "30px",
-    padding: "2px",
+    padding: "10px",
     "&:hover": {
       background: theme.palette.secondary.main,
       borderRadius: "100%",
-      padding: "2px",
+      padding: "10px",
       color: theme.palette.secondary.light,
     },
   },
   arrowB: {
-    padding: "2px",
+    padding: "10px",
+    marginRight: "10px",
     "&:hover": {
       background: theme.palette.secondary.main,
       borderRadius: "100%",
-      padding: "2px",
+      padding: "10px",
       color: theme.palette.secondary.light,
     },
   },

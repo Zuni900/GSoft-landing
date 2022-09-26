@@ -44,7 +44,7 @@ const Technologies = () => {
             }}
             snapAlign="center"
           >
-            <Card visible={visible === index} onClick={() => goToSnapItem(index)} />
+            <Card visible={visible === index || isMatch} onClick={() => goToSnapItem(index)} />
           </SnapItem>
         ))}
       </SnapList>
