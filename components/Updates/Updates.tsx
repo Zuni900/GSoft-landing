@@ -50,6 +50,9 @@ const Updates = () => {
               <Grid item md={5} xs={12} sm={8} className={cx(classes.grid)}>
                 <TextField
                   className={cx(classes.textField)}
+                  InputLabelProps={{
+                    style: { color: theme.palette.secondary.main },
+                  }}
                   id="outlined-basic"
                   size="small"
                   label="Enter your email"
