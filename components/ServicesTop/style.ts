@@ -1,4 +1,4 @@
-import { green } from "@mui/material/colors";
+
 import { makeStyles } from "tss-react/mui"; // "tss-react/mui-compat" if your project is using Typescript < 4.4
 
 export const useStyles = makeStyles({
@@ -7,9 +7,9 @@ export const useStyles = makeStyles({
 })((theme) => ({
   container: {
     display: "flex",
-    flexDirection: "row",
-    alignItems: "start",
-
+    
+position:"absolute",
+marginTop:"40px",
     height: "auto",
     background: theme.palette.secondary.light,
   },
@@ -26,11 +26,13 @@ export const useStyles = makeStyles({
   },
 
   mainGrid: {
-    margin: "auto",
+   
     display: "flex",
     justifyContent: "center",
-    
+    zIndex:"999",
+    position:"absolute",
     width: "1300px",
+    
     height: "auto",
   },
   cardBoxend: {
