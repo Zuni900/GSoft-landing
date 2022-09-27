@@ -1,14 +1,13 @@
 import React from "react";
 import { Grid, useMediaQuery, useTheme } from "@mui/material";
+import { SnapList, SnapItem, useVisibleElements, useScroll } from "react-snaplist-carousel";
 import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
-
-import Text from "components/Typography";
-import { useStyles } from "./styles";
 import { useRef } from "react";
 
-import { SnapList, SnapItem, useVisibleElements, useScroll } from "react-snaplist-carousel";
+import { useStyles } from "./styles";
 import SliderCard from "./Card";
+import Text from "../Typography";
 
 const PortfolioCard = () => {
   const { classes, cx } = useStyles();

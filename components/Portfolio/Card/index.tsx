@@ -2,12 +2,13 @@ import React from "react";
 import { Grid } from "@mui/material";
 
 import { useStyles } from "./styles";
-import Text from "components/Typography";
 
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 import Image from "next/image";
 import CardI from "images/CardI.png";
+import Text from "../../Typography";
+
 interface Props {
   isMatch: boolean;
   visible: boolean;

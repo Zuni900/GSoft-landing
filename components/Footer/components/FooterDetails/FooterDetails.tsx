@@ -64,13 +64,8 @@ const FooterDetails = () => {
         </Grid>
       </Grid>
 
-      <Grid
-        container
-        item
-        md={10}
-        sx={{ display: "flex", justifyContent: "space-between", marginTop: "2%", alignItems: "center" }}
-      >
-        <Grid container item md={3.5} sm={5} sx={{ display: "flex", justifyContent: "space-between" }}>
+      <Grid container item md={10} className={cx(classes.topGrid)}>
+        <Grid container item md={3.5} sm={5} className={cx(classes.tecBlock)}>
           <Image alt="img" src={fb} width="32px" height="32px" layout="fixed" />
           <Image alt="img" src={insta} width="32px" height="32px" layout="fixed" />
           <Image alt="img" src={linkedIn} width="32px" height="32px" layout="fixed" />

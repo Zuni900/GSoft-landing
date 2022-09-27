@@ -44,9 +44,6 @@ const Updates = () => {
                 InputLabelProps={{
                   style: { color: theme.palette.secondary.main },
                 }}
-                style={{
-                  height: isMatch ? "40px" : "42px",
-                }}
                 id="outlined-basic"
                 size="small"
                 label="Enter your email"

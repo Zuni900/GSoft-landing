@@ -1,15 +1,13 @@
 import React from "react";
-import { Grid, useMediaQuery, useTheme } from "@mui/material";
-
-import Box from "@mui/material/Box";
+import { Grid, useMediaQuery, useTheme, TypographyProps, Box } from "@mui/material";
 import CardContent from "@mui/material/CardContent";
-import { useStyles } from "./styles";
-import Text from "components/Typography";
 import Image from "next/image";
-import Testimonal from "images/Testimonal.png";
 import Card from "@mui/material/Card";
 import { Avatar } from "@mui/material";
-import { TypographyProps } from "@mui/material";
+
+import { useStyles } from "./styles";
+import Testimonal from "images/Testimonal.png";
+import Text from "../../Typography";
 
 interface Props extends TypographyProps {
   visible: boolean;
@@ -20,7 +18,7 @@ function Testimonial(props: Props) {
   const { classes } = useStyles();
   const { visible, onClick } = props;
   const theme = useTheme();
-  const isMatch = useMediaQuery(theme.breakpoints.down("sm"));
+  const isMatch = useMediaQuery(theme.breakpoints.down("md"));
 
   return (
     <Box

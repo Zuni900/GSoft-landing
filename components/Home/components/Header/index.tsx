@@ -2,10 +2,10 @@ import React from "react";
 import { Grid, useMediaQuery, useTheme, Typography } from "@mui/material";
 import Image from "next/image";
 
-import Text from "components/Typography";
 import { useStyles } from "./styles";
+import Text from "../../../Typography";
 import amico from "images/amico.png";
-import Header from "components/Navbar/Header";
+import Header from "../../../Navbar/Header";
 
 const HomeHeader = () => {
   const theme = useTheme();

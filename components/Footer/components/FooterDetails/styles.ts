@@ -67,6 +67,12 @@ export const useStyles = makeStyles({
     width: "133px",
     height: "44px",
   },
+  topGrid: {
+    display: "flex",
+    justifyContent: "space-between",
+    marginTop: "2%",
+    alignItems: "center",
+  },
   grid: {
     display: "flex",
   },

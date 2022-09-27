@@ -1,12 +1,12 @@
 import React from "react";
 import { Grid, useTheme, useMediaQuery } from "@mui/material";
-
-import Text from "components/Typography";
-import { useStyles } from "./styles";
 import { useRef } from "react";
+
+import { useStyles } from "./styles";
 
 import { SnapList, SnapItem, useVisibleElements, useScroll } from "react-snaplist-carousel";
 import Card from "./Card";
+import Text from "../Typography";
 
 const Technologies = () => {
   const { classes, cx } = useStyles();

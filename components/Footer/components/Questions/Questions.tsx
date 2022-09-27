@@ -19,8 +19,8 @@ const Questions = () => {
 
   return (
     <Grid container className={cx(classes.container)}>
-      <Grid container md={11} sm={11} className={cx(classes.box)}>
-        <Grid container md={7} sm={12}>
+      <Grid container item md={11} sm={11} className={cx(classes.box)}>
+        <Grid container item md={7} sm={12}>
           <Text variant="h2" name="Frequently Ask Questions" />
 
           <Grid className={cx(classes.block)}>
@@ -67,7 +67,7 @@ const Questions = () => {
           <CommonButton variant="contained" name="Discover more →" className={cx(classes.button)} />
         </Grid>
         {!isMatch ? (
-          <Grid container md={5}>
+          <Grid container item md={5}>
             <Image alt="img" src={questions} width="488px" height="404px" layout="fixed" />
           </Grid>
         ) : (

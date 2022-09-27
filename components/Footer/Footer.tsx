@@ -6,12 +6,12 @@ import AllRights from "./components/AllRight/AllRights";
 
 const Footer = () => {
   return (
-    <div>
+    <>
       <Questions />
       <Updates />
       <FooterDetails />
       <AllRights />
-    </div>
+    </>
   );
 };
 
