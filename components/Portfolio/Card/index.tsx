@@ -37,7 +37,7 @@ function SliderCard(props: Props) {
         src={CardI}
         alt={index.toString()}
         objectFit="cover"
-        priority
+     
         objectPosition="center"
         loading="lazy"
         placeholder="blur"

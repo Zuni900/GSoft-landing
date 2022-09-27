@@ -2,7 +2,7 @@ import { NextPage } from "next";
 import Head from "next/head";
 import Container from "@mui/material/Container";
 
-import Header from "components/Home/components/Header";
+
 import About from "components/About";
 import Services from "components/Services";
 import WorkFlow from "components/WorkFlow/WorkFlow";
@@ -10,6 +10,7 @@ import Technologies from "./components/Technologies/Technologies";
 import Portfolio from "components/Portfolio";
 import Testimonials from "components/Testimonials";
 
+import Header from "../OurServices/Header"
 const Home: NextPage = () => {
   return (
     <Container maxWidth={false} disableGutters>

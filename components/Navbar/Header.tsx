@@ -15,7 +15,7 @@ import DrawerComp from "./Drawer";
 import Logo from "../../public/images/logo.png";
 import Text from "../Typography";
 
-const Header = () => {
+const Header2 = () => {
   const [value, setValue] = useState(0);
   const theme = useTheme();
   const isMatch = useMediaQuery(theme.breakpoints.down("lg"));
@@ -56,4 +56,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default Header2;
