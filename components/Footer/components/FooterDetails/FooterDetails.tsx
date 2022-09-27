@@ -22,7 +22,7 @@ const FooterDetails = () => {
     <Grid container className={cx(classes.container)}>
       <Grid container item md={10} className={cx(classes.box)}>
         <Grid item md={2.5} sm={5} xs={12} className={cx(classes.block)}>
-          <Text variant="h4" variantMapping={{ h4: "body1" }} name="COMPANY" className={cx(classes.heading)} />
+          <Text variant="h4" variantMapping={{ h4: "p" }} name="COMPANY" className={cx(classes.heading)} />
           <Text variant="body2" name="About" className={cx(classes.text)} />
           <Text variant="body2" name="Meet Our Team" className={cx(classes.text)} />
           <Text variant="body2" name="Life at GSC" className={cx(classes.text)} />
@@ -31,7 +31,7 @@ const FooterDetails = () => {
         </Grid>
 
         <Grid item md={2.5} sm={5} xs={12} className={cx(classes.block)}>
-          <Text variant="h4" variantMapping={{ h4: "body1" }} name="SERVICES" className={cx(classes.heading)} />
+          <Text variant="h4" variantMapping={{ h4: "p" }} name="SERVICES" className={cx(classes.heading)} />
           <Text variant="body2" name="Web Development" className={cx(classes.text)} />
           <Text variant="body2" name="Mobile Development" className={cx(classes.text)} />
           <Text variant="body2" name="Backend Development" className={cx(classes.text)} />
@@ -43,7 +43,7 @@ const FooterDetails = () => {
         </Grid>
 
         <Grid item md={4} sm={5} xs={12} className={cx(classes.block)}>
-          <Text variant="h4" variantMapping={{ h4: "body1" }} name="TECHNOLOGIES" className={cx(classes.heading)} />
+          <Text variant="h4" variantMapping={{ h4: "p" }} name="TECHNOLOGIES" className={cx(classes.heading)} />
           <Grid container item xs={7} sm={12} md={8} className={cx(classes.tecBlock)}>
             <Text variant="body2" name="React Native" className={cx(classes.technologies)} />
             <Text variant="body2" name="React js" className={cx(classes.technologies)} />
@@ -57,7 +57,7 @@ const FooterDetails = () => {
         </Grid>
 
         <Grid item md={2.5} sm={5} xs={12} className={cx(classes.block)}>
-          <Text variant="h4" variantMapping={{ h4: "body1" }} name="OFFICES" className={cx(classes.heading)} />
+          <Text variant="h4" variantMapping={{ h4: "p" }} name="OFFICES" className={cx(classes.heading)} />
           <Text variant="body2" name="United Kingdom" className={cx(classes.text)} />
           <Text variant="body2" name="Australia" className={cx(classes.text)} />
           <Text variant="body2" name="Pakistan" className={cx(classes.text)} />
