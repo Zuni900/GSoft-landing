@@ -22,6 +22,7 @@ export const theme = createTheme({
     },
     error: {
       main: "#004960",
+      contrastText: "#EAFAFF",
     },
   },
   typography: {
@@ -43,6 +44,11 @@ export const theme = createTheme({
       fontSize: "18px",
       fontWeight: 600,
     },
+    subtitle2: {
+      fontWeight: 500,
+      fontSize: "20px",
+    },
+
     body2: {
       fontSize: "16px",
       fontWeight: 500,

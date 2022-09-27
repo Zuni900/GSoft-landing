@@ -34,14 +34,7 @@ function SliderCard(props: Props) {
         cursor: visible ? "default" : "pointer",
       }}
     >
-      <Image
-        src={CardI}
-        alt={index.toString()}
-        objectFit="cover"
-        objectPosition="center"
-        loading="lazy"
-        placeholder="blur"
-      />
+      <Image src={CardI} alt={index.toString()} objectFit="cover" objectPosition="center" />
       {visible && (
         <>
           <Grid className={classes.mainCardItems}>

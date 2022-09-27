@@ -10,6 +10,8 @@ import Technologies from "./components/Technologies/Technologies";
 import Testimonial from "../Testimonials";
 import PortfolioCard from "../Portfolio";
 import Footer from "../Footer/Footer";
+import Portfolio from "components/Portfolio";
+import Testimonials from "components/Testimonials";
 const Home: NextPage = () => {
   return (
     <Container maxWidth={false} disableGutters>
@@ -29,6 +31,8 @@ const Home: NextPage = () => {
         <PortfolioCard />
         <Testimonial />
         <Footer />
+        <Portfolio />
+        <Testimonials />
       </main>
     </Container>
   );
