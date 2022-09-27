@@ -15,7 +15,12 @@ function ServicesTop() {
         <Card className={cx(classes.container)}>
           <Box className={cx(classes.cardBox)}>
             <CardContent className={cx(classes.cardcontent)}>
-              <Text variant="subtitle2" name="Our Services" className={cx(classes.cardHeading)}></Text>
+              <Text
+                variant="subtitle2"
+                variantMapping={{ subtitle2: "h1" }}
+                name="Our Services"
+                className={cx(classes.cardHeading)}
+              ></Text>
               <Text
                 variant="caption"
                 name="Leveraging cutting-edge technologies to build industry-leading digital products"
@@ -25,7 +30,12 @@ function ServicesTop() {
 
           <Box className={cx(classes.cardBox)}>
             <CardContent className={cx(classes.cardcontent)}>
-              <Text variant="subtitle2" name="Services" className={cx(classes.cardHeading)}></Text>
+              <Text
+                variant="subtitle2"
+                name="Services"
+                variantMapping={{ subtitle2: "h1" }}
+                className={cx(classes.cardHeading)}
+              ></Text>
               <Text variant="caption" className={cx(classes.cardsubHeading)} name="web Development"></Text>
               <Text variant="caption" className={cx(classes.cardsubHeading)} name="Backend Development"></Text>
               <Text variant="caption" className={cx(classes.cardsubHeading)} name="Mobile App developtment"></Text>
@@ -36,7 +46,12 @@ function ServicesTop() {
           </Box>
           <Box className={cx(classes.cardBox)}>
             <CardContent className={cx(classes.cardcontent)}>
-              <Text variant="subtitle2" name="Services" className={cx(classes.cardHeading)}></Text>
+              <Text
+                variant="subtitle2"
+                name="Services"
+                variantMapping={{ subtitle2: "h1" }}
+                className={cx(classes.cardHeading)}
+              ></Text>
               <Text
                 variant="caption"
                 color="text.secondary"
@@ -59,7 +74,12 @@ function ServicesTop() {
           </Box>
           <Box className={cx(classes.cardBoxend)}>
             <CardContent className={cx(classes.cardcontent)}>
-              <Text variant="subtitle2" name="How do We work" className={cx(classes.cardHeading)}></Text>
+              <Text
+                variant="subtitle2"
+                name="How do We work"
+                variantMapping={{ subtitle2: "h1" }}
+                className={cx(classes.cardHeading)}
+              ></Text>
               <Text variant="caption" className={cx(classes.cardsubHeading)} name="Discover"></Text>
               <Text variant="caption" className={cx(classes.cardsubHeading)} name="Planning and Designing"></Text>
               <Text variant="caption" className={cx(classes.cardsubHeading)} name="Development And Testing"></Text>
@@ -67,7 +87,6 @@ function ServicesTop() {
             </CardContent>
           </Box>
         </Card>
-        
       </Grid>
     </>
   );
