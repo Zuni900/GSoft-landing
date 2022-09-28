@@ -1,52 +1,101 @@
 import React from "react";
-import { Grid } from "@mui/material";
+import { Grid, TypographyProps } from "@mui/material";
+import { StaticImageData } from "next/image";
 
 import { useStyles } from "./styles";
 import Text from "../../../Typography";
 import ComponentOne from "../ServiceComponentOne";
 import ComponentTwo from "../ServicesComponentTwo";
-import s1 from "../../../../public/images/s1.png";
-import s2 from "../../../../public/images/s2.png";
-import s3 from "../../../../public/images/s3.png";
 
-const Services = () => {
+interface Props extends TypographyProps {
+  topHeading: string;
+  heading: string;
+  c1Heading: string;
+  c1Desc: string;
+  c1Point1: string;
+  c1Point2: string;
+  c1Point3: string;
+  c1Point4: string;
+  c1Image: StaticImageData;
+  c2Heading: string;
+  c2Desc: string;
+  c2Point1: string;
+  c2Point2: string;
+  c2Point3: string;
+  c2Point4: string;
+  c2Image: StaticImageData;
+  c3Heading: string;
+  c3Desc: string;
+  c3Point1: string;
+  c3Point2: string;
+  c3Point3: string;
+  c3Point4: string;
+  c3Image: StaticImageData;
+}
+
+const Services = (props: Props) => {
+  const {
+    topHeading,
+    heading,
+    c1Heading,
+    c1Desc,
+    c1Point1,
+    c1Point2,
+    c1Point3,
+    c1Point4,
+    c1Image,
+    c2Heading,
+    c2Desc,
+    c2Point1,
+    c2Point2,
+    c2Point3,
+    c2Point4,
+    c2Image,
+    c3Heading,
+    c3Desc,
+    c3Point1,
+    c3Point2,
+    c3Point3,
+    c3Point4,
+    c3Image,
+  } = props;
   const { classes, cx } = useStyles();
 
   return (
     <Grid container className={cx(classes.container)}>
       <Grid container item md={12} lg={11} sm={12} className={cx(classes.block)}>
         <Grid container className={cx(classes.txt)}>
-          <Text name="Our Services" variantMapping={{ h5: "p" }} variant="h5" />
-          <Text variant="h2" name="We Provide Web Development Service" />
+          <Text name={topHeading} variantMapping={{ h5: "p" }} variant="h5" />
+          <Text variant="h2" name={heading} />
         </Grid>
 
         <Grid container className={cx(classes.grid)}>
           <ComponentOne
-            heading="Classified Website Development Service"
-            desc="We understand your passion and help your business reach its true potential. Whether you are a small business or a corporate business stop worrying and get ready to reach the top of the industry with our up-to-date SEO, innovative designing, and irresistible marketing."
-            point1="Top rank SEO website to generate more and more credible leads."
-            point2="Dedicated and passionate account manager."
-            point3="Latest SEO trends and marketing strategies."
-            point4="Monthly reporting and critical analysis."
-            image={s1}
+            heading={c1Heading}
+            desc={c1Desc}
+            point1={c1Point1}
+            point2={c1Point2}
+            point3={c1Point3}
+            point4={c1Point4}
+            image={c1Image}
           />
           <ComponentTwo
-            heading="eCommerce Website Development Service"
-            desc="We understand your passion and help your business reach its true potential. Whether you are a small business or a corporate business stop worrying and get ready to reach the top of the industry with our up-to-date SEO, innovative designing, and irresistible marketing."
-            point1="Top rank SEO website to generate more and more credible leads."
-            point2="Dedicated and passionate account manager."
-            point3="Latest SEO trends and marketing strategies."
-            point4="Monthly reporting and critical analysis."
-            image={s2}
+            heading={c2Heading}
+            desc={c2Desc}
+            point1={c2Point1}
+            point2={c2Point2}
+            point3={c2Point3}
+            point4={c2Point4}
+            image={c2Image}
           />
           <ComponentOne
-            heading="Web Development in React JS"
-            desc="We understand your passion and help your business reach its true potential. Whether you are a small business or a corporate business stop worrying and get ready to reach the top of the industry with our up-to-date SEO, innovative designing, and irresistible marketing."
-            point1="Top rank SEO website to generate more and more credible leads."
-            point2="Dedicated and passionate account manager."
-            point3="Latest SEO trends and marketing strategies."
-            point4="Monthly reporting and critical analysis."
-            image={s3}
+            heading={c3Heading}
+            desc={c3Desc}
+            point1={c3Point1}
+            point2={c3Point2}
+            point3={c3Point3}
+            point4={c3Point4}
+            image={c3Image}
           />
         </Grid>
       </Grid>

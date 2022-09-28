@@ -1,5 +1,5 @@
 import React from "react";
-import { Grid, useMediaQuery, useTheme } from "@mui/material";
+import { Grid, useMediaQuery, useTheme, TypographyProps } from "@mui/material";
 import { SnapList, SnapItem, useVisibleElements, useScroll } from "react-snaplist-carousel";
 import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
@@ -8,16 +8,26 @@ import { useRef } from "react";
 import { useStyles } from "./styles";
 import SliderCard from "./Card";
 import Text from "../Typography";
+import { theme } from "../../styles/theme/defalutTheme";
 
-const PortfolioCard = () => {
+interface Props extends TypographyProps {
+  bgcolor: string;
+  color: string;
+  hoverbg: string;
+  hoverColor: string;
+  descColor: string;
+}
+
+const PortfolioCard = (props: Props) => {
+  const { bgcolor, color, hoverbg, hoverColor, descColor } = props;
   const { classes, cx } = useStyles();
   const [tabIndex, setTabValue] = React.useState(0);
-  const theme = useTheme();
+  const themes = useTheme();
   const onChangeTab = (event: React.SyntheticEvent, newValue: number) => {
     setTabValue(newValue);
   };
 
-  const isMatch = useMediaQuery(theme.breakpoints.down("sm"));
+  const isMatch = useMediaQuery(themes.breakpoints.down("sm"));
 
   const snapList = useRef(null);
 
@@ -27,11 +37,11 @@ const PortfolioCard = () => {
   const TabIndicatorProps = {
     style: {
       color: theme.palette.secondary.light,
-      backgroundColor: theme.palette.secondary.contrastText,
+      background: theme.palette.secondary.contrastText,
     },
   };
   return (
-    <Grid container className={cx(classes.container)}>
+    <Grid container className={cx(classes.container)} style={{ backgroundColor: bgcolor, color: color }}>
       <Grid container item md={10} sm={12} xs={12} className={cx(classes.box)}>
         <Text
           variant="h5"
@@ -74,6 +84,9 @@ const PortfolioCard = () => {
               isMatch={isMatch}
               index={index}
               last={index == 3}
+              hoverbg={hoverbg}
+              hoverColor={hoverColor}
+              descColor={descColor}
             />
           </SnapItem>
         ))}

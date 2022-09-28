@@ -12,7 +12,7 @@ export const useStyles = makeStyles({
     paddingBottom: "70px",
     paddingLeft: "20px",
     paddingRight: "20px",
-    backgroundColor: theme.palette.primary.light,
+    // backgroundColor: theme.palette.primary.light,
   },
   box: {
     display: "flex",

@@ -27,8 +27,14 @@ export const useStyles = makeStyles({
   grid: {
     marginRight: "2%",
   },
+  txt: {
+    marginRight: "2%",
+    color: theme.palette.secondary.contrastText,
+  },
   points: {
     marginTop: "4%",
+    display: "flex",
+    flexDirection: "column",
   },
 }));
 export const style = {};

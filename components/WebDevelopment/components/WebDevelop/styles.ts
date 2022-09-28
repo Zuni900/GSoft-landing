@@ -1,5 +1,4 @@
 import { makeStyles } from "tss-react/mui"; // "tss-react/mui-compat" if your project is using Typescript < 4.4
-import webDevelop from "../../../../public/images/webDevelop.png";
 
 export const useStyles = makeStyles({
   name: "ComponentWebDev",
@@ -12,8 +11,9 @@ export const useStyles = makeStyles({
     justifyContent: "center",
     paddingBottom: "5%",
     color: theme.palette.secondary.light,
-    backgroundImage: `url(${webDevelop?.src})`,
+    // backgroundImage: `url(${webDevelop?.src})`,
     backgroundSize: "cover",
+    backgroundColor: theme.palette.secondary.main,
     backgroundPosition: "center",
     backgroundRepeat: "no-repeat",
   },

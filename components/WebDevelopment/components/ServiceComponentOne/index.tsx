@@ -34,11 +34,11 @@ const ComponentOne = (props: Props) => {
         flexDirection: !isMatch ? "row-reverse" : "row",
       }}
     >
-      <Grid container item md={5} sm={12} xs={12} className={cx(classes.grid)}>
+      <Grid container item md={5} sm={12} xs={12}>
         <Image src={image} alt="image" layout="fixed" />
       </Grid>
 
-      <Grid container item md={6} sm={12} xs={12}>
+      <Grid container item md={6} sm={12} xs={12} className={cx(classes.grid)}>
         <Text
           variant="h2"
           name={heading}
@@ -48,24 +48,24 @@ const ComponentOne = (props: Props) => {
         />
         <Text className={cx(classes.text)} variant="body1" name={desc} />
 
-        <Grid className={cx(classes.points)}>
+        <Grid container className={cx(classes.points)}>
           <Box className={cx(classes.tick)}>
-            <Text name="✓" variant="h6" variantMapping={{ h6: "body1" }} className={cx(classes.grid)} />
+            <Text name="✓" variant="h6" variantMapping={{ h6: "body1" }} className={cx(classes.txt)} />
             <Text name={point1} variant="caption" />
           </Box>
 
           <Box className={cx(classes.tick)}>
-            <Text name="✓" variant="h6" variantMapping={{ h6: "body1" }} className={cx(classes.grid)} />
+            <Text name="✓" variant="h6" variantMapping={{ h6: "body1" }} className={cx(classes.txt)} />
             <Text name={point2} variant="caption" />
           </Box>
 
           <Box className={cx(classes.tick)}>
-            <Text name="✓" variant="h6" variantMapping={{ h6: "body1" }} className={cx(classes.grid)} />
+            <Text name="✓" variant="h6" variantMapping={{ h6: "body1" }} className={cx(classes.txt)} />
             <Text name={point3} variant="caption" />
           </Box>
 
           <Box className={cx(classes.tick)}>
-            <Text name="✓" variant="h6" variantMapping={{ h6: "body1" }} className={cx(classes.grid)} />
+            <Text name="✓" variant="h6" variantMapping={{ h6: "body1" }} className={cx(classes.txt)} />
             <Text name={point4} variant="caption" />
           </Box>
 
