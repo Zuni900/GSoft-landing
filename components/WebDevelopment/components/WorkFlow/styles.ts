@@ -1,33 +1,28 @@
 import { makeStyles } from "tss-react/mui"; // "tss-react/mui-compat" if your project is using Typescript < 4.4
 
 export const useStyles = makeStyles({
-  name: "ComponentWebDevMoreServices",
-  uniqId: "webDevMoreServicesComponent",
+  name: "ComponentWorkFLow",
+  uniqId: "workFlowComponent",
 })((theme) => ({
   container: {
     display: "flex",
     flexDirection: "column",
     alignItems: "center",
     justifyContent: "center",
-    paddingTop: "70px",
-    paddingBottom: "70px",
+    paddingTop: "6%",
+    paddingBottom: "6%",
     paddingLeft: "20px",
     paddingRight: "20px",
-    background: theme.palette.primary.light,
+    color: theme.palette.secondary.light,
+    backgroundColor: theme.palette.secondary.main,
+  },
+  box: {
+    display: "flex",
+    flexDirection: "column",
   },
   block: {
-    display: "flex",
-    flexDirection: "column",
-  },
-  grid: {
-    justifyContent: "center",
-  },
-  txt: {
-    display: "flex",
-    flexDirection: "column",
-    alignItems: "center",
-    justifyContent: "center",
-    textAlign: "center",
+    marginTop: "2%",
+    justifyContent: "space-between",
   },
 }));
 export const style = {};

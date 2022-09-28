@@ -6,6 +6,8 @@ import WebDev from "./components/WebDevelop";
 import Offers from "./components/WebDevOffers";
 import WebDevServices from "./components/WebDevServices";
 import Services from "./components/WebDevMoreServices";
+import WorkFlow from "./components/WorkFlow";
+import WhyUs from "./components/WhyUs";
 import PortfolioCard from "../Portfolio";
 import Footer from "../Footer/Footer";
 
@@ -24,6 +26,8 @@ const WebDevelopment: NextPage = () => {
         <Offers />
         <WebDevServices />
         <Services />
+        <WorkFlow />
+        <WhyUs />
         <PortfolioCard />
         <Footer />
       </main>

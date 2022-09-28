@@ -10,7 +10,9 @@ const WebDev = () => {
 
   return (
     <Grid container className={cx(classes.container)}>
-      <Header />
+      <Grid container>
+        <Header />
+      </Grid>
       <Grid container item md={10} lg={8} sm={12} xs={12} className={cx(classes.block)}>
         <Text name="Web Developmemnt" variant="h1" />
         <Text
