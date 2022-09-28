@@ -3,7 +3,7 @@ import { Grid, useTheme } from "@mui/material";
 import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
 
-import Text from "components/Typography";
+import Text from "../../../Typography";
 import { useStyles } from "./styles";
 import TecBlock from "../TecBlock/TecBlock";
 
@@ -33,14 +33,7 @@ const Technologies = () => {
           <Text variant="h2" name="Technologies We Work With" />
         </Grid>
 
-        <Grid
-          container
-          item
-          md={12}
-          sm={12}
-          xs={12}
-          className={cx(classes.text)}
-        >
+        <Grid container item md={12} sm={12} xs={12} className={cx(classes.text)}>
           <Tabs
             value={tabIndex}
             onChange={onChangeTab}

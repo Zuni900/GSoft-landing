@@ -11,21 +11,18 @@ export const useStyles = makeStyles({
   },
   arrowF: {
     marginRight: "30px",
-    padding: "2px",
+    padding: "10px",
     "&:hover": {
-      background: theme.palette.secondary.main,
       borderRadius: "100%",
-      padding: "2px",
-      color: theme.palette.secondary.light,
+      padding: "10px",
     },
   },
   arrowB: {
-    padding: "2px",
+    padding: "10px",
+    marginRight: "10px",
     "&:hover": {
-      background: theme.palette.secondary.main,
       borderRadius: "100%",
-      padding: "2px",
-      color: theme.palette.secondary.light,
+      padding: "10px",
     },
   },
   mainCardItems: {
@@ -35,24 +32,20 @@ export const useStyles = makeStyles({
     width: "100%",
     marginTop: "70px",
   },
-  mainCardHeading: {
-    color: theme.palette.secondary.main,
-  },
   mainSubHeading: {},
   mainPara: {
-    color: theme.palette.success.light,
     marginTop: "30px",
   },
   mainCardTechnologies: {
     display: "flex",
-
     flexDirection: "row",
     flexWrap: "wrap",
   },
   technologyHeadings: {
     backgroundColor: theme.palette.secondary.main,
     color: theme.palette.secondary.light,
-    borderRadius: "2px",
+    borderRadius: "7%",
+    border: "1px solid",
     marginRight: "30px",
     marginTop: "20px",
     gap: "10px",

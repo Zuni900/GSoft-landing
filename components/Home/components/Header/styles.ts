@@ -25,7 +25,6 @@ export const useStyles = makeStyles({
   button: {
     color: theme.palette.secondary.contrastText,
     border: "1px solid",
-    // borderColor: theme.palette.secondary.contrastText,
     display: "flex",
     justifyContent: "center",
     borderRadius: "4px",

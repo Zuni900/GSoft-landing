@@ -5,6 +5,7 @@ import Header from "../Navbar/Header";
 import { useStyles } from "./styles";
 import About from "components/About";
 import Services from "./Servicescom";
+import WhyUs from "components/WebDevelopment/components/WhyUs";
 function Index() {
   const { classes, cx } = useStyles();
 
@@ -28,7 +29,8 @@ function Index() {
         name=" What We Offer"
         details="We are providing professional services of Website Development as well as Mobile App Development to Enterprises and companies. Global Software Consulting intends to be in front of the client’s needs and delivers modern solutions for modern problems of the client's business from the initial phase of scoping the requirements up to the final delivery, maintenance, and continuous upgrade."
       ></About>
-<Services />
+      <Services />
+      <WhyUs />
     </>
   );
 }

@@ -3,7 +3,7 @@ import { Grid, TypographyProps } from "@mui/material";
 import Image, { StaticImageData } from "next/image";
 
 import { useStyles } from "./styles";
-import Text from "components/Typography";
+import Text from "../../../Typography";
 
 interface Props extends TypographyProps {
   image: StaticImageData;

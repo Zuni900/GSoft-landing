@@ -25,14 +25,14 @@ const WorkFlowComponent = (props: Props) => {
         className={cx(classes.uperText)}
       />
       <Text
-        variant="subtitle2"
+        variant="h5"
         variantMapping={{
-          subtitle2: "p",
+          h5: "p",
         }}
         name={name}
         className={cx(classes.lowerText)}
       />
-      <Text variant="body2" name={desc} />
+      <Text variant="body2" name={desc} className={cx(classes.desc)} />
     </Grid>
   );
 };

@@ -27,5 +27,8 @@ export const useStyles = makeStyles({
   lowerText: {
     marginBottom: "10px",
   },
+  desc: {
+    textAlign: "center",
+  },
 }));
 export const style = {};

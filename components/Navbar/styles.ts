@@ -23,7 +23,6 @@ export const useStyles = makeStyles()((theme) => ({
     color: theme.palette.secondary.light,
     top: "20px",
     display: "flex",
-    marginRight: "80px",
     justifyContent: "flex-end",
     alignItems: "flex-end",
   },

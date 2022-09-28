@@ -2,10 +2,10 @@ import React from "react";
 import { Grid, useMediaQuery, useTheme, Typography } from "@mui/material";
 import Image from "next/image";
 
-import Text from "components/Typography";
 import { useStyles } from "./styles";
+import Text from "../../../Typography";
 import amico from "images/amico.png";
-import Header from "components/Navbar/Header";
+import Header from "../../../Navbar/Header";
 
 const HomeHeader = () => {
   const theme = useTheme();
@@ -13,32 +13,14 @@ const HomeHeader = () => {
   const isMatch = useMediaQuery(theme.breakpoints.down("lg"));
 
   return (
-    <Grid
-      container
-      item
-      md={12}
-      sm={12}
-      xs={12}
-      className={cx(classes.container)}
-    >
+    <Grid container item md={12} sm={12} xs={12} className={cx(classes.container)}>
       <Header />
       <Grid item md={10.5} sm={12} xs={12} className={cx(classes.box)}>
         <Grid item md={12} sm={12} xs={12}>
-          <Grid
-            container
-            item
-            md={12}
-            sm={12}
-            xs={12}
-            className={cx(classes.typo)}
-          >
+          <Grid container item md={12} sm={12} xs={12} className={cx(classes.typo)}>
             <Typography variant="h1">
               {"We're "}
-              <Typography
-                className={cx(classes.gsoft)}
-                variant="h1"
-                variantMapping={{ h1: "span" }}
-              >
+              <Typography className={cx(classes.gsoft)} variant="h1" variantMapping={{ h1: "span" }}>
                 Gsoft,
               </Typography>
               <br></br>Best Digital Partner
@@ -54,15 +36,7 @@ const HomeHeader = () => {
             name="Fast, secure, stunning websites & Web Apps at unbeatable prices."
           />
 
-          <Grid
-            container
-            item
-            md={7}
-            sm={12}
-            xs={12}
-            xl={4}
-            className={cx(classes.button)}
-          >
+          <Grid container item md={7} sm={12} xs={12} xl={4} className={cx(classes.button)}>
             <Text
               variant="h6"
               variantMapping={{
