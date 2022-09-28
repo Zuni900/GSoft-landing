@@ -14,12 +14,12 @@ const AllRights = () => {
       <Grid container item md={8} sm={8} xs={8} className={cx(classes.box)}>
         <Grid container item md={6.5} className={cx(classes.box)}>
           <Grid className={cx(classes.block)}>
-            <Text name="•" variant="h6" variantMapping={{ h6: "body1" }} className={cx(classes.text)} />
+            <Text name="•" variant="h6" variantMapping={{ h6: "p" }} className={cx(classes.text)} />
             <Text name="Privacy policy" variant="caption" />
           </Grid>
 
           <Grid className={cx(classes.block)}>
-            <Text name="•" variant="h6" variantMapping={{ h6: "body1" }} className={cx(classes.text)} />
+            <Text name="•" variant="h6" variantMapping={{ h6: "p" }} className={cx(classes.text)} />
             <Text name="Terms & conditions" variant="caption" />
           </Grid>
 

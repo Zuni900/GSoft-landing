@@ -12,6 +12,8 @@ import PortfolioCard from "../Portfolio";
 import Footer from "../Footer/Footer";
 import Portfolio from "components/Portfolio";
 import Testimonials from "components/Testimonials";
+import { theme } from "../../styles/theme/defalutTheme";
+
 const Home: NextPage = () => {
   return (
     <Container maxWidth={false} disableGutters>
@@ -28,7 +30,13 @@ const Home: NextPage = () => {
         <Services />
         <Technologies />
         <WorkFlow />
-        <PortfolioCard />
+        <PortfolioCard
+          bgcolor={theme.palette.primary.light}
+          color={theme.palette.secondary.main}
+          hoverbg={theme.palette.secondary.main}
+          hoverColor={theme.palette.secondary.light}
+          descColor={theme.palette.success.light}
+        />
         <Testimonial />
         <Footer />
         <Portfolio />

@@ -26,11 +26,11 @@ const Questions = () => {
           <Grid className={cx(classes.block)}>
             <Box className={cx(classes.ques)} onClick={handleBoxClick}>
               {isActive ? (
-                <Text variant="h4" variantMapping={{ h4: "body1" }} name="+" className={cx(classes.text)} />
+                <Text variant="h4" variantMapping={{ h4: "p" }} name="+" className={cx(classes.text)} />
               ) : (
-                <Text variant="h4" variantMapping={{ h4: "body1" }} name="-" className={cx(classes.text)} />
+                <Text variant="h4" variantMapping={{ h4: "p" }} name="-" className={cx(classes.text)} />
               )}
-              <Text variant="h5" variantMapping={{ h5: "body1" }} name="Why is SEO important for Businesses?" />
+              <Text variant="h5" variantMapping={{ h5: "p" }} name="Why is SEO important for Businesses?" />
             </Box>
             {!isActive ? (
               <Grid className={cx(classes.txtGrid)}>
@@ -45,7 +45,7 @@ const Questions = () => {
             )}
 
             <Box className={cx(classes.ques)}>
-              <Text variant="h4" variantMapping={{ h4: "body1" }} name="+" className={cx(classes.text)} />
+              <Text variant="h4" variantMapping={{ h4: "p" }} name="+" className={cx(classes.text)} />
               <Text
                 variant="h5"
                 variantMapping={{ h5: "body1" }}
@@ -54,13 +54,13 @@ const Questions = () => {
             </Box>
 
             <Box className={cx(classes.ques)}>
-              <Text variant="h4" variantMapping={{ h4: "body1" }} name="+" className={cx(classes.text)} />
-              <Text variant="h5" variantMapping={{ h5: "body1" }} name="Why is it important to hire an SEO agency?" />
+              <Text variant="h4" variantMapping={{ h4: "p" }} name="+" className={cx(classes.text)} />
+              <Text variant="h5" variantMapping={{ h5: "p" }} name="Why is it important to hire an SEO agency?" />
             </Box>
 
             <Box className={cx(classes.ques)}>
-              <Text variant="h4" variantMapping={{ h4: "body1" }} name="+" className={cx(classes.text)} />
-              <Text variant="h5" variantMapping={{ h5: "body1" }} name="What does online/digital marketing entail?" />
+              <Text variant="h4" variantMapping={{ h4: "p" }} name="+" className={cx(classes.text)} />
+              <Text variant="h5" variantMapping={{ h5: "p" }} name="What does online/digital marketing entail?" />
             </Box>
           </Grid>
 

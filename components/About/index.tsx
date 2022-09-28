@@ -10,11 +10,11 @@ const About = () => {
   return (
     <Grid container item md={12} sm={12} xs={12} className={cx(classes.container)}>
       <Grid container item md={12} sm={12} xs={12} className={cx(classes.text)}>
-        <Text variant="h5" variantMapping={{ h5: "h1" }} name="Who We Are" className={cx(classes.styling)} />
+        <Text variant="h5" variantMapping={{ h5: "h2" }} name="Who We Are" className={cx(classes.styling)} />
       </Grid>
 
       <Grid container item md={12} sm={12} xs={12} className={cx(classes.text)}>
-        <Text variantMapping={{ h2: "h2" }} variant="h2" name="About Company" className={cx(classes.styling)} />
+        <Text variantMapping={{ h2: "h1" }} variant="h2" name="About Company" className={cx(classes.styling)} />
       </Grid>
 
       <Grid container item md={9} sm={12} xs={12} className={cx(classes.description)}>
