@@ -6,6 +6,7 @@ import { useStyles } from "./styles";
 import About from "components/About";
 import Services from "./Servicescom";
 import WhyUs from "components/WebDevelopment/components/WhyUs";
+import Footer from "components/Footer/Footer";
 function Index() {
   const { classes, cx } = useStyles();
 
@@ -31,6 +32,7 @@ function Index() {
       ></About>
       <Services />
       <WhyUs />
+      <Footer />
     </>
   );
 }

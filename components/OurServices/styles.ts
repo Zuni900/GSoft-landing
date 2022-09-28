@@ -66,6 +66,7 @@ export const useStyles = makeStyles({
     color: theme.palette.secondary.light,
     width: "65%",
     justifyContent: "center",
+    margin:"20px",
     alignItems: "center",
     textAlign: "center",
   },
