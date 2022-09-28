@@ -24,9 +24,9 @@ const WebDesign: NextPage = () => {
     <Container maxWidth={false} disableGutters>
       <Head>
         <link rel="icon" href="/favicon.ico" />
-        <title>Web Development</title>
+        <title>Web Design</title>
 
-        <meta property="og:title" content="Web Development" key="Web Development" name="description" />
+        <meta property="og:title" content="Web Design" key="Web Design" name="description" />
       </Head>
 
       <main>
