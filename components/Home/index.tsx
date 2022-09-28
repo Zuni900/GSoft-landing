@@ -8,7 +8,7 @@ import WorkFlow from "../WorkFlow/WorkFlow";
 import Technologies from "./components/Technologies/Technologies";
 import Testimonial from "../Testimonials";
 import PortfolioCard from "../Portfolio";
-import Footer from "../Footer/Footer";
+import Footer from "components/Footer/Footer";
 
 import Header from "../Home/components/Header";
 import { useTheme } from "@emotion/react";
@@ -20,7 +20,12 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
         <title>Home</title>
 
-        <meta property="og:title" content="Home" key="Home" name="description" />
+        <meta
+          property="og:title"
+          content="Home"
+          key="Home"
+          name="description"
+        />
       </Head>
 
       <Header />

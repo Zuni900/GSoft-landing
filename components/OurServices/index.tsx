@@ -1,5 +1,5 @@
 import React from "react";
-import { Grid } from "@mui/material";
+import { Container, Grid } from "@mui/material";
 import Text from "../Typography";
 import Header from "../Navbar/Header";
 import { useStyles } from "./styles";
@@ -7,18 +7,45 @@ import About from "components/About";
 import Services from "./Servicescom";
 import WhyUs from "components/WebDevelopment/components/WhyUs";
 import Footer from "components/Footer/Footer";
+import Head from "next/head";
 function Index() {
   const { classes, cx } = useStyles();
 
   return (
-    <>
+    <Container maxWidth={false} disableGutters>
+      <Head>
+        <link rel="icon" href="/favicon.ico" />
+        <title>Services</title>
+
+        <meta
+          property="og:title"
+          content="Services"
+          key="Services"
+          name="description"
+        />
+      </Head>
       <Grid className={cx(classes.toolbar)}>
         <Header />
 
-        <Grid container item md={12} sm={12} xs={12} className={cx(classes.Headings)}>
-          <Text variantMapping={{ h2: "h2" }} variant="h2" name="Our Services" className={cx(classes.styling)} />
+        <Grid
+          container
+          item
+          md={12}
+          sm={12}
+          xs={12}
+          className={cx(classes.Headings)}
+        >
+          <Text
+            variantMapping={{ h2: "h2" }}
+            variant="h2"
+            name="Our Services"
+            className={cx(classes.styling)}
+          />
 
           <Text
+            variantMapping={{
+              subtitle1: "p",
+            }}
             className={cx(classes.description)}
             variant="subtitle1"
             name="Fast, secure, stunning websites & Web Apps at unbeatable prices."
@@ -33,7 +60,7 @@ function Index() {
       <Services />
       <WhyUs />
       <Footer />
-    </>
+    </Container>
   );
 }
 
