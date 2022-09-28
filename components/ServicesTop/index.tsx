@@ -2,6 +2,7 @@ import React from "react";
 import { useStyles } from "./style";
 import Text from "../Typography";
 import { Grid } from "@mui/material";
+import { useRouter } from "next/router";
 
 import Box from "@mui/material/Box";
 import Card from "@mui/material/Card";
@@ -9,6 +10,7 @@ import CardContent from "@mui/material/CardContent";
 
 function ServicesTop() {
   const { classes, cx } = useStyles();
+  const router = useRouter();
   return (
     <>
       <Grid className={cx(classes.mainGrid)}>
@@ -36,7 +38,12 @@ function ServicesTop() {
                 variantMapping={{ subtitle2: "h1" }}
                 className={cx(classes.cardHeading)}
               ></Text>
-              <Text variant="caption" className={cx(classes.cardsubHeading)} name="web Development"></Text>
+              <Text
+                variant="caption"
+                className={cx(classes.cardsubHeading)}
+                name="web Development"
+                onClick={() => router.push("/webDevelopment")}
+              ></Text>
               <Text variant="caption" className={cx(classes.cardsubHeading)} name="Backend Development"></Text>
               <Text variant="caption" className={cx(classes.cardsubHeading)} name="Mobile App developtment"></Text>
               <Text variant="caption" className={cx(classes.cardsubHeading)} name="Mobile"></Text>
