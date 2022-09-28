@@ -47,8 +47,18 @@ function ServicesTop() {
               <Text variant="caption" className={cx(classes.cardsubHeading)} name="Backend Development"></Text>
               <Text variant="caption" className={cx(classes.cardsubHeading)} name="Mobile App developtment"></Text>
               <Text variant="caption" className={cx(classes.cardsubHeading)} name="Mobile"></Text>
-              <Text variant="caption" className={cx(classes.cardsubHeading)} name="Branding"></Text>{" "}
-              <Text variant="caption" className={cx(classes.cardsubHeading)} name="web "></Text>
+              <Text
+                variant="caption"
+                className={cx(classes.cardsubHeading)}
+                name="Branding"
+                onClick={() => router.push("/portfolio")}
+              ></Text>{" "}
+              <Text
+                variant="caption"
+                className={cx(classes.cardsubHeading)}
+                name="web"
+                onClick={() => router.push("/webDesign")}
+              ></Text>
             </CardContent>
           </Box>
           <Box className={cx(classes.cardBox)}>
