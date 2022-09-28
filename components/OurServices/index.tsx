@@ -1,20 +1,17 @@
 import React from "react";
 import { Grid } from "@mui/material";
 import Text from "../Typography";
-import Block from "../DevelopmentBlock";
-import Services from "../../public/Services/Services.png";
-import Header2 from "../Navbar/Header";
+import Header from "../Navbar/Header";
 import { useStyles } from "./styles";
-import { Box } from "@mui/material";
-import Image from "next/image";
 import About from "components/About";
-function Header() {
+import Services from "./Servicescom";
+function Index() {
   const { classes, cx } = useStyles();
 
   return (
     <>
       <Grid className={cx(classes.toolbar)}>
-        <Header2 />
+        <Header />
 
         <Grid container item md={12} sm={12} xs={12} className={cx(classes.Headings)}>
           <Text variantMapping={{ h2: "h2" }} variant="h2" name="Our Services" className={cx(classes.styling)} />
@@ -26,8 +23,14 @@ function Header() {
           />
         </Grid>
       </Grid>
+      <About
+        title="Our Services"
+        name=" What We Offer"
+        details="We are providing professional services of Website Development as well as Mobile App Development to Enterprises and companies. Global Software Consulting intends to be in front of the client’s needs and delivers modern solutions for modern problems of the client's business from the initial phase of scoping the requirements up to the final delivery, maintenance, and continuous upgrade."
+      ></About>
+<Services />
     </>
   );
 }
 
-export default Header;
+export default Index;

@@ -6,20 +6,18 @@ export const useStyles = makeStyles({
   name: "ComponentTec",
   uniqId: "tecComponent",
 })((theme) => ({
-  
   toolbar: {
     margin: "0px",
 
     backgroundImage: `url(${Services?.src})`,
     backgroundSize: "fit",
-backgroundPosition:"center",
+    backgroundPosition: "cover",
     opacity: "1",
     width: "100%",
     backgroundRepeat: "no-repeat",
+    backgroundColor: theme.palette.secondary.main,
 
-    height: "50vh",
-
-   
+    height: "600px",
   },
 
   container: {
@@ -28,31 +26,62 @@ backgroundPosition:"center",
     alignItems: "center",
     alignContent: "center",
     justifyContent: "center",
-    paddingTop: "70px",
-    paddingBottom: "70px",
+    paddingTop: "50px",
+    paddingBottom: "50px",
     paddingLeft: "20px",
     paddingRight: "20px",
-    backgroundColor: theme.palette.primary.light,
+    "&:hover": {
+      borderRight: "1px solid blue",
+      backgroundColor: theme.palette.success.dark,
+      // Backgroud to set for this givin error not woking
+    },
+  },
+  containerServices: {
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "center",
+    alignContent: "center",
+    justifyContent: "center",
+    paddingTop: "10px",
+    paddingBottom: "5px",
+    paddingLeft: "20px",
+    paddingRight: "20px",
+    backgroundColor: theme.palette.secondary.main,
   },
   Headings: {
     display: "flex",
-    justifyContent: "center",
-    margin: "auto",
     alignItems: "center",
+    alignContent: "center",
+    justifyContent: "center",
+    height: "60%",
     flexDirection: "column",
-    marginTop: "60px",
+  },
+  descriptionServices: {
+    display: "flex",
+    justifyContent: "space-between",
+    marginTop: "5px",
+    textAlign: "center",
   },
   description: {
-    marginTop: "20px",
-    display: "flex",
-    alignItems:"center",
-    justifyContent:"center",
-    width:"706px",
-    textAlign:"center",
     color: theme.palette.secondary.light,
+    width: "65%",
+    justifyContent: "center",
+    alignItems: "center",
+    textAlign: "center",
+  },
+  img: {
+    filter: "brightness(0.9) invert(0.1)",
+    display: "flex",
+    flexDirection: "column",
+    paddingTop: "30px",
+    paddingBottom: "30px",
+    paddingLeft: "20px",
+    paddingRight: "20px",
+    alignItems: "center",
   },
   styling: {
     color: theme.palette.secondary.light,
   },
+  // Services Section
 }));
 export const style = {};

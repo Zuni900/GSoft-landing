@@ -9,7 +9,7 @@ export const useStyles = makeStyles({
     flexDirection: "column",
     alignItems: "center",
     paddingTop: "70px",
-    paddingBottom: "70px",
+    paddingBottom: "30px",
     paddingLeft: "20px",
     paddingRight: "20px",
     backgroundColor: theme.palette.primary.light,
