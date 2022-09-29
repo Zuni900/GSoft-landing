@@ -3,9 +3,9 @@ import { Grid, TypographyProps } from "@mui/material";
 import { StaticImageData } from "next/image";
 
 import { useStyles } from "./styles";
-import Text from "../../../Typography";
-import ComponentOne from "../ServiceComponentOne";
-import ComponentTwo from "../ServicesComponentTwo";
+import Text from "components/Typography";
+import ComponentOne from "components/WebDevelopment/components/ServiceComponentOne";
+import ComponentTwo from "components/WebDevelopment/components/ServicesComponentTwo";
 
 interface Props extends TypographyProps {
   topHeading: string;

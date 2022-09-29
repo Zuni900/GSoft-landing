@@ -3,7 +3,7 @@ import { Grid, useMediaQuery, useTheme, TypographyProps } from "@mui/material";
 import Image, { StaticImageData } from "next/image";
 
 import { useStyles } from "./styles";
-import Text from "../../../Typography";
+import Text from "components/Typography";
 
 interface Props extends TypographyProps {
   topHeading: string;

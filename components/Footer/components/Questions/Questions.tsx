@@ -3,9 +3,9 @@ import { Grid, Box, useMediaQuery, useTheme } from "@mui/material";
 import Image from "next/image";
 
 import { useStyles } from "./styles";
-import Text from "../../../Typography";
-import questions from "../../../../public/images/questions.png";
-import CommonButton from "../../../Button/CommonButton";
+import Text from "components/Typography";
+import questions from "public/images/questions.png";
+import CommonButton from "components/Button/CommonButton";
 
 const Questions = () => {
   const { classes, cx } = useStyles();

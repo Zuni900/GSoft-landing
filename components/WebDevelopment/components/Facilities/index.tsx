@@ -2,16 +2,16 @@ import React from "react";
 import { Grid, useMediaQuery, useTheme } from "@mui/material";
 import Image from "next/image";
 
-import Text from "../../../Typography";
+import Text from "components/Typography";
 import { useStyles } from "./styles";
-import WhyUsComponent from "../WhyUsComponent";
-import quality from "../../../../public/images/quality.png";
-import commitment from "../../../../public/images/commitment.png";
-import reporting from "../../../../public/images/reporting.png";
-import illustration from "../../../../public/images/illustration.png";
-import transparency from "../../../../public/images/transparency.png";
-import respect from "../../../../public/images/respect.png";
-import trust from "../../../../public/images/trust.png";
+import WhyUsComponent from "components/WebDevelopment/components/WhyUsComponent";
+import quality from "public/images/quality.png";
+import commitment from "public/images/commitment.png";
+import reporting from "public/images/reporting.png";
+import illustration from "public/images/illustration.png";
+import transparency from "public/images/transparency.png";
+import respect from "public/images/respect.png";
+import trust from "public/images/trust.png";
 
 const WhyUs = () => {
   const { classes, cx } = useStyles();

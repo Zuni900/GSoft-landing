@@ -4,11 +4,11 @@ import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
 
 import { useStyles } from "./styles";
-import MenuComponent from "../ProjectDescription";
-import menu1 from "../../../../public/images/menu1.png";
-import menu2 from "../../../../public/images/menu2.png";
-import menu3 from "../../../../public/images/menu3.png";
-import Text from "../../../Typography";
+import MenuComponent from "components/PortfolioPage/components/ProjectDescription";
+import menu1 from "public/images/menu1.png";
+import menu2 from "public/images/menu2.png";
+import menu3 from "public/images/menu3.png";
+import Text from "components/Typography";
 
 const Menu = () => {
   const { classes, cx } = useStyles();
@@ -26,14 +26,7 @@ const Menu = () => {
 
   return (
     <Grid container className={cx(classes.container)}>
-      <Grid
-        container
-        item
-        md={12}
-        sm={12}
-        xs={12}
-        className={cx(classes.tabsGrid)}
-      >
+      <Grid container item md={12} sm={12} xs={12} className={cx(classes.tabsGrid)}>
         <Tabs
           value={tabIndex}
           onChange={onChangeTab}
@@ -51,508 +44,152 @@ const Menu = () => {
         <MenuComponent
           image={menu1}
           text={
-            <Grid
-              container
-              item
-              md={9}
-              xs={12}
-              sm={12}
-              className={cx(classes.txtGrid)}
-            >
-              <Text
-                variant="caption"
-                name="React js"
-                className={cx(classes.tag)}
-              />
-              <Text
-                variant="caption"
-                name="Next js"
-                className={cx(classes.tag)}
-              />
-              <Text
-                variant="caption"
-                name="Nest js"
-                className={cx(classes.tag)}
-              />
+            <Grid container item md={9} xs={12} sm={12} className={cx(classes.txtGrid)}>
+              <Text variant="caption" name="React js" className={cx(classes.tag)} />
+              <Text variant="caption" name="Next js" className={cx(classes.tag)} />
+              <Text variant="caption" name="Nest js" className={cx(classes.tag)} />
             </Grid>
           }
         />
         <MenuComponent
           image={menu2}
           text={
-            <Grid
-              container
-              item
-              md={12}
-              xs={12}
-              sm={12}
-              className={cx(classes.txtGrid)}
-            >
-              <Text
-                variant="caption"
-                name="React Native"
-                className={cx(classes.tag)}
-              />
-              <Text
-                variant="caption"
-                name="React js"
-                className={cx(classes.tag)}
-              />
-              <Text
-                variant="caption"
-                name="Next js"
-                className={cx(classes.tag)}
-              />
-              <Text
-                variant="caption"
-                name="Nest js"
-                className={cx(classes.tag)}
-              />
-              <Text
-                variant="caption"
-                name="MYSQL"
-                className={cx(classes.tag)}
-              />
-              <Text
-                variant="caption"
-                name="Mongose"
-                className={cx(classes.tag)}
-              />
-              <Text
-                variant="caption"
-                name="React Gatsby"
-                className={cx(classes.tag)}
-              />
-              <Text
-                variant="caption"
-                name="Node js"
-                className={cx(classes.tag)}
-              />
+            <Grid container item md={12} xs={12} sm={12} className={cx(classes.txtGrid)}>
+              <Text variant="caption" name="React Native" className={cx(classes.tag)} />
+              <Text variant="caption" name="React js" className={cx(classes.tag)} />
+              <Text variant="caption" name="Next js" className={cx(classes.tag)} />
+              <Text variant="caption" name="Nest js" className={cx(classes.tag)} />
+              <Text variant="caption" name="MYSQL" className={cx(classes.tag)} />
+              <Text variant="caption" name="Mongose" className={cx(classes.tag)} />
+              <Text variant="caption" name="React Gatsby" className={cx(classes.tag)} />
+              <Text variant="caption" name="Node js" className={cx(classes.tag)} />
             </Grid>
           }
         />
         <MenuComponent
           image={menu3}
           text={
-            <Grid
-              container
-              item
-              md={10}
-              xs={12}
-              sm={12}
-              className={cx(classes.txtGrid)}
-            >
-              <Text
-                variant="caption"
-                name="React Native"
-                className={cx(classes.tag)}
-              />
-              <Text
-                variant="caption"
-                name="React js"
-                className={cx(classes.tag)}
-              />
-              <Text
-                variant="caption"
-                name="Next js"
-                className={cx(classes.tag)}
-              />
-              <Text
-                variant="caption"
-                name="Nest js"
-                className={cx(classes.tag)}
-              />
-              <Text
-                variant="caption"
-                name="MYSQL"
-                className={cx(classes.tag)}
-              />
-              <Text
-                variant="caption"
-                name="Mongose"
-                className={cx(classes.tag)}
-              />
+            <Grid container item md={10} xs={12} sm={12} className={cx(classes.txtGrid)}>
+              <Text variant="caption" name="React Native" className={cx(classes.tag)} />
+              <Text variant="caption" name="React js" className={cx(classes.tag)} />
+              <Text variant="caption" name="Next js" className={cx(classes.tag)} />
+              <Text variant="caption" name="Nest js" className={cx(classes.tag)} />
+              <Text variant="caption" name="MYSQL" className={cx(classes.tag)} />
+              <Text variant="caption" name="Mongose" className={cx(classes.tag)} />
             </Grid>
           }
         />
         <MenuComponent
           image={menu1}
           text={
-            <Grid
-              container
-              item
-              md={9}
-              xs={12}
-              sm={12}
-              className={cx(classes.txtGrid)}
-            >
-              <Text
-                variant="caption"
-                name="React js"
-                className={cx(classes.tag)}
-              />
-              <Text
-                variant="caption"
-                name="Next js"
-                className={cx(classes.tag)}
-              />
-              <Text
-                variant="caption"
-                name="Nest js"
-                className={cx(classes.tag)}
-              />
+            <Grid container item md={9} xs={12} sm={12} className={cx(classes.txtGrid)}>
+              <Text variant="caption" name="React js" className={cx(classes.tag)} />
+              <Text variant="caption" name="Next js" className={cx(classes.tag)} />
+              <Text variant="caption" name="Nest js" className={cx(classes.tag)} />
             </Grid>
           }
         />
         <MenuComponent
           image={menu2}
           text={
-            <Grid
-              container
-              item
-              md={10}
-              xs={12}
-              sm={12}
-              className={cx(classes.txtGrid)}
-            >
-              <Text
-                variant="caption"
-                name="React Native"
-                className={cx(classes.tag)}
-              />
-              <Text
-                variant="caption"
-                name="React js"
-                className={cx(classes.tag)}
-              />
-              <Text
-                variant="caption"
-                name="Next js"
-                className={cx(classes.tag)}
-              />
-              <Text
-                variant="caption"
-                name="Nest js"
-                className={cx(classes.tag)}
-              />
-              <Text
-                variant="caption"
-                name="MYSQL"
-                className={cx(classes.tag)}
-              />
-              <Text
-                variant="caption"
-                name="Mongose"
-                className={cx(classes.tag)}
-              />
-              <Text
-                variant="caption"
-                name="React Gatsby"
-                className={cx(classes.tag)}
-              />
-              <Text
-                variant="caption"
-                name="Node js"
-                className={cx(classes.tag)}
-              />
+            <Grid container item md={10} xs={12} sm={12} className={cx(classes.txtGrid)}>
+              <Text variant="caption" name="React Native" className={cx(classes.tag)} />
+              <Text variant="caption" name="React js" className={cx(classes.tag)} />
+              <Text variant="caption" name="Next js" className={cx(classes.tag)} />
+              <Text variant="caption" name="Nest js" className={cx(classes.tag)} />
+              <Text variant="caption" name="MYSQL" className={cx(classes.tag)} />
+              <Text variant="caption" name="Mongose" className={cx(classes.tag)} />
+              <Text variant="caption" name="React Gatsby" className={cx(classes.tag)} />
+              <Text variant="caption" name="Node js" className={cx(classes.tag)} />
             </Grid>
           }
         />
         <MenuComponent
           image={menu3}
           text={
-            <Grid
-              container
-              item
-              md={10}
-              xs={12}
-              sm={12}
-              className={cx(classes.txtGrid)}
-            >
-              <Text
-                variant="caption"
-                name="React Native"
-                className={cx(classes.tag)}
-              />
-              <Text
-                variant="caption"
-                name="React js"
-                className={cx(classes.tag)}
-              />
-              <Text
-                variant="caption"
-                name="Next js"
-                className={cx(classes.tag)}
-              />
-              <Text
-                variant="caption"
-                name="Nest js"
-                className={cx(classes.tag)}
-              />
-              <Text
-                variant="caption"
-                name="MYSQL"
-                className={cx(classes.tag)}
-              />
-              <Text
-                variant="caption"
-                name="Mongose"
-                className={cx(classes.tag)}
-              />
+            <Grid container item md={10} xs={12} sm={12} className={cx(classes.txtGrid)}>
+              <Text variant="caption" name="React Native" className={cx(classes.tag)} />
+              <Text variant="caption" name="React js" className={cx(classes.tag)} />
+              <Text variant="caption" name="Next js" className={cx(classes.tag)} />
+              <Text variant="caption" name="Nest js" className={cx(classes.tag)} />
+              <Text variant="caption" name="MYSQL" className={cx(classes.tag)} />
+              <Text variant="caption" name="Mongose" className={cx(classes.tag)} />
             </Grid>
           }
         />
         <MenuComponent
           image={menu1}
           text={
-            <Grid
-              container
-              item
-              md={9}
-              xs={12}
-              sm={12}
-              className={cx(classes.txtGrid)}
-            >
-              <Text
-                variant="caption"
-                name="React js"
-                className={cx(classes.tag)}
-              />
-              <Text
-                variant="caption"
-                name="Next js"
-                className={cx(classes.tag)}
-              />
-              <Text
-                variant="caption"
-                name="Nest js"
-                className={cx(classes.tag)}
-              />
+            <Grid container item md={9} xs={12} sm={12} className={cx(classes.txtGrid)}>
+              <Text variant="caption" name="React js" className={cx(classes.tag)} />
+              <Text variant="caption" name="Next js" className={cx(classes.tag)} />
+              <Text variant="caption" name="Nest js" className={cx(classes.tag)} />
             </Grid>
           }
         />
         <MenuComponent
           image={menu2}
           text={
-            <Grid
-              container
-              item
-              md={10}
-              xs={12}
-              sm={12}
-              className={cx(classes.txtGrid)}
-            >
-              <Text
-                variant="caption"
-                name="React Native"
-                className={cx(classes.tag)}
-              />
-              <Text
-                variant="caption"
-                name="React js"
-                className={cx(classes.tag)}
-              />
-              <Text
-                variant="caption"
-                name="Next js"
-                className={cx(classes.tag)}
-              />
-              <Text
-                variant="caption"
-                name="Nest js"
-                className={cx(classes.tag)}
-              />
-              <Text
-                variant="caption"
-                name="MYSQL"
-                className={cx(classes.tag)}
-              />
-              <Text
-                variant="caption"
-                name="Mongose"
-                className={cx(classes.tag)}
-              />
-              <Text
-                variant="caption"
-                name="React Gatsby"
-                className={cx(classes.tag)}
-              />
-              <Text
-                variant="caption"
-                name="Node js"
-                className={cx(classes.tag)}
-              />
+            <Grid container item md={10} xs={12} sm={12} className={cx(classes.txtGrid)}>
+              <Text variant="caption" name="React Native" className={cx(classes.tag)} />
+              <Text variant="caption" name="React js" className={cx(classes.tag)} />
+              <Text variant="caption" name="Next js" className={cx(classes.tag)} />
+              <Text variant="caption" name="Nest js" className={cx(classes.tag)} />
+              <Text variant="caption" name="MYSQL" className={cx(classes.tag)} />
+              <Text variant="caption" name="Mongose" className={cx(classes.tag)} />
+              <Text variant="caption" name="React Gatsby" className={cx(classes.tag)} />
+              <Text variant="caption" name="Node js" className={cx(classes.tag)} />
             </Grid>
           }
         />
         <MenuComponent
           image={menu3}
           text={
-            <Grid
-              container
-              item
-              md={10}
-              xs={12}
-              sm={12}
-              className={cx(classes.txtGrid)}
-            >
-              <Text
-                variant="caption"
-                name="React Native"
-                className={cx(classes.tag)}
-              />
-              <Text
-                variant="caption"
-                name="React js"
-                className={cx(classes.tag)}
-              />
-              <Text
-                variant="caption"
-                name="Next js"
-                className={cx(classes.tag)}
-              />
-              <Text
-                variant="caption"
-                name="Nest js"
-                className={cx(classes.tag)}
-              />
-              <Text
-                variant="caption"
-                name="MYSQL"
-                className={cx(classes.tag)}
-              />
-              <Text
-                variant="caption"
-                name="Mongose"
-                className={cx(classes.tag)}
-              />
+            <Grid container item md={10} xs={12} sm={12} className={cx(classes.txtGrid)}>
+              <Text variant="caption" name="React Native" className={cx(classes.tag)} />
+              <Text variant="caption" name="React js" className={cx(classes.tag)} />
+              <Text variant="caption" name="Next js" className={cx(classes.tag)} />
+              <Text variant="caption" name="Nest js" className={cx(classes.tag)} />
+              <Text variant="caption" name="MYSQL" className={cx(classes.tag)} />
+              <Text variant="caption" name="Mongose" className={cx(classes.tag)} />
             </Grid>
           }
         />
         <MenuComponent
           image={menu1}
           text={
-            <Grid
-              container
-              item
-              md={9}
-              xs={12}
-              sm={12}
-              className={cx(classes.txtGrid)}
-            >
-              <Text
-                variant="caption"
-                name="React js"
-                className={cx(classes.tag)}
-              />
-              <Text
-                variant="caption"
-                name="Next js"
-                className={cx(classes.tag)}
-              />
-              <Text
-                variant="caption"
-                name="Nest js"
-                className={cx(classes.tag)}
-              />
+            <Grid container item md={9} xs={12} sm={12} className={cx(classes.txtGrid)}>
+              <Text variant="caption" name="React js" className={cx(classes.tag)} />
+              <Text variant="caption" name="Next js" className={cx(classes.tag)} />
+              <Text variant="caption" name="Nest js" className={cx(classes.tag)} />
             </Grid>
           }
         />
         <MenuComponent
           image={menu2}
           text={
-            <Grid
-              container
-              item
-              md={10}
-              xs={12}
-              sm={12}
-              className={cx(classes.txtGrid)}
-            >
-              <Text
-                variant="caption"
-                name="React Native"
-                className={cx(classes.tag)}
-              />
-              <Text
-                variant="caption"
-                name="React js"
-                className={cx(classes.tag)}
-              />
-              <Text
-                variant="caption"
-                name="Next js"
-                className={cx(classes.tag)}
-              />
-              <Text
-                variant="caption"
-                name="Nest js"
-                className={cx(classes.tag)}
-              />
-              <Text
-                variant="caption"
-                name="MYSQL"
-                className={cx(classes.tag)}
-              />
-              <Text
-                variant="caption"
-                name="Mongose"
-                className={cx(classes.tag)}
-              />
-              <Text
-                variant="caption"
-                name="React Gatsby"
-                className={cx(classes.tag)}
-              />
-              <Text
-                variant="caption"
-                name="Node js"
-                className={cx(classes.tag)}
-              />
+            <Grid container item md={10} xs={12} sm={12} className={cx(classes.txtGrid)}>
+              <Text variant="caption" name="React Native" className={cx(classes.tag)} />
+              <Text variant="caption" name="React js" className={cx(classes.tag)} />
+              <Text variant="caption" name="Next js" className={cx(classes.tag)} />
+              <Text variant="caption" name="Nest js" className={cx(classes.tag)} />
+              <Text variant="caption" name="MYSQL" className={cx(classes.tag)} />
+              <Text variant="caption" name="Mongose" className={cx(classes.tag)} />
+              <Text variant="caption" name="React Gatsby" className={cx(classes.tag)} />
+              <Text variant="caption" name="Node js" className={cx(classes.tag)} />
             </Grid>
           }
         />
         <MenuComponent
           image={menu3}
           text={
-            <Grid
-              container
-              item
-              md={10}
-              xs={12}
-              sm={12}
-              className={cx(classes.txtGrid)}
-            >
-              <Text
-                variant="caption"
-                name="React Native"
-                className={cx(classes.tag)}
-              />
-              <Text
-                variant="caption"
-                name="React js"
-                className={cx(classes.tag)}
-              />
-              <Text
-                variant="caption"
-                name="Next js"
-                className={cx(classes.tag)}
-              />
-              <Text
-                variant="caption"
-                name="Nest js"
-                className={cx(classes.tag)}
-              />
-              <Text
-                variant="caption"
-                name="MYSQL"
-                className={cx(classes.tag)}
-              />
-              <Text
-                variant="caption"
-                name="Mongose"
-                className={cx(classes.tag)}
-              />
+            <Grid container item md={10} xs={12} sm={12} className={cx(classes.txtGrid)}>
+              <Text variant="caption" name="React Native" className={cx(classes.tag)} />
+              <Text variant="caption" name="React js" className={cx(classes.tag)} />
+              <Text variant="caption" name="Next js" className={cx(classes.tag)} />
+              <Text variant="caption" name="Nest js" className={cx(classes.tag)} />
+              <Text variant="caption" name="MYSQL" className={cx(classes.tag)} />
+              <Text variant="caption" name="Mongose" className={cx(classes.tag)} />
             </Grid>
           }
         />

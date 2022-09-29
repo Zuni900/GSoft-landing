@@ -2,7 +2,7 @@ import React from "react";
 import { Grid, useMediaQuery, useTheme } from "@mui/material";
 
 import { useStyles } from "./styles";
-import Text from "../../../Typography";
+import Text from "components/Typography";
 
 const AllRights = () => {
   const { classes, cx } = useStyles();

@@ -1,27 +1,17 @@
-import React from "react";
+import React, { useRef } from "react";
 import { Grid, useTheme, useMediaQuery } from "@mui/material";
-import { useRef } from "react";
+import { SnapList, SnapItem, useVisibleElements, useScroll } from "react-snaplist-carousel";
 
 import { useStyles } from "./styles";
-
-import {
-  SnapList,
-  SnapItem,
-  useVisibleElements,
-  useScroll,
-} from "react-snaplist-carousel";
 import Card from "./Card";
-import Text from "../Typography";
+import Text from "components/Typography";
 
 const Technologies = () => {
   const { classes, cx } = useStyles();
 
   const snapList = useRef(null);
 
-  const visible = useVisibleElements(
-    { debounce: 10, ref: snapList },
-    ([element]) => element
-  );
+  const visible = useVisibleElements({ debounce: 10, ref: snapList }, ([element]) => element);
   const goToSnapItem = useScroll({ ref: snapList });
   const theme = useTheme();
   const isMatch = useMediaQuery(theme.breakpoints.down("sm"));
@@ -38,11 +28,7 @@ const Technologies = () => {
           textAlign={"center"}
           color={theme.palette.secondary.light}
         />
-        <Text
-          variant="h2"
-          name="What Our Clients Say"
-          color={theme.palette.secondary.light}
-        />
+        <Text variant="h2" name="What Our Clients Say" color={theme.palette.secondary.light} />
       </Grid>
       <SnapList direction={"horizontal"} ref={snapList}>
         {[0, 0, 0, 0, 0].map((_, index) => (
@@ -50,15 +36,11 @@ const Technologies = () => {
             key={index}
             margin={{
               left: index == 0 && isMatch ? "5vw" : index == 0 ? "30vw" : "0px",
-              right:
-                index == 3 && isMatch ? "5vw" : index == 3 ? "30vw" : "0px",
+              right: index == 3 && isMatch ? "5vw" : index == 3 ? "30vw" : "0px",
             }}
             snapAlign="center"
           >
-            <Card
-              visible={visible === index || isMatch}
-              onClick={() => goToSnapItem(index)}
-            />
+            <Card visible={visible === index || isMatch} onClick={() => goToSnapItem(index)} />
           </SnapItem>
         ))}
       </SnapList>

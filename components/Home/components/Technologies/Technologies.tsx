@@ -3,9 +3,9 @@ import { Grid, useTheme, TypographyProps, useMediaQuery } from "@mui/material";
 import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
 
-import Text from "../../../Typography";
+import Text from "components/Typography";
 import { useStyles } from "./styles";
-import TecBlock from "../TecBlock/TecBlock";
+import TecBlock from "components/Home/components/TecBlock/TecBlock";
 
 import node from "images/node.png";
 import strapi from "images/strapi.png";

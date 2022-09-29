@@ -1,12 +1,12 @@
 import React from "react";
 import { useStyles } from "./style";
-import Text from "../Typography";
 import { Grid } from "@mui/material";
 import { useRouter } from "next/router";
-
 import Box from "@mui/material/Box";
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
+
+import Text from "components/Typography";
 
 function ServicesTop() {
   const { classes, cx } = useStyles();
@@ -47,12 +47,7 @@ function ServicesTop() {
               <Text variant="caption" className={cx(classes.cardsubHeading)} name="Backend Development"></Text>
               <Text variant="caption" className={cx(classes.cardsubHeading)} name="Mobile App developtment"></Text>
               <Text variant="caption" className={cx(classes.cardsubHeading)} name="Mobile"></Text>
-              <Text
-                variant="caption"
-                className={cx(classes.cardsubHeading)}
-                name="Branding"
-                onClick={() => router.push("/portfolio")}
-              ></Text>{" "}
+              <Text variant="caption" className={cx(classes.cardsubHeading)} name="Branding"></Text>{" "}
               <Text
                 variant="caption"
                 className={cx(classes.cardsubHeading)}

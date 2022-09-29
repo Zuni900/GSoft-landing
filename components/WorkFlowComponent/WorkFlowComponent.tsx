@@ -2,7 +2,7 @@ import React from "react";
 import { Grid, TypographyProps } from "@mui/material";
 
 import { useStyles } from "./styles";
-import Text from "../Typography";
+import Text from "components/Typography";
 
 interface Props extends TypographyProps {
   num: string;

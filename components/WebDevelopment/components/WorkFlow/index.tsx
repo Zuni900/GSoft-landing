@@ -2,8 +2,8 @@ import React from "react";
 import { Grid, useMediaQuery, useTheme } from "@mui/material";
 
 import { useStyles } from "./styles";
-import Text from "../../../Typography";
-import WorkFlowComponent from "../WorkFlowComponent";
+import Text from "components/Typography";
+import WorkFlowComponent from "components/WebDevelopment/components/WorkFlowComponent";
 
 const WorkFlow = () => {
   const { classes, cx } = useStyles();

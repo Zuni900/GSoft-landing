@@ -1,10 +1,10 @@
 import React from "react";
 import { Grid, TypographyProps } from "@mui/material";
+import { StaticImageData } from "next/image";
 
 import { useStyles } from "./styles";
-import Text from "../../../Typography";
-import Header from "../../../Navbar/Header";
-import { StaticImageData } from "next/image";
+import Text from "components/Typography";
+import Header from "components/Navbar/Header";
 
 interface Props extends TypographyProps {
   heading: string;

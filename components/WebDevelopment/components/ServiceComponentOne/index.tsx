@@ -3,8 +3,8 @@ import { Grid, Box, useMediaQuery, useTheme, TypographyProps } from "@mui/materi
 import Image, { StaticImageData } from "next/image";
 
 import { useStyles } from "./styles";
-import Text from "../../../Typography";
-import CommonButton from "../../../Button/CommonButton";
+import Text from "components/Typography";
+import CommonButton from "components/Button/CommonButton";
 
 interface Props extends TypographyProps {
   heading: string;

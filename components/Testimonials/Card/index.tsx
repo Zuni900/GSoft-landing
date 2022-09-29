@@ -1,13 +1,14 @@
 import React from "react";
 import { Grid, useMediaQuery, useTheme, TypographyProps, Box } from "@mui/material";
+import { Avatar } from "@mui/material";
 import CardContent from "@mui/material/CardContent";
 import Image from "next/image";
 import Card from "@mui/material/Card";
-import { Avatar } from "@mui/material";
 
 import { useStyles } from "./styles";
+import Text from "components/Typography";
+
 import Testimonal from "images/Testimonal.png";
-import Text from "../../Typography";
 
 interface Props extends TypographyProps {
   visible: boolean;

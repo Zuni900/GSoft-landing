@@ -2,7 +2,7 @@ import React from "react";
 import { Grid, useMediaQuery, useTheme, TypographyProps } from "@mui/material";
 
 import { useStyles } from "./styles";
-import Text from "../../../Typography";
+import Text from "components/Typography";
 
 interface Props extends TypographyProps {
   num: string;
@@ -28,11 +28,7 @@ const WorkFlowComponent = (props: Props) => {
       className={cx(classes.container)}
       style={{ textAlign: isMatch ? "center" : "start" }}
     >
-      <Grid
-        container
-        className={cx(classes.block)}
-        style={{ justifyContent: isMatch ? "center" : "flex-start" }}
-      >
+      <Grid container className={cx(classes.block)} style={{ justifyContent: isMatch ? "center" : "flex-start" }}>
         <Text
           variant="overline"
           variantMapping={{

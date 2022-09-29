@@ -1,9 +1,9 @@
 import React from "react";
 import { Grid, TextField, useMediaQuery, useTheme } from "@mui/material";
 
-import Text from "../../../Typography";
+import Text from "components/Typography";
 import { useStyles } from "./styles";
-import CommonButton from "../../../Button/CommonButton";
+import CommonButton from "components/Button/CommonButton";
 
 const Updates = () => {
   const { classes, cx } = useStyles();

@@ -3,9 +3,10 @@ import { Grid, useMediaQuery, useTheme, Typography } from "@mui/material";
 import Image from "next/image";
 
 import { useStyles } from "./styles";
-import Text from "../../../Typography";
+import Text from "components/Typography";
+import Header from "components/Navbar/Header";
+
 import amico from "images/amico.png";
-import Header from "../../../Navbar/Header";
 
 const HomeHeader = () => {
   const theme = useTheme();
