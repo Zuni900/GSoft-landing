@@ -16,11 +16,13 @@ interface Props extends TypographyProps {
   hoverbg: string;
   hoverColor: string;
   descColor: string;
+  tabColor: string;
 }
 
 const PortfolioCard = (props: Props) => {
-  const { bgcolor, color, hoverbg, hoverColor, descColor } = props;
-  const { classes, cx } = useStyles();
+  const { bgcolor, color, hoverbg, hoverColor, descColor, tabColor } = props;
+
+  const { classes, cx } = useStyles({ tabColor });
   const [tabIndex, setTabValue] = React.useState(0);
   const themes = useTheme();
   const onChangeTab = (event: React.SyntheticEvent, newValue: number) => {

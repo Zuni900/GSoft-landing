@@ -50,22 +50,22 @@ const ComponentOne = (props: Props) => {
 
         <Grid container className={cx(classes.points)}>
           <Box className={cx(classes.tick)}>
-            <Text name="✓" variant="h6" variantMapping={{ h6: "body1" }} className={cx(classes.txt)} />
+            <Text name="✓" variant="h6" variantMapping={{ h6: "p" }} className={cx(classes.txt)} />
             <Text name={point1} variant="caption" />
           </Box>
 
           <Box className={cx(classes.tick)}>
-            <Text name="✓" variant="h6" variantMapping={{ h6: "body1" }} className={cx(classes.txt)} />
+            <Text name="✓" variant="h6" variantMapping={{ h6: "p" }} className={cx(classes.txt)} />
             <Text name={point2} variant="caption" />
           </Box>
 
           <Box className={cx(classes.tick)}>
-            <Text name="✓" variant="h6" variantMapping={{ h6: "body1" }} className={cx(classes.txt)} />
+            <Text name="✓" variant="h6" variantMapping={{ h6: "p" }} className={cx(classes.txt)} />
             <Text name={point3} variant="caption" />
           </Box>
 
           <Box className={cx(classes.tick)}>
-            <Text name="✓" variant="h6" variantMapping={{ h6: "body1" }} className={cx(classes.txt)} />
+            <Text name="✓" variant="h6" variantMapping={{ h6: "p" }} className={cx(classes.txt)} />
             <Text name={point4} variant="caption" />
           </Box>
 

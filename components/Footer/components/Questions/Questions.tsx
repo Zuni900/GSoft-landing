@@ -48,7 +48,7 @@ const Questions = () => {
               <Text variant="h4" variantMapping={{ h4: "p" }} name="+" className={cx(classes.text)} />
               <Text
                 variant="h5"
-                variantMapping={{ h5: "body1" }}
+                variantMapping={{ h5: "p" }}
                 name="Are there any specific guidelines as to what is allowed in SEO?"
               />
             </Box>

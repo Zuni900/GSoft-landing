@@ -7,8 +7,6 @@ export const useStyles = makeStyles({
   container: {
     display: "flex",
     flexDirection: "column",
-    // justifyContent: "space-between",
-    // padding: "20px",
     alignItems: "center",
     borderRadius: "16px",
     color: theme.palette.secondary.main,
@@ -26,11 +24,8 @@ export const useStyles = makeStyles({
     paddingLeft: "20px",
     paddingRight: "20px",
     alignItems: "center",
-    // justifyContent: "center",
-    // textAlign: "center",
     "&:hover": {
       filter: "brightness(0) invert(1)",
-      // transition: "1s",
     },
   },
   text: {

@@ -8,27 +8,5 @@ export const useStyles = makeStyles({
     padding: "5px",
     marginTop: "10px",
     marginBottom: "10px",
-    marginLeft: "20px",
-    marginRight: "20px",
-  },
-  box: {
-    display: "flex",
-    flexDirection: "column",
-    textAlign: "center",
-    alignItems: "center",
-  },
-  text: {
-    display: "flex",
-    justifyContent: "center",
-  },
-  tabs: {
-    display: "flex",
-    marginTop: "25px",
-    marginBottom: "70px",
-  },
-  tec: {
-    display: "flex",
-    justifyContent: "space-between",
-    alignItems: "center",
   },
 }));

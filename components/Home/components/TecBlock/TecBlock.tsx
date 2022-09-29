@@ -7,19 +7,27 @@ import Text from "../../../Typography";
 
 interface Props extends TypographyProps {
   image: StaticImageData;
-  width: string;
-  height: string;
   name: string;
+  filter: string;
 }
 
 const TecBlock = (props: Props) => {
   const { classes, cx } = useStyles();
-  const { image, name } = props;
+  const { image, name, filter } = props;
 
   return (
-    <Grid className={cx(classes.container)}>
-      <Image alt="img" src={image} layout="fixed" />
-      <Text variant="h5" variantMapping={{ h5: "p" }} name={name} />
+    <Grid
+      container
+      sx={{ marginBottom: "10px", ml: "10px", mr: "10px", justifyContent: "center" }}
+      item
+      md={2}
+      sm={2}
+      xs={3}
+    >
+      <Grid className={cx(classes.container)}>
+        <Image alt="img" src={image} layout="fixed" style={{ filter: filter }} />
+        <Text variant="h5" variantMapping={{ h5: "p" }} name={name} sx={{ marginTop: "20px" }} />
+      </Grid>
     </Grid>
   );
 };

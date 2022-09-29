@@ -1,9 +1,9 @@
 import { makeStyles } from "tss-react/mui"; // "tss-react/mui-compat" if your project is using Typescript < 4.4
 
-export const useStyles = makeStyles({
+export const useStyles = makeStyles<{ tabColor: string }>({
   name: "ComponentTec",
   uniqId: "tecComponent",
-})((theme) => ({
+})((theme, { tabColor }) => ({
   container: {
     display: "flex",
     flexDirection: "column",
@@ -12,7 +12,6 @@ export const useStyles = makeStyles({
     paddingBottom: "70px",
     paddingLeft: "20px",
     paddingRight: "20px",
-    // backgroundColor: theme.palette.primary.light,
   },
   box: {
     display: "flex",
@@ -28,9 +27,12 @@ export const useStyles = makeStyles({
     display: "flex",
     marginTop: "25px",
     marginBottom: "60px",
+    "& .MuiTab-root.Mui-selected": {
+      color: theme.palette.secondary.contrastText,
+    },
   },
   tab: {
-    color: theme.palette.success.light,
+    color: tabColor,
     textTransform: "none",
   },
   tec: {

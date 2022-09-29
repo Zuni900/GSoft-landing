@@ -8,7 +8,7 @@ const CommonButton = (props: Props) => {
   const { name } = props;
   return (
     <Button {...props}>
-      <Typography variant="h6" variantMapping={{ h6: "body1" }}>
+      <Typography variant="h6" variantMapping={{ h6: "h1" }}>
         {name}
       </Typography>
     </Button>

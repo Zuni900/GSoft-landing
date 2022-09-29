@@ -66,41 +66,12 @@ function Services() {
 
   return (
     <Grid container className={cx(classes.containerServices)}>
-      <Grid
-        container
-        item
-        md={10}
-        sm={12}
-        xs={12}
-        className={cx(classes.descriptionServices)}
-      >
+      <Grid container item md={10} sm={12} xs={12} className={cx(classes.descriptionServices)}>
         {TechnologiesData.map((item, index) => (
-          <Grid
-            container
-            key={index}
-            item
-            sm={6}
-            xs={12}
-            md={2.5}
-            className={cx(classes.container)}
-          >
-            <Image
-              src={item.image.src}
-              alt="image"
-              height="56"
-              width="70"
-              className={cx(classes.img)}
-            />
-            <Text
-              className={cx(classes.styling)}
-              variant="h3"
-              name={item.name}
-            />
-            <Text
-              variant="body2"
-              name={item.description}
-              className={cx(classes.styling)}
-            />
+          <Grid container key={index} item sm={6} xs={12} md={2.5} className={cx(classes.container)}>
+            <Image src={item.image.src} alt="image" layout="fixed" className={cx(classes.img)} />
+            <Text className={cx(classes.styling)} variant="h3" name={item.name} />
+            <Text variant="body2" name={item.description} className={cx(classes.styling)} />
           </Grid>
         ))}
       </Grid>
