@@ -11,10 +11,12 @@ export const useStyles = makeStyles()((theme) => ({
     display: "flex",
     flex: 1,
     justifyContent: "space-between",
+  
   },
   appBarLogo: {
     height: "20px",
     width: "auto",
+    
     left: "60px",
   },
   headerTabs: {

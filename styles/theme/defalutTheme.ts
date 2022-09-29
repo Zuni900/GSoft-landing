@@ -95,6 +95,9 @@ theme.typography.body1 = {
 theme.typography.subtitle1 = {
   fontSize: "24px",
   fontWeight: 400,
+  lineHeight: "51px",
+
+  letterSpacing: "0.5px",
   fontFamily: "Poppins",
   [theme.breakpoints.up("sm")]: {
     fontSize: "36px",
