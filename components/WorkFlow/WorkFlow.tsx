@@ -2,20 +2,13 @@ import React from "react";
 import { Grid } from "@mui/material";
 
 import { useStyles } from "./styles";
-import WorkFlowComponent from "../WorkFlowComponent/WorkFlowComponent";
-// import Text from "../Typography/index";
+import WorkFlowComponent from "components/WorkFlowComponent/WorkFlowComponent";
 
 const WorkFlow = () => {
   const { classes, cx } = useStyles();
 
   return (
     <Grid container item md={12} sm={12} xs={12} className={cx(classes.container)}>
-      {/* <Grid container md={9} className={cx(classes.box)}>
-        <Grid container md={4} className={cx(classes.text)}>
-          <Text variant="h5" name="Work Flow" />
-          <Text variant="h5" name="Our Working Process" />
-        </Grid> */}
-
       <Grid container item md={10} sm={12} xs={12} className={cx(classes.grid)}>
         <WorkFlowComponent
           num="01"
@@ -38,7 +31,6 @@ const WorkFlow = () => {
           desc="Launching a product is just the start of the journey and from day one your users will be offering their opinions and demanding the next big feature."
         />
       </Grid>
-      {/* </Grid> */}
     </Grid>
   );
 };

@@ -2,16 +2,16 @@ import React from "react";
 import { Grid, useMediaQuery, useTheme } from "@mui/material";
 
 import { useStyles } from "./styles";
-import Text from "../../../Typography";
+import Text from "components/Typography";
 import Image from "next/image";
 
-import fb from "../../../../public/images/fb.png";
-import insta from "../../../../public/images/insta.png";
-import linkedIn from "../../../../public/images/linkedIn.png";
-import twiter from "../../../../public/images/twiter.png";
-import ball from "../../../../public/images/ball.png";
-import be from "../../../../public/images/be.png";
-import up from "../../../../public/images/Up.png";
+import fb from "images/fb.png";
+import insta from "public/images/insta.png";
+import linkedIn from "public/images/linkedIn.png";
+import twiter from "public/images/twiter.png";
+import ball from "public/images/ball.png";
+import be from "public/images/be.png";
+import up from "public/images/Up.png";
 
 const FooterDetails = () => {
   const { classes, cx } = useStyles();

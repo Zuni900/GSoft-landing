@@ -1,15 +1,17 @@
 import React, { useState } from "react";
 import { Button, Tab, Tabs, Toolbar, useMediaQuery, useTheme } from "@mui/material";
 import Image from "next/image";
+import { useRouter } from "next/router";
 
 import { useStyles } from "./styles";
 import { pages } from "./data";
 import DrawerComp from "./Drawer";
-import Logo from "../../public/images/logo.png";
-import Text from "../Typography";
+import Logo from "public/images/logo.png";
+import Text from "components/Typography";
 import ServicesTop from "components/ServicesTop";
 
 const Header = () => {
+  const router = useRouter();
   const [value, setValue] = useState(0);
   const theme = useTheme();
   const isMatch = useMediaQuery(theme.breakpoints.down("lg"));
@@ -41,6 +43,10 @@ const Header = () => {
 
               if (value == 1) {
                 handleClick();
+              } else if (value == 2) {
+                router.push("/portfolio");
+              } else if (value == 0) {
+                router.push("/");
               }
             }}
             TabIndicatorProps={{
@@ -48,7 +54,7 @@ const Header = () => {
             }}
           >
             {pages.map((page, index) => (
-              <Tab label={page.name} key={index} className={classes.headerLabel} onClick={handleClick} />
+              <Tab label={page.name} key={index} className={classes.headerLabel} />
             ))}
           </Tabs>
           {isShown && <ServicesTop />}

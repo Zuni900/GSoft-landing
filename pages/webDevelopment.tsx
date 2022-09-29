@@ -27,12 +27,7 @@ const WebDevelopment: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
         <title>Web Development</title>
 
-        <meta
-          property="og:title"
-          content="Web Development"
-          key="Web Development"
-          name="description"
-        />
+        <meta property="og:title" content="Web Development" key="Web Development" name="description" />
       </Head>
 
       <main>
@@ -86,6 +81,7 @@ const WebDevelopment: NextPage = () => {
           hoverbg={theme.palette.secondary.light}
           hoverColor={theme.palette.secondary.main}
           descColor={theme.palette.error.light}
+          tabColor={theme.palette.secondary.light}
         />
         <Footer />
       </main>

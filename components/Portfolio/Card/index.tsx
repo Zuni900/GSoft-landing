@@ -7,7 +7,7 @@ import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 import Image from "next/image";
 import CardI from "images/CardI.png";
-import Text from "../../Typography";
+import Text from "components/Typography";
 
 interface Props {
   isMatch: boolean;

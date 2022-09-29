@@ -1,8 +1,8 @@
 import React from "react";
 import { Grid } from "@mui/material";
 
-import Text from "../Typography";
 import { useStyles } from "./styles";
+import Text from "components/Typography";
 
 interface Props {
   name: string;

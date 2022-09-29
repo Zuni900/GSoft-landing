@@ -19,12 +19,7 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
         <title>Home</title>
 
-        <meta
-          property="og:title"
-          content="Home"
-          key="Home"
-          name="description"
-        />
+        <meta property="og:title" content="Home" key="Home" name="description" />
       </Head>
 
       <Header />
@@ -34,7 +29,11 @@ const Home: NextPage = () => {
         details="We are providing professional services of Website Development as well as Mobile App Development to Enterprises and companies. Global Software Consulting intends to be in front of the client’s needs and delivers modern solutions for modern problems of the client's business from the initial phase of scoping the requirements up to the final delivery, maintenance, and continuous upgrade."
       />
       <Services />
-      <Technologies />
+      <Technologies
+        bgcolor={theme.palette.primary.light}
+        color={theme.palette.secondary.main}
+        tabColor={theme.palette.success.light}
+      />
       <WorkFlow />
       <PortfolioCard
         bgcolor={theme.palette.primary.light}
@@ -42,6 +41,7 @@ const Home: NextPage = () => {
         hoverbg={theme.palette.secondary.main}
         hoverColor={theme.palette.secondary.light}
         descColor={theme.palette.success.light}
+        tabColor={theme.palette.success.light}
       />
       <Testimonial />
       <Footer />

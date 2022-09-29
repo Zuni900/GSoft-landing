@@ -1,19 +1,12 @@
-import React from "react";
+import React, { useRef } from "react";
 import { Grid, useMediaQuery, useTheme, TypographyProps } from "@mui/material";
-import {
-  SnapList,
-  SnapItem,
-  useVisibleElements,
-  useScroll,
-} from "react-snaplist-carousel";
+import { SnapList, SnapItem, useVisibleElements, useScroll } from "react-snaplist-carousel";
 import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
-import { useRef } from "react";
 
 import { useStyles } from "./styles";
 import SliderCard from "./Card";
-import Text from "../Typography";
-import { theme } from "../../styles/theme/defalutTheme";
+import Text from "components/Typography";
 
 interface Props extends TypographyProps {
   bgcolor: string;
@@ -21,12 +14,13 @@ interface Props extends TypographyProps {
   hoverbg: string;
   hoverColor: string;
   descColor: string;
+  tabColor: string;
 }
 
 const PortfolioCard = (props: Props) => {
-  const { bgcolor, color, hoverbg, hoverColor, descColor } = props;
-  const { classes, cx } = useStyles();
-
+  const { bgcolor, color, hoverbg, hoverColor, descColor, tabColor } = props;
+  const theme = useTheme();
+  const { classes, cx } = useStyles({ tabColor });
   const [tabIndex, setTabValue] = React.useState(0);
   const themes = useTheme();
   const onChangeTab = (event: React.SyntheticEvent, newValue: number) => {
@@ -37,10 +31,7 @@ const PortfolioCard = (props: Props) => {
 
   const snapList = useRef(null);
 
-  const visible = useVisibleElements(
-    { debounce: 10, ref: snapList },
-    ([element]) => element
-  );
+  const visible = useVisibleElements({ debounce: 10, ref: snapList }, ([element]) => element);
   const goToSnapItem = useScroll({ ref: snapList });
 
   const TabIndicatorProps = {
@@ -50,11 +41,7 @@ const PortfolioCard = (props: Props) => {
     },
   };
   return (
-    <Grid
-      container
-      className={cx(classes.container)}
-      style={{ backgroundColor: bgcolor, color: color }}
-    >
+    <Grid container className={cx(classes.container)} style={{ backgroundColor: bgcolor, color: color }}>
       <Grid container item md={10} sm={12} xs={12} className={cx(classes.box)}>
         <Text
           variant="h5"
@@ -66,14 +53,7 @@ const PortfolioCard = (props: Props) => {
         />
         <Text variant="h2" name="Portfolio" />
 
-        <Grid
-          container
-          item
-          md={12}
-          sm={12}
-          xs={12}
-          className={cx(classes.text)}
-        >
+        <Grid container item md={12} sm={12} xs={12} className={cx(classes.text)}>
           <Tabs
             value={tabIndex}
             onChange={onChangeTab}
@@ -111,10 +91,8 @@ const PortfolioCard = (props: Props) => {
           <SnapItem
             key={index}
             margin={{
-              left:
-                index == 0 && isMatch ? "5vw" : index == 0 ? "30vw" : "15px",
-              right:
-                index == 3 && isMatch ? "5vw" : index == 3 ? "30vw" : "15px",
+              left: index == 0 && isMatch ? "5vw" : index == 0 ? "30vw" : "15px",
+              right: index == 3 && isMatch ? "5vw" : index == 3 ? "30vw" : "15px",
             }}
             snapAlign="center"
           >

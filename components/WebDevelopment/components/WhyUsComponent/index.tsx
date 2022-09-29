@@ -2,7 +2,7 @@ import React from "react";
 import { Grid, TypographyProps } from "@mui/material";
 import Image, { StaticImageData } from "next/image";
 
-import Text from "../../../Typography";
+import Text from "components/Typography";
 import { useStyles } from "./styles";
 
 interface Props extends TypographyProps {

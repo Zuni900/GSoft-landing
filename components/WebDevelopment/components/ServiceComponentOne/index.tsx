@@ -3,8 +3,8 @@ import { Grid, Box, useMediaQuery, useTheme, TypographyProps } from "@mui/materi
 import Image, { StaticImageData } from "next/image";
 
 import { useStyles } from "./styles";
-import Text from "../../../Typography";
-import CommonButton from "../../../Button/CommonButton";
+import Text from "components/Typography";
+import CommonButton from "components/Button/CommonButton";
 
 interface Props extends TypographyProps {
   heading: string;
@@ -50,22 +50,22 @@ const ComponentOne = (props: Props) => {
 
         <Grid container className={cx(classes.points)}>
           <Box className={cx(classes.tick)}>
-            <Text name="✓" variant="h6" variantMapping={{ h6: "body1" }} className={cx(classes.txt)} />
+            <Text name="✓" variant="h6" variantMapping={{ h6: "p" }} className={cx(classes.txt)} />
             <Text name={point1} variant="caption" />
           </Box>
 
           <Box className={cx(classes.tick)}>
-            <Text name="✓" variant="h6" variantMapping={{ h6: "body1" }} className={cx(classes.txt)} />
+            <Text name="✓" variant="h6" variantMapping={{ h6: "p" }} className={cx(classes.txt)} />
             <Text name={point2} variant="caption" />
           </Box>
 
           <Box className={cx(classes.tick)}>
-            <Text name="✓" variant="h6" variantMapping={{ h6: "body1" }} className={cx(classes.txt)} />
+            <Text name="✓" variant="h6" variantMapping={{ h6: "p" }} className={cx(classes.txt)} />
             <Text name={point3} variant="caption" />
           </Box>
 
           <Box className={cx(classes.tick)}>
-            <Text name="✓" variant="h6" variantMapping={{ h6: "body1" }} className={cx(classes.txt)} />
+            <Text name="✓" variant="h6" variantMapping={{ h6: "p" }} className={cx(classes.txt)} />
             <Text name={point4} variant="caption" />
           </Box>
 

@@ -7,7 +7,6 @@ export const useStyles = makeStyles({
 })((theme) => ({
   toolbar: {
     margin: "0px",
-
     backgroundImage: `url(${Services?.src})`,
     backgroundSize: "fit",
     backgroundPosition: "cover",
@@ -15,7 +14,6 @@ export const useStyles = makeStyles({
     width: "100%",
     backgroundRepeat: "no-repeat",
     backgroundColor: theme.palette.secondary.main,
-
     height: "600px",
   },
 
