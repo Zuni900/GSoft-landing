@@ -19,30 +19,13 @@ function ServicesPage() {
         <link rel="icon" href="/favicon.ico" />
         <title>Services</title>
 
-        <meta
-          property="og:title"
-          content="Services"
-          key="Services"
-          name="description"
-        />
+        <meta property="og:title" content="Services" key="Services" name="description" />
       </Head>
       <Grid className={cx(classes.toolbar)}>
         <Header />
 
-        <Grid
-          container
-          item
-          md={12}
-          sm={12}
-          xs={12}
-          className={cx(classes.Headings)}
-        >
-          <Text
-            variantMapping={{ h2: "h2" }}
-            variant="h2"
-            name="Our Services"
-            className={cx(classes.styling)}
-          />
+        <Grid container item md={12} sm={12} xs={12} className={cx(classes.Headings)}>
+          <Text variantMapping={{ h2: "h2" }} variant="h2" name="Our Services" className={cx(classes.styling)} />
 
           <Text
             variantMapping={{
@@ -67,6 +50,7 @@ function ServicesPage() {
         hoverbg={theme.palette.secondary.light}
         hoverColor={theme.palette.secondary.main}
         descColor={theme.palette.error.light}
+        tabColor={theme.palette.secondary.light}
       />
       <Footer />
     </Container>

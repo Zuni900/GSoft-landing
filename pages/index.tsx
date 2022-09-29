@@ -32,6 +32,7 @@ const Home: NextPage = () => {
       <Technologies
         bgcolor={theme.palette.primary.light}
         color={theme.palette.secondary.main}
+        filter="brightness(0) invert(1)"
         tabColor={theme.palette.success.light}
       />
       <WorkFlow />

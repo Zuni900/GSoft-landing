@@ -1,8 +1,8 @@
 import { makeStyles } from "tss-react/mui"; // "tss-react/mui-compat" if your project is using Typescript < 4.4
 
 export const useStyles = makeStyles({
-  name: "ComponentWebDev",
-  uniqId: "webDevComponent",
+  name: "ComponentTop",
+  uniqId: "topComponent",
 })((theme) => ({
   container: {
     display: "flex",
@@ -16,14 +16,23 @@ export const useStyles = makeStyles({
     backgroundPosition: "center",
     backgroundRepeat: "no-repeat",
   },
-  block: {
+  box: {
     display: "flex",
     flexDirection: "column",
-    alignItems: "center",
-    textAlign: "center",
+    marginTop: "2%",
+  },
+  text: {
+    marginTop: "3%",
+  },
+  button: {
+    backgroundColor: theme.palette.secondary.contrastText,
+    color: theme.palette.secondary.main,
+    display: "flex",
     justifyContent: "center",
-    marginTop: "80px",
-    marginBottom: "100px",
+    borderRadius: "4px",
+    textTransform: "none",
+    padding: "10px",
+    marginTop: "4%",
   },
 }));
 export const style = {};
