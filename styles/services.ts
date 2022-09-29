@@ -1,5 +1,5 @@
 import { makeStyles } from "tss-react/mui"; // "tss-react/mui-compat" if your project is using Typescript < 4.4
-import Services from "../public/Services/Services.png";
+import Services from "images/Services/Services.png";
 
 export const useStyles = makeStyles({
   name: "ComponentTec",

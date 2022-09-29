@@ -3,7 +3,7 @@ import { makeStyles } from "tss-react/mui"; // "tss-react/mui-compat" if your pr
 export const useStyles = makeStyles({
   name: "ComponentTec",
   uniqId: "tecComponent",
-})((theme) => ({
+})(() => ({
   container: {
     display: "flex",
     flexDirection: "column",
@@ -12,7 +12,6 @@ export const useStyles = makeStyles({
     paddingBottom: "70px",
     paddingLeft: "20px",
     paddingRight: "20px",
-    // backgroundColor: theme.palette.primary.light,
   },
   box: {
     display: "flex",
@@ -28,9 +27,11 @@ export const useStyles = makeStyles({
     display: "flex",
     marginTop: "25px",
     marginBottom: "60px",
+    "& .MuiTab-root.Mui-selected": {
+      color: "transparent",
+    },
   },
   tab: {
-    color: theme.palette.success.light,
     textTransform: "none",
   },
   tec: {
