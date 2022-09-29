@@ -2,15 +2,15 @@ import React from "react";
 import { Grid } from "@mui/material";
 
 import { useStyles } from "./styles";
-import Text from "../Typography";
+import Text from "../../../Typography";
 
 import Image from "next/image";
-import Development1 from "../../public/Services/Development1.png";
-import Development from "../../public/Services/Development.png";
-import Development2 from "../../public/Services/Development2.png";
-import Development3 from "../../public/Services/Development3.png";
-import Development4 from "../../public/Services/Development4.png";
-import Development5 from "../../public/Services/Development5.png";
+import Development1 from "images/Services/Development1.png";
+import Development from "images/Services/Development.png";
+import Development2 from "images/Services/Development2.png";
+import Development3 from "images/Services/Development3.png";
+import Development4 from "images/Services/Development4.png";
+import Development5 from "images/Services/Development5.png";
 function Services() {
   const TechnologiesData = [
     {

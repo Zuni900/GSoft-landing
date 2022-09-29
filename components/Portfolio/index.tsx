@@ -1,6 +1,11 @@
 import React from "react";
 import { Grid, useMediaQuery, useTheme, TypographyProps } from "@mui/material";
-import { SnapList, SnapItem, useVisibleElements, useScroll } from "react-snaplist-carousel";
+import {
+  SnapList,
+  SnapItem,
+  useVisibleElements,
+  useScroll,
+} from "react-snaplist-carousel";
 import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
 import { useRef } from "react";
@@ -33,7 +38,10 @@ const PortfolioCard = (props: Props) => {
 
   const snapList = useRef(null);
 
-  const visible = useVisibleElements({ debounce: 10, ref: snapList }, ([element]) => element);
+  const visible = useVisibleElements(
+    { debounce: 10, ref: snapList },
+    ([element]) => element
+  );
   const goToSnapItem = useScroll({ ref: snapList });
 
   const TabIndicatorProps = {
@@ -43,7 +51,11 @@ const PortfolioCard = (props: Props) => {
     },
   };
   return (
-    <Grid container className={cx(classes.container)} style={{ backgroundColor: bgcolor, color: color }}>
+    <Grid
+      container
+      className={cx(classes.container)}
+      style={{ backgroundColor: bgcolor, color: color }}
+    >
       <Grid container item md={10} sm={12} xs={12} className={cx(classes.box)}>
         <Text
           variant="h5"
@@ -55,18 +67,43 @@ const PortfolioCard = (props: Props) => {
         />
         <Text variant="h2" name="Portfolio" />
 
-        <Grid container item md={12} sm={12} xs={12} className={cx(classes.text)}>
+        <Grid
+          container
+          item
+          md={12}
+          sm={12}
+          xs={12}
+          className={cx(classes.text)}
+        >
           <Tabs
             value={tabIndex}
             onChange={onChangeTab}
-            textColor="secondary"
             TabIndicatorProps={TabIndicatorProps}
+            allowScrollButtonsMobile={true}
             variant="scrollable"
             className={cx(classes.tabs)}
           >
-            <Tab className={cx(classes.tab)} label="Web Design" />
-            <Tab className={cx(classes.tab)} label="Mobile App" />
-            <Tab className={cx(classes.tab)} label="Web App" />
+            <Tab
+              className={cx(classes.tab)}
+              label="Web Design"
+              style={{
+                color: color,
+              }}
+            />
+            <Tab
+              className={cx(classes.tab)}
+              style={{
+                color: color,
+              }}
+              label="Mobile App"
+            />
+            <Tab
+              className={cx(classes.tab)}
+              label="Web App"
+              style={{
+                color: color,
+              }}
+            />
           </Tabs>
         </Grid>
       </Grid>
@@ -75,8 +112,10 @@ const PortfolioCard = (props: Props) => {
           <SnapItem
             key={index}
             margin={{
-              left: index == 0 && isMatch ? "5vw" : index == 0 ? "30vw" : "15px",
-              right: index == 3 && isMatch ? "5vw" : index == 3 ? "30vw" : "15px",
+              left:
+                index == 0 && isMatch ? "5vw" : index == 0 ? "30vw" : "15px",
+              right:
+                index == 3 && isMatch ? "5vw" : index == 3 ? "30vw" : "15px",
             }}
             snapAlign="center"
           >

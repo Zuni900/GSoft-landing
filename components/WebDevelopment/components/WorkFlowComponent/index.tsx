@@ -28,7 +28,11 @@ const WorkFlowComponent = (props: Props) => {
       className={cx(classes.container)}
       style={{ textAlign: isMatch ? "center" : "start" }}
     >
-      <Grid container className={cx(classes.block)} style={{ justifyContent: isMatch ? "center" : "" }}>
+      <Grid
+        container
+        className={cx(classes.block)}
+        style={{ justifyContent: isMatch ? "center" : "flex-start" }}
+      >
         <Text
           variant="overline"
           variantMapping={{

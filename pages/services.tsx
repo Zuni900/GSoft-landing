@@ -1,14 +1,16 @@
 import React from "react";
-import { Container, Grid } from "@mui/material";
+import { Container, Grid, useTheme } from "@mui/material";
 import Text from "components/Typography";
 import Header from "components/Navbar/Header";
 import { useStyles } from "styles/services";
 import Description from "components/Description";
-import Services from "components/Services";
+import Services from "components/Services/components/ServicesBlock";
 import Facilities from "components/WebDevelopment/components/Facilities";
 import Footer from "components/Footer/Footer";
 import Head from "next/head";
+import PortfolioCard from "components/Portfolio";
 function ServicesPage() {
+  const theme = useTheme();
   const { classes, cx } = useStyles();
 
   return (
@@ -59,6 +61,13 @@ function ServicesPage() {
       />
       <Services />
       <Facilities />
+      <PortfolioCard
+        bgcolor={theme.palette.secondary.main}
+        color={theme.palette.secondary.light}
+        hoverbg={theme.palette.secondary.light}
+        hoverColor={theme.palette.secondary.main}
+        descColor={theme.palette.error.light}
+      />
       <Footer />
     </Container>
   );

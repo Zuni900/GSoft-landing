@@ -4,7 +4,7 @@ import Container from "@mui/material/Container";
 
 import { theme } from "../../styles/theme/defalutTheme";
 import WebDev from "../WebDevelopment/components/WebDevelop";
-import Menu from "./components/Menu";
+import Menu from "./components/ProjectList";
 import Technologies from "../Home/components/Technologies/Technologies";
 import Footer from "../Footer/Footer";
 
@@ -17,11 +17,20 @@ const Portfolio: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
         <title>Portfolio</title>
 
-        <meta property="og:title" content="Portfolio" key="Portfolio" name="description" />
+        <meta
+          property="og:title"
+          content="Portfolio"
+          key="Portfolio"
+          name="description"
+        />
       </Head>
 
       <main>
-        <WebDev heading="Portfolio" desc="Our Work Speaks Itself" image={portfolio} />
+        <WebDev
+          heading="Portfolio"
+          desc="Our Work Speaks Itself"
+          image={portfolio}
+        />
         <Menu />
         <Technologies
           bgcolor={theme.palette.secondary.main}
