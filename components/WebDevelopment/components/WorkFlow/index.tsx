@@ -11,7 +11,11 @@ const WorkFlow = () => {
   const isMatch = useMediaQuery(theme.breakpoints.down("lg"));
 
   return (
-    <Grid container className={cx(classes.container)} style={{ alignItems: isMatch ? "center" : "" }}>
+    <Grid
+      container
+      className={cx(classes.container)}
+      style={{ alignItems: isMatch ? "center" : "flex-start" }}
+    >
       <Grid
         item
         md={10}
@@ -19,7 +23,7 @@ const WorkFlow = () => {
         sm={12}
         xs={12}
         className={cx(classes.box)}
-        style={{ alignItems: isMatch ? "center" : "" }}
+        style={{ alignItems: isMatch ? "center" : "flex-start" }}
       >
         <Text name="WORK FLOW" variant="h5" variantMapping={{ h5: "p" }} />
         <Text variant="h2" name="Our Working Process" />
