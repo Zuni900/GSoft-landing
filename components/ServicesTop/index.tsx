@@ -50,7 +50,12 @@ function ServicesTop() {
                 name="Backend Development"
                 onClick={() => router.push("/about")}
               ></Text>
-              <Text variant="caption" className={cx(classes.cardsubHeading)} name="Mobile App developtment"></Text>
+              <Text
+                variant="caption"
+                className={cx(classes.cardsubHeading)}
+                name="Mobile App developtment"
+                onClick={() => router.push("/jobs")}
+              ></Text>
               <Text variant="caption" className={cx(classes.cardsubHeading)} name="Mobile"></Text>
               <Text variant="caption" className={cx(classes.cardsubHeading)} name="Branding"></Text>{" "}
               <Text

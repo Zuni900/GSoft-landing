@@ -1,2 +1,2 @@
-import WebDevelopment from "components/WebDevelopment/components";
+import WebDevelopment from "components/WebDevelopment";
 export default WebDevelopment;

@@ -1,8 +1,8 @@
 import { makeStyles } from "tss-react/mui"; // "tss-react/mui-compat" if your project is using Typescript < 4.4
 
 export const useStyles = makeStyles({
-  name: "ComponentAbout",
-  uniqId: "aboutComponent",
+  name: "ComponentBenefits",
+  uniqId: "benefitsComponent",
 })((theme) => ({
   container: {
     display: "flex",
@@ -12,7 +12,8 @@ export const useStyles = makeStyles({
     paddingBottom: "70px",
     paddingLeft: "20px",
     paddingRight: "20px",
-    backgroundColor: theme.palette.primary.light,
+    backgroundColor: theme.palette.secondary.main,
+    color: theme.palette.secondary.light,
   },
   text: {
     display: "flex",
@@ -23,11 +24,8 @@ export const useStyles = makeStyles({
     marginTop: "20px",
     textAlign: "center",
   },
-  styling: {
-    color: theme.palette.secondary.main,
-  },
-  color: {
-    color: theme.palette.secondary.dark,
+  benefits: {
+    marginTop: "5%",
   },
 }));
 export const style = {};
