@@ -68,7 +68,7 @@ const Questions = () => {
         </Grid>
         {!isMatch ? (
           <Grid container item md={5}>
-            <Image alt="img" src={questions} width="488px" height="404px" layout="fixed" />
+            <Image alt="img" src={questions} layout="fixed" />
           </Grid>
         ) : (
           ""

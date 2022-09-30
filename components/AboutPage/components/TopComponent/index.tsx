@@ -30,7 +30,7 @@ const AboutComponent = (props: Props) => {
       <Grid container item md={9} sm={12} xs={12} className={cx(classes.box)}>
         <Grid container item md={9} className={cx(classes.box)}>
           <Text variant="h1" name={heading} />
-          <Text className={cx(classes.text)} variant="subtitle1" name={desc} />
+          <Text variant="subtitle1" name={desc} variantMapping={{ subtitle1: "p" }} className={cx(classes.text)} />
           <Grid container item md={5} sm={12} xs={12} xl={4} className={cx(classes.button)}>
             <Text
               variant="h6"

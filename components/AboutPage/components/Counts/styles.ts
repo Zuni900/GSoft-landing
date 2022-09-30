@@ -1,31 +1,29 @@
 import { makeStyles } from "tss-react/mui"; // "tss-react/mui-compat" if your project is using Typescript < 4.4
 
 export const useStyles = makeStyles({
-  name: "ComponentWebDev",
-  uniqId: "webDevComponent",
+  name: "ComponentCounts",
+  uniqId: "countsComponent",
 })((theme) => ({
   container: {
     display: "flex",
     flexDirection: "column",
     alignItems: "center",
     justifyContent: "center",
-    paddingBottom: "5%",
-    color: theme.palette.secondary.light,
-    backgroundSize: "cover",
-    backgroundColor: theme.palette.secondary.main,
-    backgroundPosition: "center",
-    backgroundRepeat: "no-repeat",
-  },
-  block: {
+    paddingTop: "70px",
+    paddingBottom: "70px",
     paddingLeft: "20px",
     paddingRight: "20px",
+    background: theme.palette.primary.light,
+  },
+  block: {
     display: "flex",
-    flexDirection: "column",
     alignItems: "center",
-    textAlign: "center",
     justifyContent: "center",
-    marginTop: "80px",
-    marginBottom: "100px",
+  },
+  box: {
+    display: "flex",
+    justifyContent: "space-between",
+    alignItems: "center",
   },
 }));
 export const style = {};
